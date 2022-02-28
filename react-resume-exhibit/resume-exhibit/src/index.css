@@ -1,0 +1,106 @@
+.br{
+    display: block;
+    margin-bottom: 0em;
+}
+.divider-line{
+    background-color: black;
+    height: 3px;
+    border: none;
+}
+#bold-this{
+    font-weight: bold;
+}
+
+.body{
+    background-color: rgb(65, 65, 65);
+}
+
+
+.break-container{
+    width: 50%;
+}
+/*Left Break: Contact info, resources, my links, project links*/
+.leftbreak{
+    position: fixed;
+    background-color: rgba(212, 175, 55, 0.3);
+    width: 20%;
+    margin-left: 0%;
+    margin-top: 0.2%;
+    height: 96%;
+    
+    border: 4px solid black;
+}
+.contact-info{
+    text-align: center;
+    font-size: 120%;
+}
+.resources{
+    text-align: center;
+}
+
+.my-links{
+    text-align: center;
+    font-size: 120%;
+}
+.my-projects{
+    text-align: center;
+    font-size: 120%;
+}
+
+/*Right Break: Resume side*/
+.rightbreak{
+    background-color: rgba(212, 175, 55, 0.5);
+    width: 75%;
+    margin-left: 22%;
+    height: 180%;
+
+    position: absolute;
+    border: 4px solid black;
+}
+
+.self-portrait{
+    width: 276px; 
+    height: 368px;
+    margin-left: 36%;
+    margin-top: 2%;
+}
+
+.basic-information{
+    width: 80%;
+    border: 4px solid black;
+    padding: 10px;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.my-skills{
+    width: 80%;
+    border: 4px solid black;
+    padding: 10px;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.my-talents{
+    width: 80%;
+    border: 4px solid black;
+    padding: 10px;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.my-education{
+    width: 80%;
+    border: 4px solid black;
+    padding: 10px;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.achievements{
+    width: 80%;
+    border: 4px solid black;
+    padding: 10px;
+    margin-left: 10%;
+    margin-top: 2%;
+}
