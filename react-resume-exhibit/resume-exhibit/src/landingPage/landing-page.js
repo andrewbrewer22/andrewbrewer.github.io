@@ -1,8 +1,10 @@
 import React from 'react';
+import './landing-page-style.css';
 
 export default class LandingPage extends React.Component {
 
     render() {
+        document.body.style = 'background: rgb(65, 65, 65);';
         return (
             <body class="body">
 
@@ -24,9 +26,9 @@ export default class LandingPage extends React.Component {
                             <span class="br">Programming Languages:</span>
                             <span class="br" id="bold-this"> HTML, CSS, JS, C#</span>
                             <span class="br">Frameworks and Libraries:</span>
-                            <span class="br" id="bold-this">Angular, React, Node.JS, ASP.NET Core/MVC</span>
-                            <span class="br">DataBase Software:</span>
-                            <span class="br" id="bold-this">MySQL</span>
+                            <span class="br" id="bold-this">React</span>
+                            <span class="br">blahblahblah:</span>
+                            <span class="br" id="bold-this">blahblahblah</span>
 
                             <hr class="divider-line"></hr>
                         </div>
