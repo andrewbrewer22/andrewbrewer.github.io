@@ -1,134 +1,40 @@
 import React from 'react';
-import './landing-page-style.css';
+import '../styles/landing-page-style.css';
+import Leftnavbar from '../components/leftnavbar/leftnavbar';
+import Resume from '../components/resume/resume';
+import BMICalculator from '../bmiPage/bmi-page';
+
+var tf = true;
+
+var rightBreak = <div></div>;
+const resume = <Resume></Resume>;
+const bmiCalc = <BMICalculator></BMICalculator>;
+
+//identify the proper right-break html component
+if(tf)
+{
+    rightBreak = resume;
+}
+else
+{
+    rightBreak = bmiCalc;
+}
 
 export default class LandingPage extends React.Component {
 
     render() {
         document.body.style = 'background: rgb(65, 65, 65);';
         return (
+
+
             <body class="body">
 
                 <section class="break-container">
 
-                    <section class="leftbreak">
+                <Leftnavbar></Leftnavbar>
 
-                        <div class="contact-info">
-                            <span class="br" id="bold-this">Full-Stack Developer</span>
-                            <span class="br">Andrew Brewer</span>
-                            <span class="br">253-244-8669</span>
-                            <span class="br">andrewwilsonbrewer22@gmail.com</span>
-
-
-                            <hr class="divider-line"></hr>
-                        </div>
-
-                        <div class="resources">
-                            <span class="br">Programming Languages:</span>
-                            <span class="br" id="bold-this"> HTML, CSS, JS, C#</span>
-                            <span class="br">Frameworks and Libraries:</span>
-                            <span class="br" id="bold-this">React</span>
-                            <span class="br">blahblahblah:</span>
-                            <span class="br" id="bold-this">blahblahblah</span>
-
-                            <hr class="divider-line"></hr>
-                        </div>
-
-                        <div class="my-links">
-                            <a class="br" href="../BMIcalc/bmi-index.html">My Links</a>
-                            <a class="br" href="../BMIcalc/bmi-index.html">Link Here</a>
-                            <a class="br" href="../BMIcalc/bmi-index.html">Link Here</a>
-                            <a class="br" href="../BMIcalc/bmi-index.html">Link Here</a>
-
-                            <hr class="divider-line"></hr>
-                        </div>
-
-                        <div class="my-projects">
-                            <a class="br" href="../BMIcalc/bmi-index.html">My Projects</a>
-                            <a class="br" href="../BMIcalc/bmi-index.html">BMI Calculator</a>
-                            <a class="br" href="../BMIcalc/bmi-index.html">Link Here</a>
-                            <a class="br" href="../BMIcalc/bmi-index.html">Link Here</a>
-
-                            <hr class="divider-line"></hr>
-                        </div>
-                    </section>
-
-                    <section class="rightbreak">
-                        <div class="img">
-                            <img class="self-portrait" src={require('./images/Andrew_Brewer.jpg')} alt="Andrew_Brewer"></img>
-                        </div>
-
-
-                        <div class="basic-information">
-                            <p>
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                            </p>
-                        </div>
-
-                        <div class="my-skills">
-                            <p>
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                            </p>
-                        </div>
-
-                        <div class="my-talents">
-                            <p>
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                            </p>
-                        </div>
-
-                        <div class="my-education">
-                            <p>
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                            </p>
-                        </div>
-
-                        <div class="achievements">
-                            <p>
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                                Put some code here for the sake of filling up space on the screen.
-                            </p>
-                        </div>
-
-
-                        <div>
-
-                        </div>
-
-                    </section>
+                {rightBreak}
+                    
                 </section>
             </body>
         );
