@@ -1,7 +1,7 @@
 
 import React from "react";
 import ReactDOM from 'react-dom';
-import LandingPage from "./landingPage/landing-page.js";
+import LandingPage from "./pages/landingPage/landing-page.js";
 
 class NavBar extends React.Component {
     render() {

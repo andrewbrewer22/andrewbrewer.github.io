@@ -1,7 +1,7 @@
 import React from 'react';
-import '../styles/landing-page-style.css';
-import Leftnavbar from '../components/leftnavbar/leftnavbar';
-import Resume from '../components/resume/resume';
+import '../../styles/landing-page-style.css';
+import Leftnavbar from '../../components/leftnavbar/leftnavbar.js';
+import Resume from '../../components/resume/resume';
 import BMICalculator from '../bmiPage/bmi-page';
 
 var tf = true;
