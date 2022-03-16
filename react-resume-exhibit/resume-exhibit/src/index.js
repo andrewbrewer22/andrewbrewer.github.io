@@ -3,6 +3,8 @@ import React from "react";
 import ReactDOM from 'react-dom';
 import LandingPage from "./pages/landingPage/landing-page.js";
 
+import App from "./App.js";
+/*
 class NavBar extends React.Component {
     render() {
         
@@ -11,5 +13,5 @@ class NavBar extends React.Component {
         );
     }
 }
-
-ReactDOM.render(<NavBar />, document.getElementById('root'))
+*/
+ReactDOM.render(<App />, document.getElementById('root'))

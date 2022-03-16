@@ -31,7 +31,7 @@ export default class LandingPage extends React.Component {
 
                 <section class="break-container">
 
-                <Leftnavbar></Leftnavbar>
+                <Leftnavbar />
 
                 {rightBreak}
                     
