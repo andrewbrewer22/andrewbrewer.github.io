@@ -2,8 +2,11 @@
 import React from "react";
 import ReactDOM from 'react-dom';
 import LandingPage from "./pages/landingPage/landing-page.js";
+import App from "./App";
 
-import App from "./App.js";
+
+
+
 /*
 class NavBar extends React.Component {
     render() {

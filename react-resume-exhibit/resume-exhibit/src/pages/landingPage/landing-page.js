@@ -33,7 +33,7 @@ export default class LandingPage extends React.Component {
 
                 <Leftnavbar />
 
-                {rightBreak}
+                <Resume />
                     
                 </section>
             </body>

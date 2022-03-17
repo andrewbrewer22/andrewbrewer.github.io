@@ -31,38 +31,21 @@ export default class Leftnavbar extends React.Component {
             React
           </span>
           <span class="br">blahblahblah:</span>
-          <span class="br" id="bold-this">
-            blahblahblah
-          </span>
-
+          <span class="br" id="bold-this">blahblahblah</span>
           <hr class="divider-line"></hr>
         </div>
 
-        <this.userLinks></this.userLinks>
+        <section class="my-projects">
+          <span class="br" id="bold-this">My Projects</span>
+          <span class="br">Link here</span>
+          <span class="br">Link here</span>
+          <span class="br">Link here</span>
+          <span class="br">Link here</span>
+
+          <hr className="divider-line"></hr>
+        </section>
+
       </section>
-    );
-  }
-
-  userLinks() {
-    return (
-      <Router>
-        <div class="my-links">
-          <hr class="divider-line"></hr>
-        </div>
-
-        <div class="my-projects">
-          <link class="br" to="bmiCalc">
-            BMI Calculator
-          </link>
-          <hr class="divider-line"></hr>
-        </div>
-
-        <switch>
-          <Route path="bmiCalc">
-            <BMICalculator />
-          </Route>
-        </switch>
-      </Router>
     );
   }
 }
