@@ -1,10 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 //style
 import "../../styles/landing-page-style.css";
 //other pages
 import BMICalculator from "../../pages/bmiPage/bmi-page";
+import Resume from "../resume/resume";
 
 export default class Leftnavbar extends React.Component {
   render() {
@@ -37,10 +38,14 @@ export default class Leftnavbar extends React.Component {
 
         <section class="my-projects">
           <span class="br" id="bold-this">My Projects</span>
-          <span class="br">Link here</span>
-          <span class="br">Link here</span>
-          <span class="br">Link here</span>
-          <span class="br">Link here</span>
+          <Routes>
+            <Route path="/" element={<Links />}>
+
+              <Route path="resume" element={<Resume />} />
+              <Route path="bmiCalc" element={<BMICalculator />} />
+
+            </Route>
+          </Routes>
 
           <hr className="divider-line"></hr>
         </section>
@@ -48,4 +53,17 @@ export default class Leftnavbar extends React.Component {
       </section>
     );
   }
+}
+
+function Links() {
+  return (
+    <div>
+      <nav>
+        <ul>
+          <li><Link to={"resume"}>Resume</Link></li>
+          <li><Link to={"bmiCalc"}>BMI Calculator</Link></li>
+        </ul>
+      </nav>
+    </div>
+  );
 }
