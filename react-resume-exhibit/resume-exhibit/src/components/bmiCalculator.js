@@ -5,18 +5,13 @@ export default class BMICalculator extends React.Component {
   render() {
     return (
       <section class="rightbreak">
+
         <div class="bmi-explanation">
           <p>
-            Put some code here for the sake of filling up space on the screen.
-            Put some code here for the sake of filling up space on the screen.
-            Put some code here for the sake of filling up space on the screen.
-            Put some code here for the sake of filling up space on the screen.
-            Put some code here for the sake of filling up space on the screen.
-            Put some code here for the sake of filling up space on the screen.
-            Put some code here for the sake of filling up space on the screen.
-            Put some code here for the sake of filling up space on the screen.
+            The BMI (Body Mass Index) Calculator is used to determine body fat in an individual based on height and weight.
           </p>
         </div>
+
       </section>
     );
   }

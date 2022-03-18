@@ -83,7 +83,7 @@ let navigate = useNavigate();
           <span class="br">
             <button onClick={() => {
               navigate("/resume");
-            }}>
+            }} id="bold-this">
               Change to Resume
             </button>
           </span>
@@ -91,7 +91,7 @@ let navigate = useNavigate();
           <span class="br">
             <button onClick={() => {
               navigate("/bmicalc");
-            }}>
+            }} id="bold-this">
               Change to BMI Calculator
             </button>
           </span>

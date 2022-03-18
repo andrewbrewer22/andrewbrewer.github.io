@@ -7,6 +7,7 @@ export default class BMICalcPage extends React.Component{
 
     render(){
         document.body.style = 'background: rgb(65, 65, 65);';
+        //document.body.style 
         return(
             <body class="body">
 
