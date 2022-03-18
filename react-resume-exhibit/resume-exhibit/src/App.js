@@ -1,125 +1,54 @@
-
 import React from "react";
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
+import ErrorPage from "./testing/ErrorPage";
+import ResumePage from "./pages/Resume-page";
+import BMICalcPage from "./pages/bmi-page";
 
-
-
-//#region 
-
+//#region testing code
 /*
-export default class App extends React.Component{
-    render(){
-        return(
-            <div>Hello World</div>
-        );
-    }
+function App() {
+  return (
+    <Router>
+      Simple nav bar for testing (Will always be displayed on any page
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/profile">Profile</Link>
+      </nav>
+
+      These are the elements that change
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/about" element={<About />}/>
+        <Route path="/profile/:username" element={<Profile />}/>
+
+        *Error page*
+        <Route path="*" element={<ErrorPage/>} />
+      </Routes>
+
+      Continue HTML, whatever is outside Routes will always be displayed
+      <footer>FOOTTEERR</footer>
+
+    </Router>
+  );
 }
-*/
 
-/*
-
-export default function App(){
-    return(
-        <BrowserRouter>
-            <Routes>
-                <Route path="bmiCalc" element={<BMICalculator />} />
-                <Route path="landingPage" element={<LandingPage />} />
-                <Route path="users/*" element={<Users />} />
-            </Routes>
-        </BrowserRouter>
-    );
-}
-
-function Users() {
-    return(
-        <div>
-            <nav>
-                <link to="me">My Profile</link>
-            </nav>
-
-            <Routes>
-                <Route path="me" element={<div>ME</div>} />
-                <Route path="landingPage" element={<LandingPage />} />
-                <Route path="bmiCalc" element={<BMICalculator />} />
-            </Routes>
-        </div>
-    );
-}
-*/
-
-/*
-export default function App() {
-    return (
-      <div>
-        <h1>Basic Example</h1>
-        <Routes>
-            <Route path="/" element={<Layout />}> 
-            <Route index element={<Home />} />
-
-            <Route path="resume" element={<Resume />} />
-            <Route path="bmiCalc" element={<BMICalculator />} />
-
-            <Route path="*" element={<NoMatch />} />
-          </Route>
-        </Routes>
-      </div>
-    );
-  }
-  
-  function Layout() {
-    return (
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="resume">Resume</Link>
-            </li>
-            <li>
-              <Link to="bmiCalc">BMICalculator</Link>
-            </li>
-          </ul>
-        </nav>
-        <hr />
-      </div>
-    );
-  }
-  
-  function Home() {
-    return (
-      <div>
-        <h2>Home</h2>
-      </div>
-    );
-  }
-  
-  
-  function NoMatch() {
-    return (
-      <div>
-        <h2>Nothing to see here!</h2>
-        <p>
-          <Link to="/">Go to the home page</Link>
-        </p>
-      </div>
-    );
-  }
+export default App;
 */
 //#endregion
-
-
-import Home from "./testing/Home";
-import About from "./testing/About";
-import Profile from "./testing/Profile";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/about" element={<About />}/>
-        <Route path="/profile" element={<Profile />}/>
+        <Route path="/" element={<ResumePage />} />
+        <Route path="resume" element={<ResumePage />} />
+        <Route path="bmicalc" element={<BMICalcPage />} />
+
+        {/*Error page*/}
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>
   );
