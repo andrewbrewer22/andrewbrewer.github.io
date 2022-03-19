@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Freshman";
+    src: local("Freshman"),
+        url("../fonts/Freshman.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "MKBritishWriting";
+    src: local("MKBritishWriting"),
+        url("../fonts/MKBritishWriting.ttf") format("truetype");
+}

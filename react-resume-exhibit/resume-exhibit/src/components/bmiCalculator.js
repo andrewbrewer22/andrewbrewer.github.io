@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/boldStyle.css";
 import ToggleSwitch from "./ToggleSwitch";
 
+
 export default class BMICalculator extends React.Component {
   render() {
     return (
