@@ -78,12 +78,12 @@ let navigate = useNavigate();
         </div>
 
         <section class="my-projects">
-          <span class="br" id="bold-this">My Projects</span>
+          <span class="br" id="bold-this">My Example Projects</span>
 
           <span class="br">
             <button onClick={() => {
               navigate("/resume");
-            }} id="bold-this">
+            }} id="link-button">
               Change to Resume
             </button>
           </span>
@@ -91,7 +91,7 @@ let navigate = useNavigate();
           <span class="br">
             <button onClick={() => {
               navigate("/bmicalc");
-            }} id="bold-this">
+            }} id="link-button">
               Change to BMI Calculator
             </button>
           </span>
@@ -104,3 +104,4 @@ let navigate = useNavigate();
 }
 
 export default LeftNavbar;
+
