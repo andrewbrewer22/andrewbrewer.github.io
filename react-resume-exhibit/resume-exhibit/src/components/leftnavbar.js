@@ -80,19 +80,27 @@ let navigate = useNavigate();
         <section class="my-projects">
           <span class="br" id="bold-this">My Example Projects</span>
 
-          <span class="br">
+          <span className="br">
             <button onClick={() => {
               navigate("/resume");
             }} id="link-button">
-              Change to Resume
+              Resume
             </button>
           </span>
 
-          <span class="br">
+          <span className="br">
             <button onClick={() => {
               navigate("/bmicalc");
             }} id="link-button">
-              Change to BMI Calculator
+              BMI Calculator
+            </button>
+          </span>
+
+          <span className="br">
+            <button onClick={() => {
+              navigate("/");
+            }} id="link-button">
+              API {" & "} AJAX Example
             </button>
           </span>
 

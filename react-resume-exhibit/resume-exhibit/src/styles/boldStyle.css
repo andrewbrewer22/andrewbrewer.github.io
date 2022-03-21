@@ -2,6 +2,10 @@
     display: block;
     margin-bottom: 0em;
 }
+#br{
+    display: block;
+    margin-bottom: 0em;
+}
 .divider-line{
     background-color: black;
     height: 3px;
