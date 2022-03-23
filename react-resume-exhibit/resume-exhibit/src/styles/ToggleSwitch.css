@@ -37,10 +37,16 @@
 .toggle-switch input[type="checkbox"]:checked+.switch::before {
     transform: translateX(25px);
     background-color: #6699cc;
+
+    padding-top: 25px;
+    font-family: "Freshman";
 }
 
 .toggle-switch input[type="checkbox"]:checked+.switch {
     background-color: #336699;
+
+    padding-top: 25px;
+    font-family: "MKBritishWriting";
 }
 
 .unitofmeasurment{
@@ -52,3 +58,4 @@
     padding-top: 25px;
     font-family: "MKBritishWriting";
 }
+*/
