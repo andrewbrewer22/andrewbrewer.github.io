@@ -58,4 +58,14 @@
     font-weight: bold;
 }
 
+.heightMeasurment{
+    position: absolute;
+    left: 575px;
+    top: 170px;
+}
 
+.weightMeasurment{
+    position: absolute;
+    right: 385px;
+    top: 170px;
+}

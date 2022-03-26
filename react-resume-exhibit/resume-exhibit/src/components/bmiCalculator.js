@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/boldStyle.css";
 import ToggleSwitch from "./ToggleSwitch";
+import ImperialBoolean from "./ToggleSwitch";
 
 /*BMI Formula
 Imperial: 703 x weight (lbs) / [height(in)]^2
@@ -9,7 +10,7 @@ Metric: [weight (kg) / height (cm) / height (cm)] x 10,000
 var calculatedBMI = 0;
 var weight = 0;
 var height = 0;
-var imperial = true;
+var imperial = true
 
 export default class BMICalculator extends React.Component {
 
@@ -18,13 +19,13 @@ export default class BMICalculator extends React.Component {
     this.calculateBMI = this.calculateBMI.bind(this);
   }
 
+  
+
   calculateBMI(event) {
     /*BMI Formula
     Imperial: 703 x weight (lbs) / [height(in)]^2
     Metric: [weight (kg) / height (cm) / height (cm)] x 10,000
     */
-
-
 
     if (imperial) {/*Imperial*/
       if (event.target.name === "weight") {
@@ -46,8 +47,8 @@ export default class BMICalculator extends React.Component {
 
       this.calculatedBMI = ((this.weight / this.height / this.height)*10000).toFixed(2);
     }
-
   }
+
 
   /*
   constructor(props) {
@@ -79,7 +80,7 @@ export default class BMICalculator extends React.Component {
     return (
       <section className="rightbreak">
         <div className="bmi-explanation">
-          <p>
+          <p className="exp-textbox">
             The BMI (Body Mass Index) Calculator is used to determine body fat
             in an individual based on height and weight.
           </p>
@@ -91,13 +92,12 @@ export default class BMICalculator extends React.Component {
             type="text"
             name="height"
             placeholder="Height"
+            id="height"
 
-            /*
-            value={this.state.heightValue}
-            onChangeHeight={this.onChangeHeight}
-            */
             onChange={this.calculateBMI}
           />
+          <span></span>
+
 
           <ToggleSwitch />
 
@@ -106,13 +106,11 @@ export default class BMICalculator extends React.Component {
             type="text"
             name="weight"
             placeholder="Weight"
-            /*
-            value={this.state.value}
-            onChangeWeight={this.onChangeWeight}
-            */
+            id="weight"
 
             onChange={this.calculateBMI}
           />
+          <span></span>
         </div>
 
         <div className="bmi-input">Your BMI: {this.calculatedBMI}</div>

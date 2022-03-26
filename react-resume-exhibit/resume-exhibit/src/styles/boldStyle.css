@@ -137,6 +137,11 @@
     padding: 10px;
     margin-left: 10%;
     margin-top: 2%;
+    background-color: rgba(255, 196, 0, 0.274);
+}
+.exp-textbox{
+    
+    
 }
 .bmi-input{
     text-align: center;
