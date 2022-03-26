@@ -5,40 +5,40 @@ import { useNavigate, useParams, Link } from "react-router-dom";
 import "../styles/boldStyle.css";
 
 /*
-export default class Leftnavbar extends React.Component {
+export default className Leftnavbar extends React.Component {
   render() {
     return (
-      <section class="leftbreak">
-        <div class="contact-info">
-          <span class="br" id="bold-this">
+      <section className="leftbreak">
+        <div className="contact-info">
+          <span className="br" id="bold-this">
             Front-End Developer
           </span>
-          <span class="br">Andrew Brewer</span>
-          <span class="br">253-244-8669</span>
-          <span class="br">andrewwilsonbrewer22@gmail.com</span>
+          <span className="br">Andrew Brewer</span>
+          <span className="br">253-244-8669</span>
+          <span className="br">andrewwilsonbrewer22@gmail.com</span>
 
-          <hr class="divider-line"></hr>
+          <hr className="divider-line"></hr>
         </div>
-        <div class="resources">
-          <span class="br">Programming Languages:</span>
-          <span class="br" id="bold-this">
+        <div className="resources">
+          <span className="br">Programming Languages:</span>
+          <span className="br" id="bold-this">
             {" "}
             HTML, CSS, JS, C#
           </span>
-          <span class="br">Frameworks and Libraries:</span>
-          <span class="br" id="bold-this">
+          <span className="br">Frameworks and Libraries:</span>
+          <span className="br" id="bold-this">
             React
           </span>
-          <span class="br">blahblahblah:</span>
-          <span class="br" id="bold-this">blahblahblah</span>
-          <hr class="divider-line"></hr>
+          <span className="br">blahblahblah:</span>
+          <span className="br" id="bold-this">blahblahblah</span>
+          <hr className="divider-line"></hr>
         </div>
 
-        <section class="my-projects">
-          <span class="br" id="bold-this">My Projects</span>
+        <section className="my-projects">
+          <span className="br" id="bold-this">My Projects</span>
 
 
-          <hr className="divider-line"></hr>
+          <hr classNameName="divider-line"></hr>
         </section>
 
       </section>
@@ -51,34 +51,34 @@ function LeftNavbar(){
 let navigate = useNavigate();
 
   return(
-    <section class="leftbreak">
-        <div class="contact-info">
-          <span class="br" id="bold-this">
+    <section className="leftbreak">
+        <div className="contact-info">
+          <span className="br" id="bold-this">
             Front-End Developer
           </span>
-          <span class="br">Andrew Brewer</span>
-          <span class="br">253-244-8669</span>
-          <span class="br">andrewwilsonbrewer22@gmail.com</span>
+          <span className="br">Andrew Brewer</span>
+          <span className="br">253-244-8669</span>
+          <span className="br">andrewwilsonbrewer22@gmail.com</span>
 
-          <hr class="divider-line"></hr>
+          <hr className="divider-line"></hr>
         </div>
-        <div class="resources">
-          <span class="br">Programming Languages:</span>
-          <span class="br" id="bold-this">
+        <div className="resources">
+          <span className="br">Programming Languages:</span>
+          <span className="br" id="bold-this">
             {" "}
             HTML, CSS, JS, C#
           </span>
-          <span class="br">Frameworks and Libraries:</span>
-          <span class="br" id="bold-this">
+          <span className="br">Frameworks and Libraries:</span>
+          <span className="br" id="bold-this">
             React
           </span>
-          <span class="br">blahblahblah:</span>
-          <span class="br" id="bold-this">blahblahblah</span>
-          <hr class="divider-line"></hr>
+          <span className="br">blahblahblah:</span>
+          <span className="br" id="bold-this">blahblahblah</span>
+          <hr className="divider-line"></hr>
         </div>
 
-        <section class="my-projects">
-          <span class="br" id="bold-this">My Example Projects</span>
+        <section className="my-projects">
+          <span className="br" id="bold-this">My Example Projects</span>
 
           <span className="br">
             <button onClick={() => {
@@ -98,9 +98,17 @@ let navigate = useNavigate();
 
           <span className="br">
             <button onClick={() => {
-              navigate("/");
+              navigate("/ajax");
             }} id="link-button">
               API {" & "} AJAX Example
+            </button>
+          </span>
+
+          <span className="br">
+            <button onClick={() => {
+              navigate("/homeBuyer");
+            }} id="link-button">
+              Find a Home under a price
             </button>
           </span>
 

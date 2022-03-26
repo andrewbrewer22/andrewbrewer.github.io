@@ -1,21 +1,19 @@
 import React from 'react';
 import "../styles/boldStyle.css";
 import Leftnavbar from '../components/leftnavbar';
-import BMICalculator from '../components/bmiCalculator';
+import APIAJAXcomponent from '../components/apiajax';
 
-export default class BMICalcPage extends React.Component{
-
+export default class APIAJAX extends React.Component{
     render(){
         document.body.style = 'background: rgb(65, 65, 65);';
-        //document.body.style 
         return(
-            <body className="body">
+            <body class="body">
 
-                <section className="break-container">
+                <section class="break-container">
 
                 <Leftnavbar />
 
-                <BMICalculator />
+                <APIAJAXcomponent />
                     
                 </section>
             </body>

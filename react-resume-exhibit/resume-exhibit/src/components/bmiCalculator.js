@@ -10,6 +10,32 @@ var calculatedBMI = 0;
 
 export default class BMICalculator extends React.Component {
 
+  constructor(props) {
+    super(props);
+    this.calculateBMI = this.calculateBMI.bind(this);
+  }
+
+  calculateBMI(event) {
+    /*BMI Formula
+    Imperial: 703 x weight (lbs) / [height(in)]^2
+    Metric: weight (kg) / [height (m)]^2
+    */
+
+    var weight = 0;
+    var height = 0;
+
+    if (event.target.name === "weight") {
+      weight = event.target.value;
+    }
+    if (event.target.name === "height") {
+      height = event.target.value;
+    }
+
+    this.calculatedBMI = (703 * weight / (height ^ 2));
+
+    console.log("bmi: " + this.calculatedBMI);
+  }
+
   /*
   constructor(props) {
     super(props);
@@ -38,32 +64,32 @@ export default class BMICalculator extends React.Component {
 */
   render() {
     return (
-      <section class="rightbreak">
-        <div class="bmi-explanation">
+      <section className="rightbreak">
+        <div className="bmi-explanation">
           <p>
             The BMI (Body Mass Index) Calculator is used to determine body fat
             in an individual based on height and weight.
           </p>
         </div>
 
-        <div class="bmi-input">
+        <div className="bmi-input">
           <input
-            class="bmi-inputbox"
+            className="bmi-inputbox"
             type="text"
             name="height"
             placeholder="Height"
-            
+
             /*
             value={this.state.heightValue}
             onChangeHeight={this.onChangeHeight}
             */
-            onChange={calculateBMI}
+            onChange={this.calculateBMI}
           />
 
           <ToggleSwitch />
 
           <input
-            class="bmi-inputbox"
+            className="bmi-inputbox"
             type="text"
             name="weight"
             placeholder="Weight"
@@ -72,37 +98,12 @@ export default class BMICalculator extends React.Component {
             onChangeWeight={this.onChangeWeight}
             */
 
-            onChange={calculateBMI}
+            onChange={this.calculateBMI}
           />
         </div>
 
-        <div className="bmi-input">Your BMI: {calculatedBMI}</div>
+        <div className="bmi-input">Your BMI: {this.calculatedBMI}</div>
       </section>
     );
   }
-
-  
 }
-
-/*BMI Formula
-Imperial: 703 x weight (lbs) / [height(in)]^2
-Metric: weight (kg) / [height (m)]^2
-*/
-const calculateBMI = (event)=>{
-  var weight = 0;
-  var height = 0;
-
-  if(event.target.name === "weight"){
-    weight = event.target.value;
-  }
-  if(event.target.name === "height"){
-    height = event.target.value;
-  }
-
-  calculatedBMI = (703 * weight / (height^2));
-
-  console.log("bmi: " + calculatedBMI);
-}
-
-
-/*#################Create required fields */

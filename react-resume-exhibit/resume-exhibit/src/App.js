@@ -5,6 +5,9 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import ErrorPage from "./testing/ErrorPage";
 import ResumePage from "./pages/Resume-page";
 import BMICalcPage from "./pages/bmi-page";
+import APIAJAX from "./pages/ajax-page";
+import HomepricingPage from "./pages/homepricing-page";
+
 
 //#region testing code
 /*
@@ -46,6 +49,8 @@ function App() {
         <Route path="/" element={<ResumePage />} />
         <Route path="resume" element={<ResumePage />} />
         <Route path="bmicalc" element={<BMICalcPage />} />
+        <Route path="ajax" element={<APIAJAX />} />
+        <Route path="homeBuyer" element={<HomepricingPage />} />
 
         {/*Error page*/}
         <Route path="*" element={<ErrorPage />} />
