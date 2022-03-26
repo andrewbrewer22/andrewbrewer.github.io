@@ -37,25 +37,22 @@
 .toggle-switch input[type="checkbox"]:checked+.switch::before {
     transform: translateX(25px);
     background-color: #6699cc;
-
-    padding-top: 25px;
-    font-family: "Freshman";
 }
 
 .toggle-switch input[type="checkbox"]:checked+.switch {
     background-color: #336699;
+}
 
+.unitofmeasurment input[type="checkbox"]:checked{
     padding-top: 25px;
-    font-family: "MKBritishWriting";
+    
+    font-family: "Freshman";
 }
 
 .unitofmeasurment{
     padding-top: 25px;
-    font-family: "Freshman";
+    
+    font-family: "MKBritishWriting";
+    font-weight: bold;
 }
 
-.unitofmeasurment input[type="checkbox"]:checked+.switch {
-    padding-top: 25px;
-    font-family: "MKBritishWriting";
-}
-*/

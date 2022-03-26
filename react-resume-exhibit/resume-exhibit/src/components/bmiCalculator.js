@@ -52,10 +52,12 @@ export default class BMICalculator extends React.Component {
             type="text"
             name="height"
             placeholder="Height"
+            
             /*
             value={this.state.heightValue}
             onChangeHeight={this.onChangeHeight}
             */
+            onChange={calculateBMI}
           />
 
           <ToggleSwitch />
@@ -69,6 +71,8 @@ export default class BMICalculator extends React.Component {
             value={this.state.value}
             onChangeWeight={this.onChangeWeight}
             */
+
+            onChange={calculateBMI}
           />
         </div>
 
@@ -76,5 +80,29 @@ export default class BMICalculator extends React.Component {
       </section>
     );
   }
+
+  
 }
+
+/*BMI Formula
+Imperial: 703 x weight (lbs) / [height(in)]^2
+Metric: weight (kg) / [height (m)]^2
+*/
+const calculateBMI = (event)=>{
+  var weight = 0;
+  var height = 0;
+
+  if(event.target.name === "weight"){
+    weight = event.target.value;
+  }
+  if(event.target.name === "height"){
+    height = event.target.value;
+  }
+
+  calculatedBMI = (703 * weight / (height^2));
+
+  console.log("bmi: " + calculatedBMI);
+}
+
+
 /*#################Create required fields */

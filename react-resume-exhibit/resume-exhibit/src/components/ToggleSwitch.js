@@ -12,6 +12,7 @@ function ToggleSwitch() {
 
 if(isToggled){
     unitofmeasurment = "Metric";
+    
 }else{
     unitofmeasurment = "Imperial";
 }
