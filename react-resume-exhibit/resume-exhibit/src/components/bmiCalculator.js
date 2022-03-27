@@ -47,6 +47,11 @@ export default class BMICalculator extends React.Component {
 
       this.calculatedBMI = ((this.weight / this.height / this.height)*10000).toFixed(2);
     }
+
+    if(this.calculatedBMI > 0 && this.calculatedBMI != Infinity)
+    {
+      document.getElementById("bmi-calculated").innerHTML = "BMI: " + this.calculatedBMI;
+    }
   }
 
 
@@ -111,9 +116,10 @@ export default class BMICalculator extends React.Component {
             onChange={this.calculateBMI}
           />
           <span></span>
+          <span></span>
         </div>
 
-        <div className="bmi-input">Your BMI: {this.calculatedBMI}</div>
+        <div className="bmi-input" id="bmi-calculated">BMI: </div>
       </section>
     );
   }

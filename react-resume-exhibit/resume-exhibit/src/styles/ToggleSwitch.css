@@ -59,13 +59,13 @@
 }
 
 .heightMeasurment{
-    position: absolute;
-    left: 575px;
-    top: 170px;
+    position: relative;
+    left: -11px;
+    top: 2px;
 }
 
 .weightMeasurment{
-    position: absolute;
-    right: 385px;
-    top: 170px;
+    position: relative;
+    right: -197px;
+    top: 2px;
 }

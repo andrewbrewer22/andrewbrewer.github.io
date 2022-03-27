@@ -7,7 +7,7 @@ import ResumePage from "./pages/Resume-page";
 import BMICalcPage from "./pages/bmi-page";
 import APIAJAX from "./pages/ajax-page";
 import HomepricingPage from "./pages/homepricing-page";
-
+import ScrollToTop from "./tools/ScrollToTop";
 
 //#region testing code
 /*
@@ -45,6 +45,7 @@ export default App;
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<ResumePage />} />
         <Route path="resume" element={<ResumePage />} />
