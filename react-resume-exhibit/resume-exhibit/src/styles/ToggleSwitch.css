@@ -43,7 +43,9 @@
     background-color: #336699;
 }
 
-.unitofmeasurment input[type="checkbox"]:checked{
+
+
+.unitofmeasurment{
     padding-top: 25px;
     
     font-family: "Freshman";
@@ -55,4 +57,5 @@
     font-family: "MKBritishWriting";
     font-weight: bold;
 }
+
 

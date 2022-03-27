@@ -10,17 +10,18 @@ function ToggleSwitch() {
   const [isToggled, setIsToggled] = useState(false);
   const onToggle = () => setIsToggled(!isToggled);
 
-if(isToggled){
-    unitofmeasurment = "Metric";
-    
-}else{
-    unitofmeasurment = "Imperial";
-}
+
+  if (isToggled) {
+    unitofmeasurment="Metric";
+  }
+  else {
+    unitofmeasurment="Imperial";
+  }
 
   return (
     <label className="toggle-switch">
       <input type="checkbox" checked={isToggled} onChange={onToggle} />
-      <span className="switch"/>
+      <span className="switch" />
       <div className="unitofmeasurment">
         {unitofmeasurment}
       </div>
@@ -28,3 +29,4 @@ if(isToggled){
   );
 }
 export default ToggleSwitch;
+
