@@ -17,6 +17,10 @@
 
 .body{
     background-color: rgb(65, 65, 65);
+
+    -ms-overflow-style: none;
+     scrollbar-width: none;
+     
 }
 
 .body::-webkit-scrollbar {
@@ -182,6 +186,17 @@
 }
 /*Home pricing page*/
 .homePricing-title{
+    text-align: center;
+    width: 80%;
+    border: 4px solid black;
+    padding: 10px;
+    margin-left: 10%;
+    margin-top: 2%;
+
+    background-color: rgba(255, 196, 0, 0.274);
+}
+/*Picture Gallery*/
+.picture-gallery-title{
     text-align: center;
     width: 80%;
     border: 4px solid black;

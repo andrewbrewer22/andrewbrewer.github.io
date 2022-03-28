@@ -8,7 +8,7 @@ import BMICalcPage from "./pages/bmi-page";
 import APIAJAX from "./pages/ajax-page";
 import HomepricingPage from "./pages/homepricing-page";
 import ScrollToTop from "./tools/ScrollToTop";
-
+import PictureGalleryPage from "./pages/picturegallery-page";
 //#region testing code
 /*
 function App() {
@@ -52,6 +52,7 @@ function App() {
         <Route path="bmicalc" element={<BMICalcPage />} />
         <Route path="ajax" element={<APIAJAX />} />
         <Route path="homeBuyer" element={<HomepricingPage />} />
+        <Route path="picturegallery" element={<PictureGalleryPage />} />
 
         {/*Error page*/}
         <Route path="*" element={<ErrorPage />} />

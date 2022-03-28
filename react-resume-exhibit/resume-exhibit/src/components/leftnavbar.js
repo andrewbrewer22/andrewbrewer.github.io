@@ -112,6 +112,14 @@ let navigate = useNavigate();
             </button>
           </span>
 
+          <span className="br">
+            <button onClick={() => {
+              navigate("/picturegallery");
+            }} id="link-button">
+              Picture Gallery
+            </button>
+          </span>
+
           <hr className="divider-line"></hr>
         </section>
 
