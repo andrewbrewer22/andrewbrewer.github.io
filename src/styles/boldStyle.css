@@ -33,7 +33,8 @@
 /*Left Break: Contact info, resources, my links, project links*/
 .leftbreak{
     position: fixed;
-    background-color: rgba(212, 175, 55, 0.3);
+    /*background-color: rgba(212, 175, 55, 0.3);*/
+    background-color: blue;
     width: 20%;
     margin-left: 0%;
     margin-top: 0%;
@@ -59,13 +60,15 @@
 }
 /*Buttons*/
 #link-button{
-    background-color: rgba(212, 172, 41, 0.404);
+    /*background-color: rgba(212, 172, 41, 0.404);*/
+    background-color: blue;
     border-style: solid;
     border-color: black;
     font-weight: lighter;
 }
 #link-button:hover{
-    background-color: rgba(255, 196, 0, 0.514);
+    /*background-color: rgba(255, 196, 0, 0.514);*/
+    background-color: blue;
     border-style: solid;
     border-color: black;
     font-weight: lighter;
