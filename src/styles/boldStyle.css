@@ -1,211 +1,451 @@
-.br{
-    display: block;
-    margin-bottom: 0em;
+
+@media (min-width: 0px) and (max-width: 999px) {
+
+    .br {
+        display: block;
+        margin-bottom: 0em;
+    }
+
+    #br {
+        display: block;
+        margin-bottom: 0em;
+    }
+
+    .divider-line {
+        background-color: black;
+        height: 1px;
+        border: none;
+    }
+
+    #bold-this {
+        font-weight: bold;
+    }
+
+    .body {
+        background-color: rgb(65, 65, 65);
+
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+    }
+
+    .body::-webkit-scrollbar {
+        display: none;
+    }
+
+    .break-container {
+        width: 50%;
+    }
+
+    /*Left Break: Contact info, resources, my links, project links*/
+    .leftbreak {
+        position: fixed;
+        background-color: rgba(212, 175, 55, 0.3);
+        width: 35%;
+        margin-left: -3%;
+        margin-top: 0%;
+        height: 50%;
+
+        border: 2px solid black;
+    }
+
+    .contact-info {
+        text-align: center;
+        font-size: 50%;
+    }
+
+    .resources {
+        text-align: center;
+        font-size: 60%;
+    }
+
+    .my-links {
+        text-align: center;
+        font-size: 60%;
+    }
+
+    .my-projects {
+        text-align: center;
+        font-size: 60%;
+    }
+
+    /*Buttons*/
+    #link-button {
+        background-color: rgba(212, 172, 41, 0.404);
+        border: 1px solid black;
+        font-weight: lighter;
+        font-size: 100%;
+    }
+
+    #link-button:hover {
+        background-color: rgba(255, 196, 0, 0.514);
+        border: 1px solid black;
+        font-weight: lighter;
+        font-size: 100%;
+        /*Changes mouse cursor to pointer*/
+        cursor: pointer;
+    }
+
+    /*Right Break: Resume side*/
+    .rightbreak {
+        background-color: rgba(212, 175, 55, 0.5);
+        width: 60%;
+        margin-left: 35%;
+        height: 180%;
+
+        position: absolute;
+        border: 2px solid black;
+    }
+
+    /*Resume*/
+    .self-portrait {
+        width: 92px;
+        height: 123px;
+        margin-left: 30%;
+        margin-top: 2%;
+
+        border: 2px solid black;
+
+        background-color: rgba(255, 196, 0, 0.274);
+    }
+
+    .basic-information {
+        width: 80%;
+        border: 1px solid black;
+        padding: 10px;
+        margin-left: 6%;
+        margin-top: 2%;
+
+        background-color: rgba(255, 196, 0, 0.274);
+        font-size: 50%;
+    }
+
+    .my-skills {
+        width: 80%;
+        border: 1px solid black;
+        padding: 10px;
+        margin-left: 6%;
+        margin-top: 2%;
+
+        background-color: rgba(255, 196, 0, 0.274);
+        font-size: 50%;
+    }
+
+    .my-talents {
+        width: 80%;
+        border: 1px solid black;
+        padding: 10px;
+        margin-left: 6%;
+        margin-top: 2%;
+
+        background-color: rgba(255, 196, 0, 0.274);
+        font-size: 50%;
+    }
+
+    .my-education {
+        width: 80%;
+        border: 1px solid black;
+        padding: 10px;
+        margin-left: 6%;
+        margin-top: 2%;
+
+        background-color: rgba(255, 196, 0, 0.274);
+        font-size: 50%;
+    }
+
+    .achievements {
+        width: 80%;
+        border: 1px solid black;
+        padding: 10px;
+        margin-left: 6%;
+        margin-top: 2%;
+
+        background-color: rgba(255, 196, 0, 0.274);
+        font-size: 50%;
+    }
+
+    /*BMI CALC*/
+    .bmi-explanation {
+        text-align: center;
+        width: 80%;
+        border: 4px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+        background-color: rgba(255, 196, 0, 0.274);
+    }
+
+    .exp-textbox {}
+
+    .bmi-input {
+        text-align: center;
+        width: 40%;
+        border: 4px solid black;
+        padding: 10px;
+        margin-left: 30%;
+        margin-top: 2%;
+        background-color: rgba(255, 196, 0, 0.274);
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /*API and AJAX*/
+    .ajax-title {
+        text-align: center;
+        width: 80%;
+        border: 4px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+
+        background-color: rgba(255, 196, 0, 0.274);
+    }
+
+    /*Home pricing page*/
+    .homePricing-title {
+        text-align: center;
+        width: 80%;
+        border: 4px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+
+        background-color: rgba(255, 196, 0, 0.274);
+    }
+
+    /*Picture Gallery*/
+    .picture-gallery-title {
+        text-align: center;
+        width: 80%;
+        border: 4px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+
+        background-color: rgba(255, 196, 0, 0.274);
+    }
 }
-#br{
-    display: block;
-    margin-bottom: 0em;
-}
-.divider-line{
-    background-color: black;
-    height: 3px;
-    border: none;
-}
-#bold-this{
-    font-weight: bold;
-}
 
-.body{
-    background-color: rgb(65, 65, 65);
+@media (min-width: 1000px) {
 
-    -ms-overflow-style: none;
-     scrollbar-width: none;
-     
-}
+    .br {
+        display: block;
+        margin-bottom: 0em;
+    }
 
-.body::-webkit-scrollbar {
-    display: none;
-  }
+    #br {
+        display: block;
+        margin-bottom: 0em;
+    }
 
-.break-container{
-    width: 50%;
-}
-/*Left Break: Contact info, resources, my links, project links*/
-.leftbreak{
-    position: fixed;
-    /*background-color: rgba(212, 175, 55, 0.3);*/
-    background-color: blue;
-    width: 20%;
-    margin-left: 0%;
-    margin-top: 0%;
-    height: 96%;
-    
-    border: 4px solid black;
-}
-.contact-info{
-    text-align: center;
-    font-size: 120%;
-}
-.resources{
-    text-align: center;
-}
+    .divider-line {
+        background-color: black;
+        height: 3px;
+        border: none;
+    }
 
-.my-links{
-    text-align: center;
-    font-size: 120%;
-}
-.my-projects{
-    text-align: center;
-    font-size: 120%;
-}
-/*Buttons*/
-#link-button{
-    /*background-color: rgba(212, 172, 41, 0.404);*/
-    background-color: blue;
-    border-style: solid;
-    border-color: black;
-    font-weight: lighter;
-}
-#link-button:hover{
-    /*background-color: rgba(255, 196, 0, 0.514);*/
-    background-color: blue;
-    border-style: solid;
-    border-color: black;
-    font-weight: lighter;
+    #bold-this {
+        font-weight: bold;
+    }
 
-    /*Changes mouse cursor to pointer*/
-    cursor: pointer;
-}
+    .body {
+        background-color: rgb(65, 65, 65);
 
-/*Right Break: Resume side*/
-.rightbreak{
-    background-color: rgba(212, 175, 55, 0.5);
-    width: 75%;
-    margin-left: 22%;
-    height: 180%;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
 
-    position: absolute;
-    border: 4px solid black;
-}
+    }
 
-/*Resume*/
-.self-portrait{
-    width: 276px; 
-    height: 368px;
-    margin-left: 36%;
-    margin-top: 2%;
+    .body::-webkit-scrollbar {
+        display: none;
+    }
 
-    border: 4px solid black;
+    .break-container {
+        width: 50%;
+    }
 
-    background-color: rgba(255, 196, 0, 0.274);
-}
+    /*Left Break: Contact info, resources, my links, project links*/
+    .leftbreak {
+        position: fixed;
+        background-color: rgba(212, 175, 55, 0.3);
+        width: 20%;
+        margin-left: 0%;
+        margin-top: 0%;
+        height: 96%;
 
-.basic-information{
-    width: 80%;
-    border: 4px solid black;
-    padding: 10px;
-    margin-left: 10%;
-    margin-top: 2%;
+        border: 4px solid black;
+    }
 
-    background-color: rgba(255, 196, 0, 0.274);
-}
+    .contact-info {
+        text-align: center;
+        font-size: 120%;
+    }
 
-.my-skills{
-    width: 80%;
-    border: 4px solid black;
-    padding: 10px;
-    margin-left: 10%;
-    margin-top: 2%;
+    .resources {
+        text-align: center;
+    }
 
-    background-color: rgba(255, 196, 0, 0.274);
-}
+    .my-links {
+        text-align: center;
+        font-size: 120%;
+    }
 
-.my-talents{
-    width: 80%;
-    border: 4px solid black;
-    padding: 10px;
-    margin-left: 10%;
-    margin-top: 2%;
+    .my-projects {
+        text-align: center;
+        font-size: 120%;
+    }
 
-    background-color: rgba(255, 196, 0, 0.274);
-}
+    /*Buttons*/
+    #link-button {
+        background-color: rgba(212, 172, 41, 0.404);
+        border-style: solid;
+        border-color: black;
+        font-weight: lighter;
+    }
 
-.my-education{
-    width: 80%;
-    border: 4px solid black;
-    padding: 10px;
-    margin-left: 10%;
-    margin-top: 2%;
+    #link-button:hover {
+        background-color: rgba(255, 196, 0, 0.514);
+        border-style: solid;
+        border-color: black;
+        font-weight: lighter;
 
-    background-color: rgba(255, 196, 0, 0.274);
-}
+        /*Changes mouse cursor to pointer*/
+        cursor: pointer;
+    }
 
-.achievements{
-    width: 80%;
-    border: 4px solid black;
-    padding: 10px;
-    margin-left: 10%;
-    margin-top: 2%;
+    /*Right Break: Resume side*/
+    .rightbreak {
+        background-color: rgba(212, 175, 55, 0.5);
+        width: 75%;
+        margin-left: 22%;
+        height: 180%;
 
-    background-color: rgba(255, 196, 0, 0.274);
-}
+        position: absolute;
+        border: 4px solid black;
+    }
 
-/*BMI CALC*/
-.bmi-explanation{
-    text-align: center;
-    width: 80%;
-    border: 4px solid black;
-    padding: 10px;
-    margin-left: 10%;
-    margin-top: 2%;
-    background-color: rgba(255, 196, 0, 0.274);
-}
-.exp-textbox{
-    
-    
-}
-.bmi-input{
-    text-align: center;
-    width: 40%;
-    border: 4px solid black;
-    padding: 10px;
-    margin-left: 30%;
-    margin-top: 2%;
-    background-color: rgba(255, 196, 0, 0.274);
+    /*Resume*/
+    .self-portrait {
+        width: 276px;
+        height: 368px;
+        margin-left: 36%;
+        margin-top: 2%;
 
-    display: flex;
-    justify-content: space-between;
-}
-/*API and AJAX*/
-.ajax-title{
-    text-align: center;
-    width: 80%;
-    border: 4px solid black;
-    padding: 10px;
-    margin-left: 10%;
-    margin-top: 2%;
+        border: 4px solid black;
 
-    background-color: rgba(255, 196, 0, 0.274);
-}
-/*Home pricing page*/
-.homePricing-title{
-    text-align: center;
-    width: 80%;
-    border: 4px solid black;
-    padding: 10px;
-    margin-left: 10%;
-    margin-top: 2%;
+        background-color: rgba(255, 196, 0, 0.274);
+    }
 
-    background-color: rgba(255, 196, 0, 0.274);
-}
-/*Picture Gallery*/
-.picture-gallery-title{
-    text-align: center;
-    width: 80%;
-    border: 4px solid black;
-    padding: 10px;
-    margin-left: 10%;
-    margin-top: 2%;
+    .basic-information {
+        width: 80%;
+        border: 4px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
 
-    background-color: rgba(255, 196, 0, 0.274);
+        background-color: rgba(255, 196, 0, 0.274);
+    }
+
+    .my-skills {
+        width: 80%;
+        border: 4px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+
+        background-color: rgba(255, 196, 0, 0.274);
+    }
+
+    .my-talents {
+        width: 80%;
+        border: 4px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+
+        background-color: rgba(255, 196, 0, 0.274);
+    }
+
+    .my-education {
+        width: 80%;
+        border: 4px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+
+        background-color: rgba(255, 196, 0, 0.274);
+    }
+
+    .achievements {
+        width: 80%;
+        border: 4px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+
+        background-color: rgba(255, 196, 0, 0.274);
+    }
+
+    /*BMI CALC*/
+    .bmi-explanation {
+        text-align: center;
+        width: 80%;
+        border: 4px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+        background-color: rgba(255, 196, 0, 0.274);
+    }
+
+    .exp-textbox {}
+
+    .bmi-input {
+        text-align: center;
+        width: 40%;
+        border: 4px solid black;
+        padding: 10px;
+        margin-left: 30%;
+        margin-top: 2%;
+        background-color: rgba(255, 196, 0, 0.274);
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /*API and AJAX*/
+    .ajax-title {
+        text-align: center;
+        width: 80%;
+        border: 4px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+
+        background-color: rgba(255, 196, 0, 0.274);
+    }
+
+    /*Home pricing page*/
+    .homePricing-title {
+        text-align: center;
+        width: 80%;
+        border: 4px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+
+        background-color: rgba(255, 196, 0, 0.274);
+    }
+
+    /*Picture Gallery*/
+    .picture-gallery-title {
+        text-align: center;
+        width: 80%;
+        border: 4px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+
+        background-color: rgba(255, 196, 0, 0.274);
+    }
 }
