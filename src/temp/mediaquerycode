@@ -1,0 +1,35 @@
+/*#region phone*/
+@media screen 
+and (min-device-width: 689x)
+and (max-device-width: 999px)
+{
+
+}
+/*#endregion*/
+
+/*#region tablet*/
+@media screen 
+and (min-device-width: 689x)
+and (max-device-width: 999px)
+{
+
+}
+/*#endregion*/
+
+/*#region desktop*/
+@media screen 
+and (min-device-width: 1000px)
+and (max-device-width: 2000px)
+{
+
+}
+/*#endregion*/
+
+
+/*#region desktop and beyond*/
+@media screen 
+and (min-device-width: 2001px) 
+{
+
+}
+/*#endregion*/

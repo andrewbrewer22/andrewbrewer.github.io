@@ -54,33 +54,6 @@ export default class BMICalculator extends React.Component {
     }
   }
 
-
-  /*
-  constructor(props) {
-    super(props);
-    this.state = { heightValue: '', weightValue: '', RegExp: /^[0-9\b]+$/ };
-
-    this.onChangeHeight = this.onChangeHeight.bind(this);
-    this.onChangeWeight = this.onChangeWeight.bind(this);
-  }
-
-  onChangeHeight(e) {
-    let heightValue = e.target.value;
-
-    if(heightValue === '' || this.state.RegExp.test(heightValue)) {
-      this.setState({ [e.target.value]: heightValue})
-    }
-
-
-  }
-
-  onChangeWeight(e) {
-    const re = /^[0-9\b]+$/;
-    if (e.target.value === "" || re.test(e.target.value)) {
-      this.setState({ value: e.target.value });
-    }
-  }
-*/
   render() {
     return (
       <section className="rightbreak">

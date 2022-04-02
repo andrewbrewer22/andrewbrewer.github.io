@@ -1,79 +1,191 @@
-.toggle-switch {
-    margin-bottom: 3%;
-    position: relative;
-    display: inline-block;
-    width: 50px;
-    height: 30px;
-    top: -4px;
 
+
+/*#region phone*/
+@media screen 
+and (min-device-width: 689x)
+and (max-device-width: 999px)
+{
+    .toggle-switch {
+        margin-bottom: 3%;
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 30px;
+        top: -4px;
     
-}
-
-.toggle-switch input[type="checkbox"] {
-    display: none;
+        
+    }
     
-}
-
-.toggle-switch .switch {
-    position: absolute;
-    cursor: pointer;
-    background-color: rgb(255, 131, 93);
-    border-radius: 0%;
-    border: 3px solid black;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    transition: background-color 0.6s ease;
-}
-
-.toggle-switch .switch::before {
-    position: absolute;
-    content: "";
-    left: 0px;
-    top: 0px;
-    right: 0px;
-    width: 21px;
-    height: 21px;
-    background-color: rgb(255, 194, 175);
-    border: 1px solid black;
+    .toggle-switch input[type="checkbox"] {
+        display: none;
+        
+    }
     
-    transition: transform 0.3s ease;
-}
-
-.toggle-switch input[type="checkbox"]:checked+.switch::before {
-    transform: translateX(25px);
-    background-color: #6699cc;
-}
-
-.toggle-switch input[type="checkbox"]:checked+.switch {
-    background-color: #336699;
-}
-
-
-
-.unitofmeasurment::before{
-    padding-top: 25px;
+    .toggle-switch .switch {
+        position: absolute;
+        cursor: pointer;
+        background-color: rgb(255, 131, 93);
+        border-radius: 0%;
+        border: 3px solid black;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
     
-    font-family: "Freshman";
-}
-
-.unitofmeasurment{
-    padding-top: 25px;
+        transition: background-color 0.6s ease;
+    }
     
-    font-family: "MKBritishWriting";
-    font-weight: bold;
+    .toggle-switch .switch::before {
+        position: absolute;
+        content: "";
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        width: 21px;
+        height: 21px;
+        background-color: rgb(255, 194, 175);
+        border: 1px solid black;
+        
+        transition: transform 0.3s ease;
+    }
+    
+    .toggle-switch input[type="checkbox"]:checked+.switch::before {
+        transform: translateX(25px);
+        background-color: #6699cc;
+    }
+    
+    .toggle-switch input[type="checkbox"]:checked+.switch {
+        background-color: #336699;
+    }
+    
+    
+    
+    .unitofmeasurment::before{
+        padding-top: 25px;
+        
+        font-family: "Freshman";
+    }
+    
+    .unitofmeasurment{
+        padding-top: 25px;
+        
+        font-family: "MKBritishWriting";
+        font-weight: bold;
+    }
+    
+    .heightMeasurment{
+        position: relative;
+        left: -11px;
+        top: 2px;
+    }
+    
+    .weightMeasurment{
+        position: relative;
+        right: -197px;
+        top: 2px;
+    }
 }
+/*#endregion*/
 
-.heightMeasurment{
-    position: relative;
-    left: -11px;
-    top: 2px;
-}
+/*#region tablet*/
+@media screen 
+and (min-device-width: 689x)
+and (max-device-width: 999px)
+{
 
-.weightMeasurment{
-    position: relative;
-    right: -197px;
-    top: 2px;
 }
+/*#endregion*/
+
+/*#region desktop*/
+@media screen 
+and (min-device-width: 1000px)
+and (max-device-width: 2000px)
+{
+    .toggle-switch {
+        margin-bottom: 3%;
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 30px;
+        top: -4px;
+    }
+    
+    .toggle-switch input[type="checkbox"] {
+        display: none;
+        
+    }
+    
+    .toggle-switch .switch {
+        position: absolute;
+        cursor: pointer;
+        background-color: rgb(255, 131, 93);
+        border-radius: 0%;
+        border: 3px solid black;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    
+        transition: background-color 0.6s ease;
+    }
+    
+    .toggle-switch .switch::before {
+        position: absolute;
+        content: "";
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        width: 21px;
+        height: 21px;
+        background-color: rgb(255, 194, 175);
+        border: 1px solid black;
+        
+        transition: transform 0.3s ease;
+    }
+    
+    .toggle-switch input[type="checkbox"]:checked+.switch::before {
+        transform: translateX(25px);
+        background-color: #6699cc;
+    }
+    
+    .toggle-switch input[type="checkbox"]:checked+.switch {
+        background-color: #336699;
+    }
+    
+    
+    
+    .unitofmeasurment::before{
+        padding-top: 25px;
+        
+        font-family: "Freshman";
+    }
+    
+    .unitofmeasurment{
+        padding-top: 25px;
+        
+        font-family: "MKBritishWriting";
+        font-weight: bold;
+    }
+    
+    .heightMeasurment{
+        position: relative;
+        left: -11px;
+        top: 2px;
+    }
+    
+    .weightMeasurment{
+        position: relative;
+        right: -197px;
+        top: 2px;
+    }
+}
+/*#endregion*/
+
+/*#region desktop and beyond*/
+@media screen 
+and (min-device-width: 2001px) 
+{
+
+}
+/*#endregion*/
+
