@@ -12,7 +12,7 @@ function LeftNavbar() {
 
         <span className="leftbreak-background-setter"></span>
 
-        <div className="contact-info">
+        <section className="contact-info">
           <span className="br" id="bold-this">
             Front-End Developer
           </span>
@@ -22,8 +22,9 @@ function LeftNavbar() {
           <span className="br">andrewwilsonbrewer22@gmail.com</span>
           */}
           <hr className="divider-line"></hr>
-        </div>
-        <div className="resources">
+        </section>
+
+        <section className="resources">
           <span className="br">Programming Languages:</span>
           <span className="br" id="bold-this">
             {" "}
@@ -36,11 +37,10 @@ function LeftNavbar() {
           <span className="br">blahblahblah:</span>
           <span className="br" id="bold-this">blahblahblah</span>
           <hr className="divider-line"></hr>
-        </div>
+        </section>
 
         <section className="my-projects">
           <span className="br" id="bold-this">My Example Projects</span>
-
           <span className="br">
             <button onClick={() => {
               navigate("/resume");
@@ -48,7 +48,6 @@ function LeftNavbar() {
               Resume
             </button>
           </span>
-
           <span className="br">
             <button onClick={() => {
               navigate("/bmicalc");
@@ -56,7 +55,6 @@ function LeftNavbar() {
               BMI Calculator
             </button>
           </span>
-
           <span className="br">
             <button onClick={() => {
               navigate("/ajax");
@@ -64,7 +62,6 @@ function LeftNavbar() {
               API {" & "} AJAX Example
             </button>
           </span>
-
           <span className="br">
             <button onClick={() => {
               navigate("/homeBuyer");
@@ -72,7 +69,6 @@ function LeftNavbar() {
               Find a Home under a price
             </button>
           </span>
-
           <span className="br">
             <button onClick={() => {
               navigate("/picturegallery");
@@ -80,7 +76,6 @@ function LeftNavbar() {
               Picture Gallery
             </button>
           </span>
-
           <hr className="divider-line"></hr>
         </section>
 
