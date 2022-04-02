@@ -76,6 +76,7 @@ and (max-device-width: 688px)
     }
 
     /*Left Break: Contact info, resources, my links, project links*/
+    /*background-color: rgb(65, 65, 65);*/
     .leftbreak-background-setter{
         background-color: rgb(65, 65, 65);
         width: 100%;
@@ -86,9 +87,9 @@ and (max-device-width: 688px)
     .leftbreak {
         position: fixed;
         background-color: #6D623E;
-        width: 304px;
-        margin-top: -12px;
-        margin-left: -10px;
+        width: 95%;
+        margin-top: -3%;
+        margin-left: -2%;
         height: 165px;
 
         border: 2px solid black;
@@ -128,9 +129,9 @@ and (max-device-width: 688px)
         z-index: -1;
         background-color: rgba(212, 175, 55, 0.5);
         width: 95%;
-        margin-left: -3%;
+        margin-left: -2%;
         height: 180%;
-        margin-top: 50%;
+        margin-top: 160px;
 
         position: absolute;
         border: 2px solid black;
