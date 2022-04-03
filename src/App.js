@@ -14,7 +14,7 @@ import ScrollToTop from "./tools/ScrollToTop";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/andrewbrewer.github.io">
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
