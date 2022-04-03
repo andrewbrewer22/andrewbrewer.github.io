@@ -14,9 +14,9 @@ import ScrollToTop from "./tools/ScrollToTop";
 
 function App() {
   return (
-    <Router basename="/andrewbrewer.github.io">
+    <Router >
       <ScrollToTop />
-      <Routes>
+      <Routes basename="andrewbrewer.github.io">
         <Route path="/" element={<HomePage />} />
         <Route path="resume" element={<ResumePage />} />
         <Route path="bmicalc" element={<BMICalcPage />} />
