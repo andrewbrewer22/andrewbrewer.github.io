@@ -16,7 +16,7 @@ function App() {
   return (
     <Router >
       <ScrollToTop />
-      <Routes basename="andrewbrewer.github.io">
+      <Routes basename="/andrewbrewer.github.io">
         <Route path="/" element={<HomePage />} />
         <Route path="resume" element={<ResumePage />} />
         <Route path="bmicalc" element={<BMICalcPage />} />
