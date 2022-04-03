@@ -538,6 +538,24 @@ and (max-device-width: 2000px)
         width: 50%;
     }
 
+    /*Buttons*/
+    #link-button {
+        background-color: rgba(212, 172, 41, 0.404);
+        border-style: solid;
+        border-color: black;
+        font-weight: lighter;
+    }
+
+    #link-button:hover {
+        background-color: rgba(255, 196, 0, 0.514);
+        border-style: solid;
+        border-color: black;
+        font-weight: lighter;
+
+        /*Changes mouse cursor to pointer*/
+        cursor: pointer;
+    }
+
     /*Left Break: Contact info, resources, my links, project links*/
     .leftbreak {
         position: fixed;
@@ -569,23 +587,11 @@ and (max-device-width: 2000px)
         font-size: 120%;
     }
 
-    /*Buttons*/
-    #link-button {
-        background-color: rgba(212, 172, 41, 0.404);
-        border-style: solid;
-        border-color: black;
-        font-weight: lighter;
+    .contactme{
+        text-align: center;
+        font-size: 120%;
     }
 
-    #link-button:hover {
-        background-color: rgba(255, 196, 0, 0.514);
-        border-style: solid;
-        border-color: black;
-        font-weight: lighter;
-
-        /*Changes mouse cursor to pointer*/
-        cursor: pointer;
-    }
 
     /*Right Break: Resume side*/
     .rightbreak {
