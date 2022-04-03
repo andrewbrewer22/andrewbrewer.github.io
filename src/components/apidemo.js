@@ -1,13 +1,13 @@
 import React from "react";
 import "../styles/boldStyle.css";
 
-export default class APIAJAXcomponent extends React.Component{
+export default class APIDEMOcomponent extends React.Component{
     render(){
         return(
             <section className="rightbreak">
-                <div className="ajax-title">
+                <div className="api-title">
                     <p>
-                        API and AJAX
+                        API DEMO
                     </p>
                 </div>
             </section>

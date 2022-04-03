@@ -1,9 +1,9 @@
 import React from 'react';
 import "../styles/boldStyle.css";
 import Leftnavbar from '../components/leftnavbar';
-import APIAJAXcomponent from '../components/apiajax';
+import APIDEMOcomponent from '../components/apidemo';
 
-export default class APIAJAX extends React.Component{
+export default class APIDEMO extends React.Component{
     render(){
         document.body.style = 'background: rgb(65, 65, 65);';
         return(
@@ -13,7 +13,7 @@ export default class APIAJAX extends React.Component{
 
                 <Leftnavbar />
 
-                <APIAJAXcomponent />
+                <APIDEMOcomponent />
                     
                 </section>
             </body>

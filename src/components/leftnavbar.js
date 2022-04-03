@@ -57,9 +57,9 @@ function LeftNavbar() {
           </span>
           <span className="br">
             <button onClick={() => {
-              navigate("/ajax");
+              navigate("/api");
             }} id="link-button">
-              API {" & "} AJAX Example
+              API Demonstration
             </button>
           </span>
           <span className="br">
