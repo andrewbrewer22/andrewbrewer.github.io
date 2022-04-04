@@ -12,10 +12,10 @@ import HomePage from "./pages/home-page";
 
 import ScrollToTop from "./tools/ScrollToTop";
 
-//https://andrewbrewer.github.io
+//https://andrewbrewer.github.io (this was originally in the homepage section in package.json)
 function App() {
   return (
-    <Router basename="/">
+    <Router >
       <ScrollToTop />
       <Routes >
         <Route path="/" element={<HomePage />} />
