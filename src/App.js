@@ -11,12 +11,12 @@ import PictureGalleryPage from "./pages/picturegallery-page";
 import HomePage from "./pages/home-page";
 
 import ScrollToTop from "./tools/ScrollToTop";
-
+//https://andrewbrewer.github.io
 function App() {
   return (
-    <Router >
+    <Router basename="/">
       <ScrollToTop />
-      <Routes basename="/andrewbrewer.github.io">
+      <Routes >
         <Route path="/" element={<HomePage />} />
         <Route path="resume" element={<ResumePage />} />
         <Route path="bmicalc" element={<BMICalcPage />} />
