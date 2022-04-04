@@ -2,6 +2,8 @@ import { render } from "@testing-library/react";
 import React from "react";
 import "../styles/boldStyle.css";
 
+var refreshNumber = 0;
+
 export default class TestAPI extends React.Component {
 
     constructor(props) {
@@ -11,11 +13,19 @@ export default class TestAPI extends React.Component {
             isLoaded: false,
             items: [],
         };
+
+        this.apiFetch = this.apiFetch.bind(this);
+    }
+
+    refresh(){
+        this.refreshNumber += 1;
+        document.getElementById("refreshHTML").innerHTML = this.refreshNumber;
     }
 
     //https://api.quotable.io/random
     //https://randomuser.me/api/
-    componentDidMount() {
+
+    async apiFetch(){
         fetch("https://api.quotable.io/random")
             .then((res) => res.json())
             .then(
@@ -33,6 +43,13 @@ export default class TestAPI extends React.Component {
                 }
             );
     }
+
+    async componentDidMount() {
+        this.apiFetch();
+    }
+
+    
+    
 
     render() {
         const { error, isLoaded, items } = this.state;
@@ -53,8 +70,8 @@ export default class TestAPI extends React.Component {
                         (Quote ID: {items._id})
                     </pre>
 
-                    <button onClick={this.refreshComp}>Refresh</button>
-
+                    <button onClick={this.apiFetch}>Refresh</button>
+                    
                     <li className="contentRestrictor-api">Credit: https://github.com/kritika27/quotes-generator-react</li>
                 </ul>
             );
