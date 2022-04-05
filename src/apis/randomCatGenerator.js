@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/boldStyle.css";
 
-export default class APIDEMOcomponent extends React.Component{
+export default class RandomCatGenerator extends React.Component{
     render(){
         return(
                 <div className="api-title">
@@ -12,3 +12,5 @@ export default class APIDEMOcomponent extends React.Component{
         );
     }
 }
+
+//https://robohash.org/
