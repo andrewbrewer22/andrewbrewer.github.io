@@ -1,8 +1,8 @@
 import React from "react";
 import "../styles/boldStyle.css";
 import Leftnavbar from "../components/leftnavbar";
-import APIDEMOcomponent from "../apis/apidemo";
-import TestAPI from "../apis/testapi";
+import RandomCatGenerator from "../apis/randomCatGenerator";
+import RandomQuoteAPI from "../apis/randomQuoteAPI";
 
 export default class APIDEMO extends React.Component {
     render() {
@@ -13,9 +13,9 @@ export default class APIDEMO extends React.Component {
                     <Leftnavbar />
 
                     <section className="rightbreak">
-                        <APIDEMOcomponent />
+                        <RandomQuoteAPI />
 
-                        <TestAPI />
+                        <RandomCatGenerator />
                     </section>
                 </section>
             </body>

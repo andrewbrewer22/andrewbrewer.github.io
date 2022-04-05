@@ -4,7 +4,7 @@ import "../styles/boldStyle.css";
 
 var refreshNumber = 0;
 
-export default class TestAPI extends React.Component {
+export default class RandomQuoteAPI extends React.Component {
 
     constructor(props) {
         super(props);
