@@ -9,6 +9,7 @@ import APIDEMO from "./pages/api-page";
 import HomepricingPage from "./pages/homepricing-page";
 import PictureGalleryPage from "./pages/picturegallery-page";
 import HomePage from "./pages/home-page";
+import CosmicNumber from "./pages/cosmicNumber-page";
 
 import ScrollToTop from "./tools/ScrollToTop";
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="api" element={<APIDEMO />} />
         <Route path="homeBuyer" element={<HomepricingPage />} />
         <Route path="picturegallery" element={<PictureGalleryPage />} />
+        <Route path="cosmicnumber" element={<CosmicNumber />} />
 
         {/*Error page*/}
         <Route path="*" element={<ErrorPage />} />

@@ -76,6 +76,13 @@ function LeftNavbar() {
               Picture Gallery
             </button>
           </span>
+          <span className="br">
+            <button onClick={() => {
+              navigate("/cosmicnumber");
+            }} id="link-button">
+              Cosmic Number
+            </button>
+          </span>
           <hr className="divider-line"></hr>
         </section>
 
