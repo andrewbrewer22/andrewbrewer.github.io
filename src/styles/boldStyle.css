@@ -3,27 +3,7 @@
 /*ROOT*/
 
 
-.mainHTML {
-    caret-color: rgba(0,0,0,0);
-}
 
-/*Scroll bar*/
-::-webkit-scrollbar {
-    width: 20px;
-}
-::-webkit-scrollbar-track {
-    background: #6D623E;
-    border: 4px solid black;
-    
-}
-::-webkit-scrollbar-thumb {
-    background: rgba(212, 172, 41, 0.404);
-    border: 4px solid black;
-}
-/*Hover*/
-::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 196, 0, 0.514);
-}
 
 
 .resScrollBar{
@@ -335,7 +315,7 @@
     /*Left Break: Contact info, resources, my links, project links*/
     .leftbreak {
         position: fixed;
-        background-color: rgba(212, 175, 55, 0.3);
+        background-color: rgba(212, 55, 55, 0.3);
         width: 35%;
         margin-left: -3%;
         margin-top: 0%;
@@ -511,6 +491,30 @@
 
 /*#region desktop*/
 @media screen and (min-device-width: 1000px) and (max-device-width: 2000px) {
+
+    .mainHTML {
+        caret-color: rgba(0,0,0,0);
+    }
+    
+    /*Scroll bar*/
+    ::-webkit-scrollbar {
+        width: 20px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #6D623E;
+        border: 4px solid black;
+        
+    }
+    ::-webkit-scrollbar-thumb {
+        background: rgba(212, 172, 41, 0.404);
+        border: 4px solid black;
+    }
+    /*Hover*/
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgba(255, 196, 0, 0.514);
+    }
+    
+
     .br {
         display: block;
         margin-bottom: 0em;
