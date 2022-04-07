@@ -8,17 +8,17 @@ export default class APIDEMO extends React.Component {
     render() {
         document.body.style = "background: rgb(65, 65, 65);";
         return (
-            <body class="body">
-                <section class="break-container">
-                    <Leftnavbar />
+                <body class="body">
+                    <section class="break-container">
+                        <Leftnavbar />
 
-                    <section className="rightbreak">
-                        <RandomQuoteAPI />
+                        <section className="rightbreak">
+                            <RandomQuoteAPI />
 
-                        <RandomCatGenerator />
+                            <RandomCatGenerator />
+                        </section>
                     </section>
-                </section>
-            </body>
+                </body>
         );
     }
 }

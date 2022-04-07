@@ -27,13 +27,10 @@ function ToggleSwitch() {
 
   return (
     <div>
-      <span className="heightMeasurment">{heightMeasurment}</span>
       <label className="toggle-switch">
         <input type="checkbox" checked={isToggled} onChange={onToggle} />
         <span className="switch" />
-        <div className="unitofmeasurment">{unitofmeasurment}</div>
       </label>
-      <span className="weightMeasurment">{weightMeasurment}</span>
     </div>
   );
 }

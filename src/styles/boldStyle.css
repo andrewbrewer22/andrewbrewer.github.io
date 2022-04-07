@@ -2,14 +2,33 @@
 
 /*ROOT*/
 
-#root {
-    overflow: hidden;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+
+.mainHTML {
+    caret-color: rgba(0,0,0,0);
 }
 
-#root::-webkit-scrollbar {
-    display: none;
+/*Scroll bar*/
+::-webkit-scrollbar {
+    width: 20px;
+}
+::-webkit-scrollbar-track {
+    background: #6D623E;
+    border: 4px solid black;
+    
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(212, 172, 41, 0.404);
+    border: 4px solid black;
+}
+/*Hover*/
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 196, 0, 0.514);
+}
+
+
+.resScrollBar{
+    width: 1000px;
+    height: 1000px;
 }
 
 /*#region phone*/
@@ -520,10 +539,6 @@
 
     }
 
-    .body::-webkit-scrollbar {
-        display: none;
-    }
-
     .break-container {
         width: 50%;
     }
@@ -677,8 +692,6 @@
         background-color: rgba(255, 196, 0, 0.274);
     }
 
-    .exp-textbox {}
-
     .bmi-input {
         text-align: center;
         width: 40%;
@@ -690,6 +703,9 @@
 
         display: flex;
         justify-content: space-between;
+    }
+    .bmi-inputbox{
+        caret-color: rgb(0, 0, 0);
     }
 
     /*API*/

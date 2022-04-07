@@ -55,6 +55,7 @@ export default class BMICalculator extends React.Component {
   }
 
   render() {
+    
     return (
       <section className="rightbreak">
         <div className="bmi-explanation">
@@ -76,8 +77,8 @@ export default class BMICalculator extends React.Component {
           />
           <span></span>
 
-
-          <ToggleSwitch />
+          
+          <ToggleSwitch/>
 
           <input
             className="bmi-inputbox"
