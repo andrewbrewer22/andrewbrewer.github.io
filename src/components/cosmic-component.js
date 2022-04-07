@@ -23,21 +23,31 @@ export default class CosmicComponent extends React.Component{
             
 
             var cosmicInput = document.getElementById("cosmic-number").value;
-            var wordLength = cosmicInput;
-            
-            for (let index = 0; index < 4; index = 0) {
-                if(cosmicInput.length == 4)
+            var cosmicLength = cosmicInput.length;
+
+            for (let index = 0; index != 4; index = 0) {
+
+                if(cosmicLength > 100)
+                {
+                    
+                }
+                else if(cosmicLength == 4)
                 {
                     index = 4;
                     document.getElementById("output").innerHTML += " [Your Cosmic number is 4] ";
                 }
                 else{
-                    document.getElementById("output").innerHTML += " [Your letter length is: " + cosmicInput.length + "] ";
+                    document.getElementById("output").innerHTML += " [Your letter length is: " + cosmicLength + "] ";
+                    
+
+                }
+
+                switch(cosmicInput.length)
+                {
                     
                 }
 
-                cosmicInput = cosmicInput.length;
-
+                break;
             }
         }
     }
