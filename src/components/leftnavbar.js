@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
+import ContactMe from "./contactMe";
 
 //style
 import "../styles/boldStyle.css";
@@ -86,9 +87,7 @@ function LeftNavbar() {
           <hr className="divider-line"></hr>
         </section>
 
-        <section className="contactme">
-          <span className="br" id="bold-this">Contact Me</span>
-        </section>
+        <ContactMe />
 
       </section>
   );

@@ -50,7 +50,7 @@ and (max-device-width: 999px)
     }
     
     .toggle-switch input[type="checkbox"]:checked+.switch::before {
-        transform: translateX(25px);
+        transform: translateX(26px);
         background-color: #6699cc;
     }
     
@@ -148,7 +148,7 @@ and (max-device-width: 2000px)
     
     .toggle-switch input[type="checkbox"]:checked+.switch::before {
         position: absolute;
-        transform: translateX(19px);
+        transform: translateX(18px);
         background-color: rgba(255, 196, 0, 0.514);
     }
     
