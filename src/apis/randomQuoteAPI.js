@@ -1,8 +1,6 @@
-import { render } from "@testing-library/react";
+
 import React from "react";
 import "../styles/boldStyle.css";
-
-var refreshNumber = 0;
 
 export default class RandomQuoteAPI extends React.Component {
 
@@ -16,12 +14,6 @@ export default class RandomQuoteAPI extends React.Component {
 
         this.apiFetch = this.apiFetch.bind(this);
     }
-
-    refresh(){
-        this.refreshNumber += 1;
-        document.getElementById("refreshHTML").innerHTML = this.refreshNumber;
-    }
-
     //https://api.quotable.io/random
     //https://randomuser.me/api/
 
@@ -54,13 +46,13 @@ export default class RandomQuoteAPI extends React.Component {
     render() {
         const { error, isLoaded, items } = this.state;
         if (error) {
-            return <div className="testapi">Error: {error.message}</div>;
+            return <div className="api-container">Error: {error.message}</div>;
         } else if (!isLoaded) {
-            return <div className="testapi">Loading... ugh</div>;
+            return <div className="api-container">Loading... ugh</div>;
         } else {
             
             return (
-                <ul className="testapi">
+                <ul className="api-container">
                     Random Quote Generator
                     <pre >
                         Author: {items.author}
@@ -70,11 +62,10 @@ export default class RandomQuoteAPI extends React.Component {
                         (Quote ID: {items._id})
                     </pre>
 
-                    <button onClick={this.apiFetch}>Refresh</button>
-                    
-                    <li className="contentRestrictor-api">Credit: https://github.com/kritika27/quotes-generator-react</li>
+                    <button className="quoteButton" onClick={this.apiFetch}>Refresh</button>
                 </ul>
             );
         }
     }
 }
+// Credit: https://github.com/kritika27/quotes-generator-react

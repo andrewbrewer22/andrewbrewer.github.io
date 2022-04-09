@@ -713,7 +713,8 @@
     }
 
     /*API*/
-    .api-title {
+    .api-container {
+        overflow: "hidden";
         text-align: center;
         width: 80%;
         border: 4px solid black;
@@ -723,18 +724,18 @@
 
         background-color: rgba(255, 196, 0, 0.274);
     }
-
-    .testapi {
-        text-align: center;
-        width: 80%;
+    .quoteButton{
+        background-color: rgba(121, 101, 36, 0.69);
+        font-size: large;
         border: 4px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-
-        background-color: rgba(255, 196, 0, 0.274);
+        padding: 6px 8px;
+        margin-top: 14px;
+        margin-right: 0px;
     }
-
+    .quoteButton:hover{
+        cursor: pointer;
+        background-color: rgb(255, 196, 0);
+    }
     .contentRestrictor-api {
         display: inline-block;
         max-width: 80%;
@@ -744,6 +745,19 @@
         white-space: nowrap;
 
         list-style: none;
+    }
+    /*Cat API*/
+    .catContainer{
+        margin-top: auto;
+        flex-wrap: wrap;
+        
+    }
+    .catInput{
+        
+    }
+    .catImg{
+        border: 4px solid black;
+        background-color: wheat;
     }
 
     /*Home pricing page*/
