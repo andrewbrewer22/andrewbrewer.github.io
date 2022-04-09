@@ -1,6 +1,6 @@
 import React from "react";
 //import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import ErrorPage from "./pages/errorpage";
 import ResumePage from "./pages/Resume-page";
@@ -11,9 +11,8 @@ import PictureGalleryPage from "./pages/picturegallery-page";
 import HomePage from "./pages/home-page";
 import CosmicNumber from "./pages/cosmicNumber-page";
 
+//tools
 import ScrollToTop from "./tools/ScrollToTop";
-
-
 
 //https://andrewbrewer.github.io (this was originally in the homepage section in package.json)
 function App() {
