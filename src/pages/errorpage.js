@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/boldStyle.css"
+import "../styles/mainStyle.css";
 import LeftNavbar from "../components/leftnavbar";
 
 export default class ErrorPage extends React.Component{

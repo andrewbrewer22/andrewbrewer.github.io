@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/boldStyle.css";
+import "../styles/mainStyle.css";
 
 export default class HomepricingComponent extends React.Component {
     render() {

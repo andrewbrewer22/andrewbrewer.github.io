@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import ContactModal from "./contactModal";
 
 //style
-import "../styles/boldStyle.css";
+import "../styles/mainStyle.css";
 import "../styles/modal.css";
 
 export default function ContactMe() {

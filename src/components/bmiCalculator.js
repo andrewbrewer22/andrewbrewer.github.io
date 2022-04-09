@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/boldStyle.css";
+import "../styles/mainStyle.css";
 import ToggleSwitch from "./ToggleSwitch";
 import ImperialBoolean from "./ToggleSwitch";
 

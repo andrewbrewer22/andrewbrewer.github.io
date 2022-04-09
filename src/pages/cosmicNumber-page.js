@@ -2,7 +2,7 @@ import React from "react";
 import Leftnavbar from '../components/leftnavbar';
 import CosmicComponent from "../components/cosmic-component";
 
-import "../styles/boldStyle.css";
+import "../styles/mainStyle.css";
 
 export default class CosmicNumber extends React.Component{
     render(){

@@ -1,7 +1,8 @@
 import React from "react";
 import Resume from "../components/resume";
 import Leftnavbar from "../components/leftnavbar";
-import "../styles/boldStyle.css";
+import "../styles/resume.css";
+import "../styles/mainStyle.css";
 
 export default class ResumePage extends React.Component {
 

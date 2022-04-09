@@ -1,5 +1,6 @@
 import React from "react";
-import "../styles/boldStyle.css";
+import "../styles/api.css";
+import "../styles/mainStyle.css";
 
 export default class RandomCatGenerator extends React.Component {
 

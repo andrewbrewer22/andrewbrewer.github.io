@@ -1,6 +1,7 @@
 
-import React from "react";
-import "../styles/boldStyle.css";
+ import React from "react";
+ import "../styles/mainStyle.css";
+import "../styles/api.css";
 
 export default class RandomQuoteAPI extends React.Component {
 

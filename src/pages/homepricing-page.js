@@ -1,7 +1,7 @@
 import React from "react";
 import HomepricingComponent from "../components/homepricing-component";
 import LeftNavbar from "../components/leftnavbar";
-import "../styles/boldStyle.css";
+import "../styles/mainStyle.css";
 
 export default class HomepricingPage extends React.Component{
     render(){

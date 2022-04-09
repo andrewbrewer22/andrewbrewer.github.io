@@ -1,5 +1,6 @@
 import React from "react";
-import "../styles/boldStyle.css";
+import "../styles/mainStyle.css";
+import "../styles/resume.css";
 
 export default class Resume extends React.Component {
   render() {

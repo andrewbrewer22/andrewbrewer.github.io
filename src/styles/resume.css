@@ -1,0 +1,66 @@
+
+/*#region desktop*/
+@media screen and (min-device-width: 1000px) and (max-device-width: 2000px) {
+    /*Resume*/
+    .self-portrait {
+        width: 276px;
+        height: 368px;
+        margin-left: 36%;
+        margin-top: 2%;
+
+        border: 4px solid black;
+
+        background-color: rgba(255, 196, 0, 0.274);
+    }
+
+    .basic-information {
+        width: 80%;
+        border: 4px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+
+        background-color: rgba(255, 196, 0, 0.274);
+    }
+
+    .my-skills {
+        width: 80%;
+        border: 4px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+
+        background-color: rgba(255, 196, 0, 0.274);
+    }
+
+    .my-talents {
+        width: 80%;
+        border: 4px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+
+        background-color: rgba(255, 196, 0, 0.274);
+    }
+
+    .my-education {
+        width: 80%;
+        border: 4px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+
+        background-color: rgba(255, 196, 0, 0.274);
+    }
+
+    .achievements {
+        width: 80%;
+        border: 4px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+
+        background-color: rgba(255, 196, 0, 0.274);
+    }
+}
+/*#endregion*/

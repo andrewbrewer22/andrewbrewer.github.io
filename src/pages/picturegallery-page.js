@@ -1,6 +1,6 @@
 import React from "react";
 import Leftnavbar from "../components/leftnavbar";
-import "../styles/boldStyle.css";
+import "../styles/mainStyle.css";
 import PictureGalleryComponent from "../components/pictureGallery";
 
 export default class PictureGalleryPage extends React.Component {

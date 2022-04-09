@@ -1,5 +1,6 @@
 import React from 'react';
-import "../styles/boldStyle.css";
+import "../styles/mainStyle.css";
+import "../styles/bmi.css";
 import Leftnavbar from '../components/leftnavbar';
 import BMICalculator from '../components/bmiCalculator';
 

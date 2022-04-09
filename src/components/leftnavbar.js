@@ -3,7 +3,7 @@ import { useNavigate, useParams, Link } from "react-router-dom";
 import ContactMe from "./contactMe";
 
 //style
-import "../styles/boldStyle.css";
+import "../styles/mainStyle.css";
 
 function LeftNavbar() {
   let navigate = useNavigate();
