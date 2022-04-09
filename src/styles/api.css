@@ -42,7 +42,7 @@
     
 }
 .catInput{
-    
+    caret-color: rgb(0, 0, 0);
 }
 .catImg{
     border: 4px solid black;

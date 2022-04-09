@@ -26,11 +26,13 @@ function ToggleSwitch() {
   }
 
   return (
-    <div>
+    <div className="userInput-container">
+      <div className="imperial">Imperial</div>
       <label className="toggle-switch">
         <input type="checkbox" checked={isToggled} onChange={onToggle} />
         <span className="switch" />
       </label>
+      <div className="metric">Metric</div>
     </div>
   );
 }

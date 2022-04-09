@@ -7,10 +7,12 @@ export default class RandomCatGenerator extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            catText: "",
+            catText: "Put some text here!",
         }
         this.refreshImg = this.refreshImg.bind(this);
     }
+
+    
     updateInput = (e) => {
         if (e.key === 'Enter') {
             this.refreshImg();
@@ -32,11 +34,11 @@ export default class RandomCatGenerator extends React.Component {
                 <pre className="catContainer">
                     <div className="catInputContainer">
                         <input className="catInput" placeholder="Put Some Words Here!" 
-                        type="text" id="cat-input" onKeyDown={this.updateInput}></input>
+                        type="text" id="cat-input" ></input>
                         <button type="button" onClick={this.refreshImg}>Generate</button>
                     </div>
                     <br />
-                    <img className="catImg" alt="img" src={"https://robohash.org/" + catText + "/?set=set4"}></img>
+                    <img  className="catImg" alt="img" src={"https://robohash.org/" + catText + "/?set=set4"}></img>
                 </pre>
             </ul>
         );

@@ -19,7 +19,7 @@ export default class BMICalculator extends React.Component {
     this.calculateBMI = this.calculateBMI.bind(this);
   }
 
-  
+
 
   calculateBMI(event) {
     /*BMI Formula
@@ -37,7 +37,7 @@ export default class BMICalculator extends React.Component {
 
       this.calculatedBMI = ((703 * this.weight) / (this.height ** 2)).toFixed(2);
     }
-    else{/*Metric*/
+    else {/*Metric*/
       if (event.target.name === "weight") {
         this.weight = event.target.value;
       }
@@ -45,17 +45,16 @@ export default class BMICalculator extends React.Component {
         this.height = event.target.value;
       }
 
-      this.calculatedBMI = ((this.weight / this.height / this.height)*10000).toFixed(2);
+      this.calculatedBMI = ((this.weight / this.height / this.height) * 10000).toFixed(2);
     }
 
-    if(this.calculatedBMI > 0 && this.calculatedBMI != Infinity)
-    {
+    if (this.calculatedBMI > 0 && this.calculatedBMI != Infinity) {
       document.getElementById("bmi-calculated").innerHTML = "BMI: " + this.calculatedBMI;
     }
   }
 
   render() {
-    
+
     return (
       <section className="rightbreak">
         <div className="bmi-explanation">
@@ -66,32 +65,29 @@ export default class BMICalculator extends React.Component {
         </div>
 
         <div className="bmi-input">
-          <input
-            className="bmi-inputbox"
-            type="text"
-            name="height"
-            placeholder="Height"
-            id="height"
+          <div>
+            <input
+              className="bmi-inputbox"
+              type="text"
+              name="height"
+              placeholder="Height"
+              id="height"
 
-            onChange={this.calculateBMI}
-          />
-          <span></span>
+              onChange={this.calculateBMI}
+            />
+            <input
+              className="bmi-inputbox"
+              type="text"
+              name="weight"
+              placeholder="Weight"
+              id="weight"
 
-          
-          <ToggleSwitch/>
-
-          <input
-            className="bmi-inputbox"
-            type="text"
-            name="weight"
-            placeholder="Weight"
-            id="weight"
-
-            onChange={this.calculateBMI}
-          />
-          <span></span>
-          <span></span>
+              onChange={this.calculateBMI}
+            />
+          </div>
+          <ToggleSwitch />
         </div>
+
 
         <div className="bmi-input" id="bmi-calculated">BMI: </div>
       </section>

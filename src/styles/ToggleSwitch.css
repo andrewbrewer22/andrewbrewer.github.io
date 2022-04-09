@@ -102,13 +102,14 @@ and (min-device-width: 1000px)
 and (max-device-width: 2000px)
 {
     .toggle-switch {
+        
         margin-bottom: 3%;
         position: relative;
-        display: inline-block;
+        display: inline-flex;
         width: 50px;
         height: 30px;
-        top: -4px;
-
+        top: 10px;
+        right: 15px;
         /*Changes mouse cursor to pointer*/
         cursor: pointer;
     }
@@ -184,6 +185,29 @@ and (max-device-width: 2000px)
         position: absolute;
         right: -197px;
         top: 2px;
+    }
+
+    .userInput-container{
+        display: flex;
+        width: 50%;
+        margin-left: 21%;
+        justify-content: space-evenly;
+    }
+    .imperial{
+        color: rgb(66, 56, 25);
+        margin-top: 15px;
+        margin-right: -10px;
+    }
+    .imperial input[type="checkbox"]:checked{
+        color: rgb(174, 137, 16);
+    }
+    .metric{
+        color: rgb(66, 56, 25);
+        margin-top: 15px;
+        margin-left: -42px;
+    }
+    .metric input[type="checkbox"]:checked{
+        color: rgb(174, 137, 16);
     }
 }
 /*#endregion*/

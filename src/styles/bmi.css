@@ -20,12 +20,13 @@
         margin-left: 30%;
         margin-top: 2%;
         background-color: rgba(255, 196, 0, 0.274);
-
-        display: flex;
-        justify-content: space-between;
+        justify-content: center;
     }
     .bmi-inputbox{
         caret-color: rgb(0, 0, 0);
+        margin-right: 0%;
+        margin-right: 5%;
+        padding: 1%;
     }
 }
 /*#endregion*/
