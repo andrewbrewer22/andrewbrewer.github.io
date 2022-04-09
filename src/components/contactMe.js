@@ -1,14 +1,25 @@
 import React, { useState } from "react";
-import ContactModal from "../tools/contactModal";
+// import ContactModal from "../tools/contactModal";
+import ContactModal from "./contactModal";
 
 //style
 import "../styles/boldStyle.css";
+import "../styles/modal.css";
 
 export default function ContactMe() {
-    const [isOpen, setIsOpen] = useState(false);
+    const [contactIsOpen, setContactIsOpen] = useState(false);
     return (
+        <main>
+            <button className={"primaryBtn"} onClick={() => setContactIsOpen(true)}>
+                Contact Me
+            </button>
+            {contactIsOpen && <ContactModal setContactIsOpen={setContactIsOpen} />}
+        </main>
+            
+            
+        /*
         <form className="contactme">
-            {/*
+            
             <span className="br" id="bold-this">Contact Me</span>
             Name
             <div>
@@ -27,11 +38,7 @@ export default function ContactMe() {
                     Submit
                 </button>
             </div>
-            */}
-            <button className={"primaryBtn"} onClick={() => setIsOpen(true)}>
-                Contact Me
-            </button>
-            {isOpen && <ContactModal setIsOpen={setIsOpen} />}
         </form>
+        */
     );
 }

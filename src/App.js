@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 //import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -17,21 +17,24 @@ import ScrollToTop from "./tools/ScrollToTop";
 //https://andrewbrewer.github.io (this was originally in the homepage section in package.json)
 function App() {
   return (
-    <Router >
-      <ScrollToTop />
-      <Routes >
-        <Route path="/" element={<HomePage />} />
-        <Route path="resume" element={<ResumePage />} />
-        <Route path="bmicalc" element={<BMICalcPage />} />
-        <Route path="api" element={<APIDEMO />} />
-        <Route path="homeBuyer" element={<HomepricingPage />} />
-        <Route path="picturegallery" element={<PictureGalleryPage />} />
-        <Route path="cosmicnumber" element={<CosmicNumber />} />
+    <main>
+      
+      <Router >
+        <ScrollToTop />
+        <Routes >
+          <Route path="/" element={<HomePage />} />
+          <Route path="resume" element={<ResumePage />} />
+          <Route path="bmicalc" element={<BMICalcPage />} />
+          <Route path="api" element={<APIDEMO />} />
+          <Route path="homeBuyer" element={<HomepricingPage />} />
+          <Route path="picturegallery" element={<PictureGalleryPage />} />
+          <Route path="cosmicnumber" element={<CosmicNumber />} />
 
-        {/*Error page*/}
-        <Route path="*" element={<ErrorPage />} />
-      </Routes>
-    </Router>
+          {/*Error page*/}
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+      </Router>
+    </main>
   );
 }
 
