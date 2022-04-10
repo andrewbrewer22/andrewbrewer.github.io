@@ -13,27 +13,38 @@ function ToggleSwitch() {
   const [isToggled, setIsToggled] = useState(false);
   const onToggle = () => setIsToggled(!isToggled);
 
-  if (isToggled) {
-    unitofmeasurment = "Metric";
-    heightMeasurment = "cm";
-    weightMeasurment = "kg ";
-    ImperialBoolean = false;
-  } else {
-    unitofmeasurment = "Imperial";
-    heightMeasurment = "in";
-    weightMeasurment = "lbs";
-    ImperialBoolean = true;
-  }
+  var metric = document.getElementById("imperial");
+  var imperial = document.getElementById("metric");
+  
+  
+
+  
 
   return (
     <div className="userInput-container">
-      <div className="imperial">Imperial</div>
+      <div id="imperial" className="imperial">Imperial</div>
       <label className="toggle-switch">
         <input type="checkbox" checked={isToggled} onChange={onToggle} />
         <span className="switch" />
       </label>
-      <div className="metric">Metric</div>
+      <div id="metric" className="metric">Metric</div>
     </div>
   );
+
+  /*Fix color assignments of variables*/
+  if (isToggled) {
+    metric.style.color = 'rgb(66, 56, 25)';
+    metric.style.backgroundColor = 'rgba(174, 137, 16,0)';
+
+    imperial.style.color = 'rgb(174, 137, 16)';
+    imperial.style.backgroundColor = 'rgb(66, 56, 25)';
+  } else if(!isToggled) 
+  {
+    metric.style.color = 'rgb(174, 137, 16)';
+    metric.style.backgroundColor = 'rgb(66, 56, 25)';
+    
+    imperial.style.color = 'rgb(66, 56, 25)';
+    imperial.style.backgroundColor = 'rgba(174, 137, 16,0)';
+  }
 }
 export default ToggleSwitch;
