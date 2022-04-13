@@ -1,31 +1,69 @@
-import React from "react"
+import React, { FormEvent } from "react"
 import "../styles/modal.css";
 import { RiCloseLine } from "react-icons/ri";
+import axios from "axios";
 
 const ContactModal = ({ setContactIsOpen }) => {
+    const formId = 'fQzHN7w2';
+    const formSparkUrl = "https://submit-form.com/fQzHN7w2";
+
+
+    const submitForm = async (event: FormEvent) => {
+        event.preventDefault();
+        await postSubmission();
+    };
+
+    const postSubmission = async () => {
+        const payload = {
+            message: 'Test formspark submission',
+        };
+
+        try {
+            const result = await axios.post(formSparkUrl, payload);
+            console.log(result);
+        } catch(error){
+            console.log(error);
+        }
+    }
+
     return (
         disableScroll(),
         <main className="contact-body">
             <div className="contact-content">
-                <form className="contact-form">
-                    Name
+                <form className="contact-form" onSubmit={submitForm}>
+
                     <span id="br">
-                        <input className="contact-personal" id="name" placeholder="John Doe"></input>
+                        <span>
+                            First Name
+                            <span id="br">
+                                
+                                <input className="name" id="first-name" placeholder="John"></input>
+                            </span >
+                        </span>
+
+                        <span>
+                            Last Name
+                            <span id="br">
+                                <input className="name" id="last-name" placeholder="Doe"></input>
+                            </span>
+                        </span>
                     </span>
+
+
                     Email
                     <span id="br">
-                        <input className="contact-personal" id="email" placeholder="youremail@email.com"></input>
+                        <input className="email" id="email" placeholder="youremail@email.com"></input>
                     </span>
                     Message or Inquiry
                     <span id="br">
                         <textarea type="text" className="contact-message" id="message" placeholder="Say Hello!"></textarea>
                     </span>
 
-                    <button className="contact-submit" onClick={() => {setContactIsOpen(false); enableScroll();}}>
+                    <button className="contact-submit" onClick={() => { setContactIsOpen(false); enableScroll(); }}>
                         Submit
                     </button>
 
-                    <button className="contact-exit" onClick={() => {setContactIsOpen(false); enableScroll();}}>
+                    <button className="contact-exit" onClick={() => { setContactIsOpen(false); enableScroll(); }}>
                         <RiCloseLine style={{ marginBottom: "-3px" }} />
                     </button>
                 </form>

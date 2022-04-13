@@ -154,6 +154,23 @@
     margin-bottom: 0em;
 }
 /*Contact Modal*/
+.contact-exit{
+    cursor: pointer;
+    font-weight: 500;
+    padding: 6px 8px;
+    border: 4px solid black;
+    font-size: 18px;
+    color: #2c3e50;
+    background: white;
+    transition: all 0.25s ease;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.247);
+    position: absolute;
+    right: 0;
+    top: 0;
+    align-self: flex-end;
+    margin-top: -14px;
+    margin-right: -14px;
+}
 .contact-body{
     background-color: rgba(0, 0, 0, 0.647);
 
@@ -175,28 +192,20 @@
     left: 35%;
     position: absolute;
 }
-.contact-exit{
-    cursor: pointer;
-    font-weight: 500;
-    padding: 6px 8px;
-    border: 4px solid black;
-    font-size: 18px;
-    color: #2c3e50;
-    background: white;
-    transition: all 0.25s ease;
-    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.247);
-    position: absolute;
-    right: 0;
-    top: 0;
-    align-self: flex-end;
-    margin-top: -14px;
-    margin-right: -14px;
-}
 .contact-form{
     text-align: center;
     margin-top: 5%;
+    font-size: x-large;
 }
-.contact-personal{
+.name{
+    
+    border: 3px solid black;
+    width: 200px;
+    height: 40px;
+
+    caret-color: rgb(0, 0, 0);
+}
+.email{
     border: 3px solid black;
     width: 400px;
     height: 40px;
