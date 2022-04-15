@@ -62,11 +62,10 @@ const ContactModal = ({ setContactIsOpen }) => {
                     <button className="contact-submit" onClick={() => { setContactIsOpen(false); enableScroll(); }}>
                         Submit
                     </button>
-
-                    <button className="contact-exit" onClick={() => { setContactIsOpen(false); enableScroll(); }}>
+                </form>
+                <button className="contact-exit" onClick={() => { setContactIsOpen(false); enableScroll(); }}>
                         <RiCloseLine style={{ marginBottom: "-3px" }} />
                     </button>
-                </form>
             </div>
 
         </main>

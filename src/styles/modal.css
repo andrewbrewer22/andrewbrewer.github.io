@@ -1,231 +1,287 @@
-.darkBG {
-    background-color: rgba(0, 0, 0, 0.2);
-    width: 100vw;
-    height: 100vh;
-    z-index: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
+
+/*#region media query min 1375px*/
+
+@media screen and (min-width: 1375px){
+
+    .br {
+        display: block;
+        margin-bottom: 0em;
+    }
+
+    /*Contact Modal*/
+    .contact-exit {
+        cursor: pointer;
+        font-weight: 500;
+        padding: 6px 8px;
+        border: 4px solid black;
+        font-size: 18px;
+        color: #2c3e50;
+        background: white;
+        transition: all 0.25s ease;
+        box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.247);
+        position: absolute;
+        right: 0;
+        top: 0;
+        align-self: flex-end;
+        margin-top: -14px;
+        margin-right: -14px;
+    }
+
+    .contact-body {
+        background-color: rgba(0, 0, 0, 0.647);
+
+        width: 600%;
+        height: 200%;
+        z-index: 3;
+        top: 50%;
+        left: 250%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+    }
+
+    .contact-content {
+        border: 4px solid black;
+        background-color: rgba(212, 175, 55, 0.587);
+        width: 30%;
+        height: 30%;
+
+        top: 30%;
+        left: 35%;
+        position: absolute;
+    }
+
+    .contact-form {
+        text-align: center;
+        margin-top: 5%;
+        font-size: x-large;
+    }
+
+    .name {
+
+        border: 3px solid black;
+        width: 200px;
+        height: 40px;
+
+        caret-color: rgb(0, 0, 0);
+    }
+
+    .email {
+        border: 3px solid black;
+        width: 400px;
+        height: 40px;
+
+        caret-color: rgb(0, 0, 0);
+    }
+
+    .contact-message {
+        color: black;
+        resize: none;
+        border: 3px solid black;
+        width: 470px;
+        height: 150px;
+        font-size: x-large;
+
+        caret-color: rgb(0, 0, 0);
+    }
+
+    .contact-submit {
+        cursor: pointer;
+
+        font-size: large;
+        border: 4px solid black;
+        padding: 6px 8px;
+    }
+
 }
 
-.centered {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/*#endregion*/
+
+
+/*#region media query min 800px*/
+@media screen and (min-width: 800px) and (max-width: 1374px){
+    .br {
+        display: block;
+        margin-bottom: 0em;
+    }
+
+    /*Contact Modal*/
+    .contact-exit {
+        cursor: pointer;
+        font-weight: 500;
+        padding: 6px 8px;
+        border: 3px solid black;
+        font-size: 18px;
+        color: #2c3e50;
+        background: rgb(255, 255, 255);
+        transition: all 0.25s ease;
+        box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.247);
+        position: absolute;
+        right: 0;
+        top: 0;
+        align-self: flex-end;
+        margin-top: -14px;
+        margin-right: -14px;
+    }
+
+    .contact-body {
+        background-color: rgba(0, 0, 0, 0.647);
+
+        width: 600%;
+        height: 200%;
+        z-index: 3;
+        top: 50%;
+        left: 250%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+    }
+
+    .contact-content {
+        border: 4px solid black;
+        background-color: rgba(212, 175, 55, 0.587);
+        width: 30%;
+        height: 30%;
+
+        top: 30%;
+        left: 35%;
+        position: absolute;
+    }
+
+    .contact-form {
+        text-align: center;
+        margin-top: 5%;
+        font-size: x-large;
+    }
+
+    .name {
+
+        border: 3px solid black;
+        width: 200px;
+        height: 40px;
+
+        caret-color: rgb(0, 0, 0);
+    }
+
+    .email {
+        border: 3px solid black;
+        width: 200px;
+        height: 40px;
+
+        caret-color: rgb(0, 0, 0);
+    }
+
+    .contact-message {
+        color: black;
+        resize: none;
+        border: 3px solid black;
+        width: 275px;
+        height: 150px;
+        font-size: x-large;
+
+        caret-color: rgb(0, 0, 0);
+    }
+
+    .contact-submit {
+        cursor: pointer;
+
+        font-size: large;
+        border: 3px solid black;
+        padding: 6px 8px;
+    }
 }
 
-.modal {
-    width: 250px;
-    height: 170px;
-    background: white;
-    color: white;
-    z-index: 10;
-    border-radius: 16px;
-    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+/*#endregion*/
+
+
+/*#region media query min 900px*/
+@media screen and (max-width: 799px){
+    .br {
+        display: block;
+        margin-bottom: 0em;
+    }
+
+    /*Contact Modal*/
+    .contact-exit {
+        cursor: pointer;
+        font-weight: 500;
+        padding: 6px 8px;
+        border: 1px solid black;
+        font-size: 18px;
+        color: #2c3e50;
+        background: rgb(255, 255, 255);
+        transition: all 0.25s ease;
+        box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.247);
+        position: absolute;
+        right: 0;
+        top: 0;
+        align-self: flex-end;
+        margin-top: 5%;
+        margin-right: 26%;
+    }
+
+    .contact-body {
+        background-color: rgba(0, 0, 0, 0.714);
+
+        width: 200%;
+        height: 200%;
+        z-index: 3;
+        top: 35%;
+        left: 53%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+    }
+
+    .contact-content {
+        border: 2px solid black;
+        background-color: rgba(212, 175, 55, 0.587);
+        width: 100%;
+        height: 100%;
+
+        top: 30%;
+        position: absolute;
+    }
+
+    .contact-form {
+        text-align: center;
+        margin-top: 15%;
+        font-size: x-large;
+    }
+
+    .name {
+
+        border: 2px solid black;
+        width: 40%;
+        height: 40px;
+
+        caret-color: rgb(0, 0, 0);
+    }
+
+    .email {
+        border: 2px solid black;
+        width: 40%;
+        height: 40px;
+
+        caret-color: rgb(0, 0, 0);
+    }
+
+    .contact-message {
+        color: black;
+        resize: none;
+        border: 2px solid black;
+        width: 40%;
+        height: 200px;
+        font-size: x-large;
+
+        caret-color: rgb(0, 0, 0);
+    }
+
+    .contact-submit {
+        cursor: pointer;
+
+        font-size: large;
+        border: 1px solid black;
+        padding: 6px 8px;
+    }
 }
 
-.modalHeader {
-    height: 50px;
-    background: white;
-    overflow: hidden;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-}
+/*#endregion*/
 
-.heading {
-    margin: 0;
-    padding: 10px;
-    color: #2c3e50;
-    font-weight: 500;
-    font-size: 18px;
-    text-align: center;
-}
-
-.modalContent {
-    padding: 10px;
-    font-size: 14px;
-    color: #2c3e50;
-    text-align: center;
-}
-
-.modalActions {
-    position: absolute;
-    bottom: 2px;
-    margin-bottom: 10px;
-    width: 100%;
-}
-
-.actionsContainer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.closeBtn {
-    cursor: pointer;
-    font-weight: 500;
-    padding: 4px 8px;
-    border-radius: 8px;
-    border: none;
-    font-size: 18px;
-    color: #2c3e50;
-    background: white;
-    transition: all 0.25s ease;
-    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.06);
-    position: absolute;
-    right: 0;
-    top: 0;
-    align-self: flex-end;
-    margin-top: -7px;
-    margin-right: -7px;
-}
-
-.closeBtn:hover {
-    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
-    transform: translate(-4px, 4px);
-}
-
-.deleteBtn {
-    margin-top: 10px;
-    cursor: pointer;
-    font-weight: 500;
-    padding: 11px 28px;
-    border-radius: 12px;
-    font-size: 0.8rem;
-    border: none;
-    color: #fff;
-    background: #ff3e4e;
-    transition: all 0.25s ease;
-}
-
-.deleteBtn:hover {
-    box-shadow: 0 10px 20px -10px rgba(255, 62, 78, 0.6);
-    transform: translateY(-5px);
-    background: #ff3e4e;
-}
-
-.cancelBtn {
-    margin-top: 10px;
-    cursor: pointer;
-    font-weight: 500;
-    padding: 11px 28px;
-    border-radius: 12px;
-    font-size: 0.8rem;
-    border: none;
-    color: #2c3e50;
-    background: #fcfcfc;
-    transition: all 0.25s ease;
-}
-
-.cancelBtn:hover {
-    box-shadow: none;
-    transform: none;
-    background: whitesmoke;
-}
-
-.primaryBtn {
-    text-align: center;
-    border: 2px solid black;
-    margin: 20px 10px;
-    cursor: pointer;
-    font-weight: 500;
-    padding: 13px 25px;
-    font-size: 0.8rem;
-    color: rgb(0, 0, 0);
-    background: rgba(212, 175, 55, 0.587);
-    transition: all 0.25s ease;
-}
-
-.primaryBtn:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px -10px rgba(200, 146, 38, 0.6);
-}
-
-.primaryBtn-container{
-    text-align: center;
-}
-
-/*My code*/
-
-.br {
-    display: block;
-    margin-bottom: 0em;
-}
-/*Contact Modal*/
-.contact-exit{
-    cursor: pointer;
-    font-weight: 500;
-    padding: 6px 8px;
-    border: 4px solid black;
-    font-size: 18px;
-    color: #2c3e50;
-    background: white;
-    transition: all 0.25s ease;
-    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.247);
-    position: absolute;
-    right: 0;
-    top: 0;
-    align-self: flex-end;
-    margin-top: -14px;
-    margin-right: -14px;
-}
-.contact-body{
-    background-color: rgba(0, 0, 0, 0.647);
-
-    width: 600%;
-    height: 200%;
-    z-index: 3;
-    top: 50%;
-    left: 250%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-}
-.contact-content{
-    border: 4px solid black;
-    background-color: rgba(212, 175, 55, 0.587);
-    width: 30%;
-    height: 30%;
-
-    top: 30%;
-    left: 35%;
-    position: absolute;
-}
-.contact-form{
-    text-align: center;
-    margin-top: 5%;
-    font-size: x-large;
-}
-.name{
-    
-    border: 3px solid black;
-    width: 200px;
-    height: 40px;
-
-    caret-color: rgb(0, 0, 0);
-}
-.email{
-    border: 3px solid black;
-    width: 400px;
-    height: 40px;
-
-    caret-color: rgb(0, 0, 0);
-}
-.contact-message{
-    color: black;
-    resize: none;
-    border: 3px solid black;
-    width: 470px;
-    height: 150px;
-    font-size: x-large;
-    
-    caret-color: rgb(0, 0, 0);
-}
-.contact-submit{
-    cursor: pointer;
-
-    font-size: large;
-    border: 4px solid black;
-    padding: 6px 8px;
-}
