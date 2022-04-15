@@ -4,33 +4,13 @@ import { RiCloseLine } from "react-icons/ri";
 import axios from "axios";
 
 const ContactModal = ({ setContactIsOpen }) => {
-    const formId = 'fQzHN7w2';
-    const formSparkUrl = "https://submit-form.com/fQzHN7w2";
 
-
-    const submitForm = async (event: FormEvent) => {
-        event.preventDefault();
-        await postSubmission();
-    };
-
-    const postSubmission = async () => {
-        const payload = {
-            message: 'Test formspark submission',
-        };
-
-        try {
-            const result = await axios.post(formSparkUrl, payload);
-            console.log(result);
-        } catch(error){
-            console.log(error);
-        }
-    }
 
     return (
         disableScroll(),
         <main className="contact-body">
             <div className="contact-content">
-                <form className="contact-form" onSubmit={submitForm}>
+                <form className="contact-form">
 
                     <span id="br">
                         <span>
@@ -72,7 +52,6 @@ const ContactModal = ({ setContactIsOpen }) => {
     );
 }
 export default ContactModal;
-
 
 //#region no scrolling courtesy of https://stackoverflow.com/questions/4770025/how-to-disable-scrolling-temporarily
 var keys = { 37: 1, 38: 1, 39: 1, 40: 1 };
@@ -116,3 +95,4 @@ function enableScroll() {
 }
 
 //#endregion
+
