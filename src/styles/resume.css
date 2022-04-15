@@ -64,3 +64,73 @@
     }
 }
 /*#endregion*/
+
+/*
+
+    .self-portrait {
+        width: 92px;
+        height: 123px;
+        margin-left: 30%;
+        margin-top: 2%;
+
+        border: 2px solid black;
+
+        background-color: rgba(255, 196, 0, 0.274);
+    }
+
+    .basic-information {
+        width: 80%;
+        border: 1px solid black;
+        padding: 10px;
+        margin-left: 6%;
+        margin-top: 2%;
+
+        background-color: rgba(255, 196, 0, 0.274);
+        font-size: 50%;
+    }
+
+    .my-skills {
+        width: 80%;
+        border: 1px solid black;
+        padding: 10px;
+        margin-left: 6%;
+        margin-top: 2%;
+
+        background-color: rgba(255, 196, 0, 0.274);
+        font-size: 50%;
+    }
+
+    .my-talents {
+        width: 80%;
+        border: 1px solid black;
+        padding: 10px;
+        margin-left: 6%;
+        margin-top: 2%;
+
+        background-color: rgba(255, 196, 0, 0.274);
+        font-size: 50%;
+    }
+
+    .my-education {
+        width: 80%;
+        border: 1px solid black;
+        padding: 10px;
+        margin-left: 6%;
+        margin-top: 2%;
+
+        background-color: rgba(255, 196, 0, 0.274);
+        font-size: 50%;
+    }
+
+    .achievements {
+        width: 80%;
+        border: 1px solid black;
+        padding: 10px;
+        margin-left: 6%;
+        margin-top: 2%;
+
+        background-color: rgba(255, 196, 0, 0.274);
+        font-size: 50%;
+    }
+
+*/

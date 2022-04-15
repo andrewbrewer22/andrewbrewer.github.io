@@ -1,48 +1,46 @@
 /**/
 
+/*#region Universal*/
+.br {
+    display: block;
+    margin-bottom: 0em;
+}
+
+#br {
+    display: block;
+    margin-bottom: 0em;
+}
+
+
+
+#bold-this {
+    font-weight: bold;
+}
+
+.testingHead {
+    position: fixed;
+    background-color: rgb(65, 65, 65);
+    width: 100%;
+    height: 30%;
+    right: 0%;
+    top: -3%;
+}
+
+.body {
+    background-color: rgb(65, 65, 65);
+    
+}
+
+.break-container {
+    width: 50%;
+}
+
+/*#endregion*/
 
 /*#region phone*/
 
 /*Left Nav-bar*/
-@media screen and (min-width: 0px) and (max-width: 799px) {
-
-    .br {
-        display: block;
-        margin-bottom: 0em;
-    }
-
-    #br {
-        display: block;
-        margin-bottom: 0em;
-    }
-
-    .divider-line {
-        background-color: black;
-        height: 1px;
-        border: none;
-    }
-
-    #bold-this {
-        font-weight: bold;
-    }
-
-    .testingHead {
-        position: fixed;
-        background-color: rgb(65, 65, 65);
-        width: 100%;
-        height: 30%;
-        right: 0%;
-        top: -3%;
-    }
-
-    .body {
-        background-color: rgb(65, 65, 65);
-        
-    }
-
-    .break-container {
-        width: 50%;
-    }
+@media screen and (min-width: 700px) and (max-width: 799px) {
 
     /*Buttons*/
     #link-button {
@@ -63,6 +61,20 @@
 
     /*Left Break: Contact info, resources, my links, project links*/
     /*background-color: rgb(65, 65, 65);*/
+    
+
+    .leftbreak {
+        position: fixed;
+        background-color: #6D623E;
+        width: 98%;
+        height: 145px;
+        margin-top: -4px;
+        margin-left: -10px;
+        border: 1px solid black;
+    
+        text-align: center;
+    }
+    /*#region nav bar content*/
     .leftbreak-background-setter {
         background-color: rgb(65, 65, 65);
         width: 100%;
@@ -70,201 +82,144 @@
         margin-top: 1%;
     }
 
-    .leftbreak {
-        position: fixed;
-        background-color: #6D623E;
-        width: 95%;
-        margin-top: -3%;
-        margin-left: -2%;
-        height: 100%;
-
-        border: 2px solid black;
-
-        
+    .divider-line {
+        background-color: black;
+        height: 0px;
+        border: none;
     }
 
     .contact-info {
         text-align: center;
-        font-size: 50%;
+        font-size: 100%;
     }
 
     .resources {
-        text-align: center;
-        font-size: 50%;
-    }
+        /*Hide this for it takes up to much space*/
+        font-size: 100%;
 
-    .my-links {
-        text-align: center;
-        font-size: 50%;
+        margin-right: 480px;
+        margin-top: -30px;
     }
 
     .my-projects {
         text-align: center;
-        font-size: 50%;
-        margin-right: 50%;
-    }
+        font-size: 85%;
 
-    .contactme {
-        text-align: center;
-        font-size: 50%;
-        margin-left: 50%;
-        margin-top: -80px;
+        margin-left: 470px;
+        margin-top: -130px;
+        margin-bottom: -33px;
     }
-
+    /*#endregion*/
 
     /*Right Break: content side*/
-    .rightbreak {
-        z-index: -1;
-        background-color: rgba(212, 175, 55, 0.5);
-        width: 95%;
-        margin-left: -2%;
-        height: 180%;
-        margin-top: 160px;
-
-        position: absolute;
-        border: 2px solid black;
-
-        /*for testing, delete to see object
-        display: none;*/
-        
-    }
-
-    /*Resume*/
-    .self-portrait {
-        width: 92px;
-        height: 123px;
-        margin-left: 30%;
-        margin-top: 2%;
-
-        border: 2px solid black;
-
-        background-color: rgba(255, 196, 0, 0.274);
-    }
-
-    .basic-information {
-        width: 80%;
-        border: 1px solid black;
-        padding: 10px;
-        margin-left: 6%;
-        margin-top: 2%;
-
-        background-color: rgba(255, 196, 0, 0.274);
-        font-size: 50%;
-    }
-
-    .my-skills {
-        width: 80%;
-        border: 1px solid black;
-        padding: 10px;
-        margin-left: 6%;
-        margin-top: 2%;
-
-        background-color: rgba(255, 196, 0, 0.274);
-        font-size: 50%;
-    }
-
-    .my-talents {
-        width: 80%;
-        border: 1px solid black;
-        padding: 10px;
-        margin-left: 6%;
-        margin-top: 2%;
-
-        background-color: rgba(255, 196, 0, 0.274);
-        font-size: 50%;
-    }
-
-    .my-education {
-        width: 80%;
-        border: 1px solid black;
-        padding: 10px;
-        margin-left: 6%;
-        margin-top: 2%;
-
-        background-color: rgba(255, 196, 0, 0.274);
-        font-size: 50%;
-    }
-
-    .achievements {
-        width: 80%;
-        border: 1px solid black;
-        padding: 10px;
-        margin-left: 6%;
-        margin-top: 2%;
-
-        background-color: rgba(255, 196, 0, 0.274);
-        font-size: 50%;
-    }
-
-    /*BMI CALC*/
-    .bmi-explanation {
-        text-align: center;
-        width: 80%;
-        border: 4px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-        background-color: rgba(255, 196, 0, 0.274);
-    }
-
-    .exp-textbox {}
-
-    .bmi-input {
-        text-align: center;
-        width: 40%;
-        border: 4px solid black;
-        padding: 10px;
-        margin-left: 30%;
-        margin-top: 2%;
-        background-color: rgba(255, 196, 0, 0.274);
-
-        display: flex;
-        justify-content: space-between;
-    }
-
-    /*API and AJAX*/
-    .ajax-title {
-        text-align: center;
-        width: 80%;
-        border: 4px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-
-        background-color: rgba(255, 196, 0, 0.274);
-    }
-
-    /*Home pricing page*/
-    .homePricing-title {
-        text-align: center;
-        width: 80%;
-        border: 4px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-
-        background-color: rgba(255, 196, 0, 0.274);
-    }
-
-    /*Picture Gallery*/
-    .picture-gallery-title {
-        text-align: center;
-        width: 80%;
-        border: 4px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-
-        background-color: rgba(255, 196, 0, 0.274);
-    }
+.rightbreak {
+    z-index: -1;
+    background-color: rgba(212, 175, 55, 0.5);
+    width: 98%;
+    height: 677px;
+    margin-top: 148px;
+    margin-left: -10px;
+    position: absolute;
+    border: 1px solid black;
+}
 }
 
+@media screen and (min-width: 600px) and (max-width: 699px) {
+/*Buttons*/
+#link-button {
+    background-color: rgba(212, 172, 41, 0.404);
+    border: 1px solid black;
+    font-weight: lighter;
+    font-size: 100%;
+}
 
+#link-button:hover {
+    background-color: rgba(255, 196, 0, 0.514);
+    border: 1px solid black;
+    font-weight: lighter;
+    font-size: 100%;
+    /*Changes mouse cursor to pointer*/
+    cursor: pointer;
+}
+
+/*Left Break: Contact info, resources, my links, project links*/
+/*background-color: rgb(65, 65, 65);*/
+
+
+.leftbreak {
+    position: fixed;
+    background-color: #6D623E;
+    width: 98%;
+    height: 125px;
+    margin-top: -4px;
+    margin-left: -11px;
+    border: 1px solid black;
+
+    text-align: center;
+}
+/*#region nav bar content*/
+.leftbreak-background-setter {
+    background-color: rgb(65, 65, 65);
+    width: 100%;
+    height: 100%;
+    margin-top: 1%;
+}
+
+.divider-line {
+    background-color: black;
+    height: 0px;
+    border: none;
+}
+
+.contact-info {
+    text-align: center;
+    font-size: 100%;
+}
+
+.resources {
+    /*Hide this for it takes up to much space*/
+    font-size: 80%;
+
+    margin-right: 400px;
+    margin-top: -35px;
+}
+
+.my-projects {
+    text-align: center;
+    font-size: 75%;
+
+    margin-left: 420px;
+    margin-top: -110px;
+    margin-bottom: -33px;
+}
+/*#endregion*/
+
+/*Right Break: content side*/
+.rightbreak {
+    z-index: -1;
+    background-color: rgba(212, 175, 55, 0.5);
+    width: 98%;
+    height: 700px;
+    margin-top: 128px;
+    margin-left: -11px;
+    position: absolute;
+    border: 1px solid black;
+}
+}
+@media screen and (min-width: 500px) and (max-width: 599px) {
+
+}
+@media screen and (min-width: 400px) and (max-width: 499px) {
+
+}
+@media screen and (min-width: 300px) and (max-width: 399px) {
+
+}
 
 /*#endregion */
 
 /*#region desktop*/
-@media screen and (min-device-width: 800px) and (max-device-width: 2000px) {
+@media screen and (min-width: 800px) and (max-width: 2000px) {
 
     .mainHTML {
         caret-color: rgba(0,0,0,0);

@@ -63,6 +63,7 @@ function LeftNavbar() {
               API Demonstration
             </button>
           </span>
+          {/*
           <span className="br">
             <button onClick={() => {
               navigate("/homeBuyer");
@@ -70,6 +71,7 @@ function LeftNavbar() {
               Find a Home under a price
             </button>
           </span>
+          */}
           <span className="br">
             <button onClick={() => {
               navigate("/picturegallery");
