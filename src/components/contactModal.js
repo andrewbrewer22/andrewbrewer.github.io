@@ -33,26 +33,31 @@ const ContactModal = ({ setContactIsOpen }) => {
         disableScroll(),
         <main className="contact-body">
             <div className="contact-content">
+
                 <form className="contact-form" onSubmit={handleSubmit}>
                     Name
-                    <span id="br">
-                        <input className="name" id="name" placeholder="John Doe" required></input>
-                    </span>
-                    Email
-                    <span id="br">
-                        <input className="email" id="email" placeholder="youremail@email.com" required></input>
-                    </span>
-                    Message or Inquiry
-                    <span id="br">
-                        <textarea type="text" className="contact-message" id="message" placeholder="Say Hello!" required></textarea>
-                    </span>
+                    <div id="br">
+                        <input type="text" className="name" id="name" placeholder="John Doe" required />
+                    </div>
 
-                    <button type="submit" className="contact-submit" onClick={() => { setContactIsOpen(false); enableScroll(); }}>
-                        {status}
-                    </button>
+                    Email
+                    <div id="br">
+                        <input type="email" className="email" id="email" placeholder="youremail@email.com" required />
+                    </div>
+
+                    Message or Inquiry
+                    <div id="br">
+                        <textarea className="contact-message" placeholder="Say Hello!" id="message" required />
+                    </div>
+
+                    {/*onClick={() => {setContactIsOpen(false); enableScroll(); }}
+                    To get this to close when submitted we need to first see if the submission
+                    was successful and than execute the closing commands*/}
+                    <button type="submit" className="contact-submit" >
+                        {status}</button>
                 </form>
 
-                <button  className="contact-exit" onClick={() => { setContactIsOpen(false); enableScroll(); }}>
+                <button type="button" className="contact-exit" onClick={() => { setContactIsOpen(false); enableScroll(); }}>
                     <RiCloseLine style={{ marginBottom: "-3px" }} />
                 </button>
             </div>
