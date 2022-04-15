@@ -1,51 +1,60 @@
-import React, { FormEvent } from "react"
+import React, { FormEvent, useState } from "react"
 import "../styles/modal.css";
 import { RiCloseLine } from "react-icons/ri";
 import axios from "axios";
 
 const ContactModal = ({ setContactIsOpen }) => {
 
+    //#region handle contact form submissions
+    const [status, setStatus] = useState("Submit");
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setStatus("Sending...");
+        const { name, email, message } = e.target.elements;
+        let details = {
+            name: name.value,
+            email: email.value,
+            message: message.value,
+        };
+        let response = await fetch("http://localhost:5000/contact", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json;charset=utf-8",
+            },
+            body: JSON.stringify(details),
+        });
+        setStatus("Submit");
+        let result = await response.json();
+        alert(result.status);
+    };
+    //#endregion
 
     return (
         disableScroll(),
         <main className="contact-body">
             <div className="contact-content">
-                <form className="contact-form">
-
+                <form className="contact-form" onSubmit={handleSubmit}>
+                    Name
                     <span id="br">
-                        <span>
-                            First Name
-                            <span id="br">
-                                
-                                <input className="name" id="first-name" placeholder="John"></input>
-                            </span >
-                        </span>
-
-                        <span>
-                            Last Name
-                            <span id="br">
-                                <input className="name" id="last-name" placeholder="Doe"></input>
-                            </span>
-                        </span>
+                        <input className="name" id="name" placeholder="John Doe" required></input>
                     </span>
-
-
                     Email
                     <span id="br">
-                        <input className="email" id="email" placeholder="youremail@email.com"></input>
+                        <input className="email" id="email" placeholder="youremail@email.com" required></input>
                     </span>
                     Message or Inquiry
                     <span id="br">
-                        <textarea type="text" className="contact-message" id="message" placeholder="Say Hello!"></textarea>
+                        <textarea type="text" className="contact-message" id="message" placeholder="Say Hello!" required></textarea>
                     </span>
 
-                    <button className="contact-submit" onClick={() => { setContactIsOpen(false); enableScroll(); }}>
-                        Submit
+                    <button type="submit" className="contact-submit" onClick={() => { setContactIsOpen(false); enableScroll(); }}>
+                        {status}
                     </button>
                 </form>
-                <button className="contact-exit" onClick={() => { setContactIsOpen(false); enableScroll(); }}>
-                        <RiCloseLine style={{ marginBottom: "-3px" }} />
-                    </button>
+
+                <button  className="contact-exit" onClick={() => { setContactIsOpen(false); enableScroll(); }}>
+                    <RiCloseLine style={{ marginBottom: "-3px" }} />
+                </button>
             </div>
 
         </main>
@@ -54,6 +63,7 @@ const ContactModal = ({ setContactIsOpen }) => {
 export default ContactModal;
 
 //#region no scrolling courtesy of https://stackoverflow.com/questions/4770025/how-to-disable-scrolling-temporarily
+
 var keys = { 37: 1, 38: 1, 39: 1, 40: 1 };
 
 function preventDefault(e) {
