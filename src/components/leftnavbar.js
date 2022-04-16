@@ -1,5 +1,6 @@
 import React from "react";
-import { useNavigate, useParams, Link } from "react-router-dom";
+import { useNavigate,} from "react-router-dom";
+//useParams,   Link 
 import ContactMe from "./contactMe";
 
 //style

@@ -25,13 +25,13 @@ export default class CosmicComponent extends React.Component{
             var cosmicInput = document.getElementById("cosmic-number").value;
             var cosmicLength = cosmicInput.length;
 
-            for (let index = 0; index != 4; index = 0) {
+            for (let index = 0; index !== 4; index = 0) {
 
                 if(cosmicLength > 100)
                 {
                     
                 }
-                else if(cosmicLength == 4)
+                else if(cosmicLength === 4)
                 {
                     index = 4;
                     document.getElementById("output").innerHTML += " [Your Cosmic number is 4] ";
