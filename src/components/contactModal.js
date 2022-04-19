@@ -34,7 +34,7 @@ const ContactModal = ({ setContactIsOpen }) => {
         <main className="contact-body">
             <div className="contact-content">
 
-                <form className="contact-form" >
+                <form className="contact-form" onSubmit={handleSubmit}>
                     Name
                     <div id="br">
                         <input type="text" className="name" id="name" placeholder="John Doe" required />
@@ -53,7 +53,7 @@ const ContactModal = ({ setContactIsOpen }) => {
                     {/*onClick={() => {setContactIsOpen(false); enableScroll(); }}
                     To get this to close when submitted we need to first see if the submission
                     was successful and than execute the closing commands                     {status}*/}
-                    <button type="submit" className="contact-submit" >
+                    <button type="submit" className="contact-submit">{status}
                         </button>
                 </form>
 

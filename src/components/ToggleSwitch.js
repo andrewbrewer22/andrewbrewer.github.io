@@ -16,10 +16,6 @@ function ToggleSwitch() {
   var metric = document.getElementById("imperial");
   var imperial = document.getElementById("metric");
   
-  
-
-  
-
   return (
     <div className="userInput-container">
       <div id="imperial" className="imperial">Imperial</div>
