@@ -282,7 +282,55 @@
     }
 }
 @media screen and (min-width: 300px) and (max-width: 399px) {
-    
+    /*Resume*/
+    .self-portrait {
+        width: 138px;
+        height: 184px;
+        margin-left: 36%;
+        margin-top: 2%;
+
+        border: 2px solid black;
+    }
+
+    .basic-information {
+        width: 80%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+
+    .my-skills {
+        width: 80%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+
+    .my-talents {
+        width: 80%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+
+    .my-education {
+        width: 80%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+
+    .achievements {
+        width: 80%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
 }
 
 /*#endregion*/

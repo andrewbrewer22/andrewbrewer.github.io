@@ -512,7 +512,106 @@
 }
 
 @media screen and (min-width: 300px) and (max-width: 399px) {
-    
+    /*Buttons*/
+    #link-button {
+        background-color: rgba(212, 172, 41, 0.404);
+        border: 1px solid black;
+        font-weight: lighter;
+        font-size: 100%;
+    }
+
+    #link-button:hover {
+        background-color: rgba(255, 196, 0, 0.514);
+        border: 1px solid black;
+        font-weight: lighter;
+        font-size: 100%;
+        /*Changes mouse cursor to pointer*/
+        cursor: pointer;
+    }
+
+    /*Left Break: Contact info, resources, my links, project links*/
+    /*background-color: rgb(65, 65, 65);*/
+
+
+    .leftbreak {
+        position: fixed;
+        background-color: #6D623E;
+        width: 98%;
+        height: 125px;
+        margin-top: -4px;
+        margin-left: -11px;
+        border: 1px solid black;
+
+        text-align: center;
+    }
+
+    /*#region nav bar content*/
+    .leftbreak-background-setter {
+        background-color: rgb(65, 65, 65);
+        width: 100%;
+        height: 100%;
+        margin-top: 1%;
+    }
+
+    .divider-line {
+        background-color: black;
+        height: 0px;
+        border: none;
+    }
+
+    .contact-info {
+        text-align: center;
+        font-size: 100%;
+    }
+
+    .resources {
+        /*Hide this for it takes up to much space*/
+        font-size: 0%;
+
+        margin-right: 400px;
+        margin-top: -35px;
+    }
+
+    /*Drop down*/
+    .my-projects {
+        text-align: center;
+        font-size: 100%;
+
+        margin-left: -380px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    .project-dropdown-content{
+        margin-top: 0px;
+        margin-left: 550px;
+    }
+
+
+    .dropbtn{
+        
+    }
+    /*#endregion*/
+
+    .testingHead {
+        position: fixed;
+        background-color: rgb(65, 65, 65);
+        width: 100%;
+        height: 200px;
+        right: 0%;
+        top: -10%;
+    }
+
+    /*Right Break: content side*/
+    .rightbreak {
+        z-index: -1;
+        background-color: rgba(212, 175, 55, 0.5);
+        width: 98%;
+        /*height: 700px;*/
+        margin-top: 128px;
+        margin-left: -11px;
+        position: absolute;
+        border: 1px solid black;
+    }
 }
 
 /*#endregion */
