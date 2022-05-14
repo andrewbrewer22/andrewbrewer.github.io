@@ -1,6 +1,295 @@
+/*#region Universal*/
+/*Resume*/
+.self-portrait {
+    background-color: rgba(255, 196, 0, 0.274);
+}
+
+.basic-information {
+    background-color: rgba(255, 196, 0, 0.274);
+}
+
+.my-skills {
+    background-color: rgba(255, 196, 0, 0.274);
+}
+
+.my-talents {
+    background-color: rgba(255, 196, 0, 0.274);
+}
+
+.my-education {
+    background-color: rgba(255, 196, 0, 0.274);
+}
+
+.achievements {
+    background-color: rgba(255, 196, 0, 0.274);
+}
+/*#endregion*/
+
+/*#region mobile*/
+@media screen and (min-width: 800px) and (max-width: 899px) {
+    /*Resume*/
+    .self-portrait {
+        width: 138px;
+        height: 184px;
+        margin-left: 36%;
+        margin-top: 2%;
+
+        border: 2px solid black;
+    }
+
+    .basic-information {
+        width: 80%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+
+    .my-skills {
+        width: 80%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+
+    .my-talents {
+        width: 80%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+
+    .my-education {
+        width: 80%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+
+    .achievements {
+        width: 80%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 799px) {
+    /*Resume*/
+    .self-portrait {
+        width: 138px;
+        height: 184px;
+        margin-left: 36%;
+        margin-top: 2%;
+
+        border: 2px solid black;
+    }
+
+    .basic-information {
+        width: 80%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+
+    .my-skills {
+        width: 80%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+
+    .my-talents {
+        width: 80%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+
+    .my-education {
+        width: 80%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+
+    .achievements {
+        width: 80%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 699px) {
+    /*Resume*/
+    .self-portrait {
+        width: 138px;
+        height: 184px;
+        margin-left: 36%;
+        margin-top: 2%;
+
+        border: 2px solid black;
+    }
+
+    .basic-information {
+        width: 80%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+
+    .my-skills {
+        width: 80%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+
+    .my-talents {
+        width: 80%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+
+    .my-education {
+        width: 80%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+
+    .achievements {
+        width: 80%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 599px) {
+    /*Resume*/
+    .self-portrait {
+        width: 138px;
+        height: 184px;
+        margin-left: 36%;
+        margin-top: 2%;
+
+        border: 2px solid black;
+    }
+
+    .basic-information {
+        width: 80%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+
+    .my-skills {
+        width: 80%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+
+    .my-talents {
+        width: 80%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+
+    .my-education {
+        width: 80%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+
+    .achievements {
+        width: 80%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+}
+@media screen and (min-width: 400px) and (max-width: 499px) {
+    /*Resume*/
+    .self-portrait {
+        width: 138px;
+        height: 184px;
+        margin-left: 36%;
+        margin-top: 2%;
+
+        border: 2px solid black;
+    }
+
+    .basic-information {
+        width: 80%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+
+    .my-skills {
+        width: 80%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+
+    .my-talents {
+        width: 80%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+
+    .my-education {
+        width: 80%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+
+    .achievements {
+        width: 80%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+}
+@media screen and (min-width: 300px) and (max-width: 399px) {
+    
+}
+
+/*#endregion*/
+
 
 /*#region desktop*/
-@media screen and (min-device-width: 1000px) and (max-device-width: 2000px) {
+@media screen and (min-device-width: 900px) and (max-device-width: 2000px) {
     /*Resume*/
     .self-portrait {
         width: 276px;
@@ -9,8 +298,6 @@
         margin-top: 2%;
 
         border: 4px solid black;
-
-        background-color: rgba(255, 196, 0, 0.274);
     }
 
     .basic-information {
@@ -19,8 +306,6 @@
         padding: 10px;
         margin-left: 10%;
         margin-top: 2%;
-
-        background-color: rgba(255, 196, 0, 0.274);
     }
 
     .my-skills {
@@ -29,8 +314,6 @@
         padding: 10px;
         margin-left: 10%;
         margin-top: 2%;
-
-        background-color: rgba(255, 196, 0, 0.274);
     }
 
     .my-talents {
@@ -39,8 +322,6 @@
         padding: 10px;
         margin-left: 10%;
         margin-top: 2%;
-
-        background-color: rgba(255, 196, 0, 0.274);
     }
 
     .my-education {
@@ -49,8 +330,6 @@
         padding: 10px;
         margin-left: 10%;
         margin-top: 2%;
-
-        background-color: rgba(255, 196, 0, 0.274);
     }
 
     .achievements {
@@ -59,8 +338,6 @@
         padding: 10px;
         margin-left: 10%;
         margin-top: 2%;
-
-        background-color: rgba(255, 196, 0, 0.274);
     }
 }
 /*#endregion*/
