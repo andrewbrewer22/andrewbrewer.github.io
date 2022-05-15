@@ -31,6 +31,7 @@
 
 /* Dropdown Button */
 .dropbtn {
+    caret-color: rgb(0, 0, 0);
     border: none;
     cursor: pointer;
     background-image: url(../images/dropDownImg.png);
@@ -62,7 +63,7 @@
     background-color: #f1f1f100;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(255, 166, 0, 0.2);
-    background-color: #6d623eb4;
+    background-color: #6d623e;
     z-index: 1;
     
     margin-left: 109px;

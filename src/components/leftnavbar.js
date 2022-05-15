@@ -2,7 +2,6 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 //useParams,   Link
 import ContactMe from "./contactMe";
-
 //style
 import "../styles/mainStyle.css";
 
@@ -109,7 +108,7 @@ function LeftNavbar() {
         </div>
       </section>
 
-      {/*<ContactMe />*/}
+      {/* <ContactMe /> */}
     </section>
   );
 }
@@ -131,3 +130,18 @@ window.onclick = function(event) {
     }
   }
 }
+
+/*run our contact me server */
+// const { exec } = require("child_process");
+
+// exec("node contactmeServer.js", (error, stdout, stderr) => {
+//   if (error) {
+//       console.log(`error: ${error.message}`);
+//       return;
+//   }
+//   if (stderr) {
+//       console.log(`stderr: ${stderr}`);
+//       return;
+//   }
+//   console.log(`stdout: ${stdout}`);
+// });

@@ -1,4 +1,27 @@
 
+/*#region Universal*/
+
+/*#endregion universal*/
+
+/*#region Mobile*/
+
+@media screen and (min-width: 700px) and (max-width: 799px) {
+    
+}
+@media screen and (min-width: 600px) and (max-width: 699px) {
+    
+}
+@media screen and (min-width: 500px) and (max-width: 599px) {
+    
+}
+@media screen and (min-width: 400px) and (max-width: 499px) {
+    
+}
+@media screen and (min-width: 300px) and (max-width: 399px) {
+    
+}
+/*#endregion mobile*/
+
 /*#region desktop*/
 @media screen and (min-device-width: 1000px) and (max-device-width: 2000px) {
     /*API*/

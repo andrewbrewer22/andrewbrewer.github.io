@@ -6,7 +6,8 @@ export default class HomeComponent extends React.Component{
         return(
             <section className="rightbreak">
                 <div className="home-title">
-                    Welcome To my website
+                    <p>Welcome To my website!</p>
+                    <p>Click on the navbar to get started</p>
                 </div>
             </section>
         );
