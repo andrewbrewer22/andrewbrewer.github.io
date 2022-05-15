@@ -3,24 +3,7 @@
 .self-portrait {
     background-color: rgba(255, 196, 0, 0.274);
 }
-
-.basic-information {
-    background-color: rgba(255, 196, 0, 0.274);
-}
-
-.my-skills {
-    background-color: rgba(255, 196, 0, 0.274);
-}
-
-.my-talents {
-    background-color: rgba(255, 196, 0, 0.274);
-}
-
-.my-education {
-    background-color: rgba(255, 196, 0, 0.274);
-}
-
-.achievements {
+.resume-text{
     background-color: rgba(255, 196, 0, 0.274);
 }
 /*#endregion*/
@@ -29,47 +12,13 @@
 @media screen and (min-width: 800px) and (max-width: 899px) {
     /*Resume*/
     .self-portrait {
-        width: 138px;
-        height: 184px;
+        width: 276px;
+        height: 368px;
         margin-left: 36%;
         margin-top: 2%;
-
-        border: 2px solid black;
+        border: 4px solid black;
     }
-
-    .basic-information {
-        width: 80%;
-        border: 2px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-
-    .my-skills {
-        width: 80%;
-        border: 2px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-
-    .my-talents {
-        width: 80%;
-        border: 2px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-
-    .my-education {
-        width: 80%;
-        border: 2px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-
-    .achievements {
+    .resume-text {
         width: 80%;
         border: 2px solid black;
         padding: 10px;
@@ -84,43 +33,9 @@
         height: 184px;
         margin-left: 36%;
         margin-top: 2%;
-
         border: 2px solid black;
     }
-
-    .basic-information {
-        width: 80%;
-        border: 2px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-
-    .my-skills {
-        width: 80%;
-        border: 2px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-
-    .my-talents {
-        width: 80%;
-        border: 2px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-
-    .my-education {
-        width: 80%;
-        border: 2px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-
-    .achievements {
+    .resume-text {
         width: 80%;
         border: 2px solid black;
         padding: 10px;
@@ -133,45 +48,12 @@
     .self-portrait {
         width: 138px;
         height: 184px;
-        margin-left: 36%;
+        margin-left: 39%;
         margin-top: 2%;
-
         border: 2px solid black;
     }
 
-    .basic-information {
-        width: 80%;
-        border: 2px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-
-    .my-skills {
-        width: 80%;
-        border: 2px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-
-    .my-talents {
-        width: 80%;
-        border: 2px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-
-    .my-education {
-        width: 80%;
-        border: 2px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-
-    .achievements {
+    .resume-text{
         width: 80%;
         border: 2px solid black;
         padding: 10px;
@@ -184,45 +66,11 @@
     .self-portrait {
         width: 138px;
         height: 184px;
-        margin-left: 36%;
+        margin-left: 38%;
         margin-top: 2%;
-
         border: 2px solid black;
     }
-
-    .basic-information {
-        width: 80%;
-        border: 2px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-
-    .my-skills {
-        width: 80%;
-        border: 2px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-
-    .my-talents {
-        width: 80%;
-        border: 2px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-
-    .my-education {
-        width: 80%;
-        border: 2px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-
-    .achievements {
+    .resume-text {
         width: 80%;
         border: 2px solid black;
         padding: 10px;
@@ -237,43 +85,9 @@
         height: 184px;
         margin-left: 36%;
         margin-top: 2%;
-
         border: 2px solid black;
     }
-
-    .basic-information {
-        width: 80%;
-        border: 2px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-
-    .my-skills {
-        width: 80%;
-        border: 2px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-
-    .my-talents {
-        width: 80%;
-        border: 2px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-
-    .my-education {
-        width: 80%;
-        border: 2px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-
-    .achievements {
+    .resume-text {
         width: 80%;
         border: 2px solid black;
         padding: 10px;
@@ -286,50 +100,17 @@
     .self-portrait {
         width: 138px;
         height: 184px;
-        margin-left: 36%;
+        margin-left: 31%;
         margin-top: 2%;
-
         border: 2px solid black;
     }
-
-    .basic-information {
-        width: 80%;
+    .resume-text {
+        width: 90%;
         border: 2px solid black;
         padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-
-    .my-skills {
-        width: 80%;
-        border: 2px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-
-    .my-talents {
-        width: 80%;
-        border: 2px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-
-    .my-education {
-        width: 80%;
-        border: 2px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-
-    .achievements {
-        width: 80%;
-        border: 2px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
+        margin-left: 2%;
+        margin-top: 1%;
+        font-size: 16px;
     }
 }
 
@@ -343,43 +124,9 @@
         height: 368px;
         margin-left: 36%;
         margin-top: 2%;
-
         border: 4px solid black;
     }
-
-    .basic-information {
-        width: 80%;
-        border: 4px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-
-    .my-skills {
-        width: 80%;
-        border: 4px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-
-    .my-talents {
-        width: 80%;
-        border: 4px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-
-    .my-education {
-        width: 80%;
-        border: 4px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-
-    .achievements {
+    .resume-text {
         width: 80%;
         border: 4px solid black;
         padding: 10px;

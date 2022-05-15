@@ -14,7 +14,7 @@ export default class Resume extends React.Component {
           ></img>
         </div>
 
-        <div class="basic-information">
+        <div class="resume-text">
           <p>
             Put some code here for the sake of filling up space on the screen.
             Put some code here for the sake of filling up space on the screen.
@@ -27,7 +27,7 @@ export default class Resume extends React.Component {
           </p>
         </div>
 
-        <div class="my-skills">
+        <div class="resume-text">
           <p>
             Put some code here for the sake of filling up space on the screen.
             Put some code here for the sake of filling up space on the screen.
@@ -40,7 +40,7 @@ export default class Resume extends React.Component {
           </p>
         </div>
 
-        <div class="my-talents">
+        <div class="resume-text">
           <p>
             Put some code here for the sake of filling up space on the screen.
             Put some code here for the sake of filling up space on the screen.
@@ -53,7 +53,7 @@ export default class Resume extends React.Component {
           </p>
         </div>
 
-        <div class="my-education">
+        <div class="resume-text">
           <p>
             Put some code here for the sake of filling up space on the screen.
             Put some code here for the sake of filling up space on the screen.
@@ -66,7 +66,7 @@ export default class Resume extends React.Component {
           </p>
         </div>
 
-        <div class="achievements">
+        <div class="resume-text">
           <p>
             Put some code here for the sake of filling up space on the screen.
             Put some code here for the sake of filling up space on the screen.

@@ -1,40 +1,34 @@
-/**/
 
 /*#region Universal*/
 .br {
     display: block;
     margin-bottom: 0em;
 }
-
 #br {
     display: block;
     margin-bottom: 0em;
 }
-
 #bold-this {
     font-weight: bold;
 }
-
-/*
-.testingHead {
+/*.testingHead {
     position: fixed;
     background-color: rgb(65, 65, 65);
     width: 100%;
     height: 30%;
     right: 0%;
-    top: -3%;
-}
-*/
+    top: -3%;}*/
 .body {
     background-color: rgb(65, 65, 65);
-
 }
-
 .break-container {
     width: 50%;
 }
 
-/*Drop down menu*/
+/*#region leftbreak*/
+
+/*#region Drop down menu*/
+
 /* Dropdown Button */
 .dropbtn {
     border: none;
@@ -52,18 +46,15 @@
 .dropbtn span{
     display: none;
 }
-
 /* Dropdown button on hover & focus */
 .dropbtn:hover{
     background-color: #e0a912c9;
 }
-
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
 }
-
 /* Dropdown Content (Hidden by Default) */
 .project-dropdown-content {
     display: none;
@@ -71,46 +62,93 @@
     background-color: #f1f1f100;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(255, 166, 0, 0.2);
+    background-color: #6d623eb4;
     z-index: 1;
     
     margin-left: 109px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
     display: block;
 }
 
-/*#endregion*/
+/*Content Buttons*/
+#link-button {
+    background-color: rgba(212, 172, 41, 0.404);
+    border: 1px solid black;
+    font-weight: lighter;
+    font-size: 100%;
+}
+
+#link-button:hover {
+    background-color: rgba(255, 196, 0, 0.514);
+    border: 1px solid black;
+    font-weight: lighter;
+    font-size: 100%;
+    /*Changes mouse cursor to pointer*/
+    cursor: pointer;
+}
+/*#endregion dropdown*/
+
+/*Hide content when scrolling up*/
+.testingHead {
+    position: fixed;
+    background-color: rgb(65, 65, 65);
+    width: 100%;
+    height: 200px;
+    right: 0%;
+    top: -10%;
+}
+
+.leftbreak-background-setter {
+    background-color: rgb(65, 65, 65);
+    width: 100%;
+    height: 100%;
+    margin-top: 1%;
+}
+
+.divider-line {
+    background-color: black;
+    height: 0px;
+    border: none;
+}
+
+.contact-info {
+    text-align: center;
+    font-size: 100%;
+}
+
+.resources {
+    /*Hide this for it takes up to much space*/
+    font-size: 0%;
+
+    margin-right: 400px;
+    margin-top: -35px;
+}
+/*#endregion leftbreak*/
+
+/*Under 700px*/
+@media screen and (max-width: 699px){
+    .leftbreak {
+        position: fixed;
+        background-color: #6D623E;
+        width: 98%;
+        height: 125px;
+        margin-top: -4px;
+        margin-left: -11px;
+        border: 1px solid black;
+
+        text-align: center;
+    }
+}
+
+/*#endregion universal*/
 
 /*#region phone*/
 
-/*Left Nav-bar*/
 @media screen and (min-width: 700px) and (max-width: 799px) {
-
-    /*Buttons*/
-    #link-button {
-        background-color: rgba(212, 172, 41, 0.404);
-        border: 1px solid black;
-        font-weight: lighter;
-        font-size: 100%;
-    }
-
-    #link-button:hover {
-        background-color: rgba(255, 196, 0, 0.514);
-        border: 1px solid black;
-        font-weight: lighter;
-        font-size: 100%;
-        /*Changes mouse cursor to pointer*/
-        cursor: pointer;
-    }
-
-    /*Left Break: Contact info, resources, my links, project links*/
-    /*background-color: rgb(65, 65, 65);*/
-
-
     .leftbreak {
         position: fixed;
         background-color: #6D623E;
@@ -123,37 +161,15 @@
         text-align: center;
     }
 
-    /*#region nav bar content*/
-    .leftbreak-background-setter {
-        background-color: rgb(65, 65, 65);
-        width: 100%;
-        height: 100%;
-        margin-top: 1%;
-    }
-
-    .divider-line {
-        background-color: black;
-        height: 0px;
-        border: none;
-    }
-
-    .contact-info {
-        text-align: center;
-        font-size: 100%;
-    }
-
     .resources {
         /*Hide this for it takes up to much space*/
         font-size: 0%;
-
         margin-right: 480px;
         margin-top: -30px;
     }
-
     .my-projects {
         text-align: center;
         font-size: 85%;
-
         margin-left: 470px;
         margin-top: -130px;
         margin-bottom: -33px;
@@ -163,125 +179,39 @@
     .my-projects {
         text-align: center;
         font-size: 100%;
-
-        margin-left: -420px;
+        margin-left: -90%;
         margin-top: 20px;
         margin-bottom: 0px;
     }
     .project-dropdown-content{
         margin-top: 0px;
-        margin-left: 550px;
+        margin-left: 90%;
     }
-
-    /*#endregion*/
 
     /*Right Break: content side*/
     .rightbreak {
         z-index: -1;
         background-color: rgba(212, 175, 55, 0.5);
         width: 98%;
-        height: 677px;
+        height: 1110px;
         margin-top: 148px;
         margin-left: -10px;
         position: absolute;
         border: 1px solid black;
     }
 }
-
 @media screen and (min-width: 600px) and (max-width: 699px) {
-
-    /*Buttons*/
-    #link-button {
-        background-color: rgba(212, 172, 41, 0.404);
-        border: 1px solid black;
-        font-weight: lighter;
-        font-size: 100%;
-    }
-
-    #link-button:hover {
-        background-color: rgba(255, 196, 0, 0.514);
-        border: 1px solid black;
-        font-weight: lighter;
-        font-size: 100%;
-        /*Changes mouse cursor to pointer*/
-        cursor: pointer;
-    }
-
-    /*Left Break: Contact info, resources, my links, project links*/
-    /*background-color: rgb(65, 65, 65);*/
-
-
-    .leftbreak {
-        position: fixed;
-        background-color: #6D623E;
-        width: 98%;
-        height: 125px;
-        margin-top: -4px;
-        margin-left: -11px;
-        border: 1px solid black;
-
-        text-align: center;
-    }
-
-    /*#region nav bar content*/
-    .leftbreak-background-setter {
-        background-color: rgb(65, 65, 65);
-        width: 100%;
-        height: 100%;
-        margin-top: 1%;
-    }
-
-    .divider-line {
-        background-color: black;
-        height: 0px;
-        border: none;
-    }
-
-    .contact-info {
-        text-align: center;
-        font-size: 100%;
-    }
-
-    .resources {
-        /*Hide this for it takes up to much space*/
-        font-size: 0%;
-
-        margin-right: 400px;
-        margin-top: -35px;
-    }
-
-    .my-projects {
-        text-align: center;
-        font-size: 75%;
-
-        margin-left: 420px;
-        margin-top: -110px;
-        margin-bottom: -33px;
-    }
-
-    /*Drop down*/
+    /*Drop down button*/
     .my-projects {
         text-align: center;
         font-size: 100%;
-
-        margin-left: -420px;
+        margin-left: -85%;
         margin-top: 20px;
         margin-bottom: 0px;
     }
     .project-dropdown-content{
         margin-top: 0px;
-        margin-left: 550px;
-    }
-
-    /*#endregion*/
-
-    .testingHead {
-        position: fixed;
-        background-color: rgb(65, 65, 65);
-        width: 100%;
-        height: 200px;
-        right: 0%;
-        top: -10%;
+        margin-left: 85%;
     }
 
     /*Right Break: content side*/
@@ -289,103 +219,25 @@
         z-index: -1;
         background-color: rgba(212, 175, 55, 0.5);
         width: 98%;
-        /*height: 700px;*/
+        height: 1200px;
         margin-top: 128px;
         margin-left: -11px;
         position: absolute;
         border: 1px solid black;
     }
 }
-
 @media screen and (min-width: 500px) and (max-width: 599px) {
-
-    /*Buttons*/
-    #link-button {
-        background-color: rgba(212, 172, 41, 0.404);
-        border: 1px solid black;
-        font-weight: lighter;
-        font-size: 100%;
-    }
-
-    #link-button:hover {
-        background-color: rgba(255, 196, 0, 0.514);
-        border: 1px solid black;
-        font-weight: lighter;
-        font-size: 100%;
-        /*Changes mouse cursor to pointer*/
-        cursor: pointer;
-    }
-
-    /*Left Break: Contact info, resources, my links, project links*/
-    /*background-color: rgb(65, 65, 65);*/
-
-
-    .leftbreak {
-        position: fixed;
-        background-color: #6D623E;
-        width: 98%;
-        height: 125px;
-        margin-top: -4px;
-        margin-left: -11px;
-        border: 1px solid black;
-
-        text-align: center;
-    }
-
-    /*#region nav bar content*/
-    .leftbreak-background-setter {
-        background-color: rgb(65, 65, 65);
-        width: 100%;
-        height: 100%;
-        margin-top: 1%;
-    }
-
-    .divider-line {
-        background-color: black;
-        height: 0px;
-        border: none;
-    }
-
-    .contact-info {
-        text-align: center;
-        font-size: 100%;
-    }
-
-    .resources {
-        /*Hide this for it takes up to much space*/
-        font-size: 0%;
-
-        margin-right: 400px;
-        margin-top: -35px;
-    }
-
-    /*Drop down*/
+    /*Drop down button*/
     .my-projects {
         text-align: center;
         font-size: 100%;
-
-        margin-left: -420px;
+        margin-left: -80%;
         margin-top: 20px;
         margin-bottom: 0px;
     }
     .project-dropdown-content{
         margin-top: 0px;
-        margin-left: 550px;
-    }
-
-
-    .dropbtn{
-        
-    }
-    /*#endregion*/
-
-    .testingHead {
-        position: fixed;
-        background-color: rgb(65, 65, 65);
-        width: 100%;
-        height: 200px;
-        right: 0%;
-        top: -10%;
+        margin-left: 80%;
     }
 
     /*Right Break: content side*/
@@ -401,95 +253,18 @@
     }
 
 }
-
 @media screen and (min-width: 400px) and (max-width: 499px) {
-    /*Buttons*/
-    #link-button {
-        background-color: rgba(212, 172, 41, 0.404);
-        border: 1px solid black;
-        font-weight: lighter;
-        font-size: 100%;
-    }
-
-    #link-button:hover {
-        background-color: rgba(255, 196, 0, 0.514);
-        border: 1px solid black;
-        font-weight: lighter;
-        font-size: 100%;
-        /*Changes mouse cursor to pointer*/
-        cursor: pointer;
-    }
-
-    /*Left Break: Contact info, resources, my links, project links*/
-    /*background-color: rgb(65, 65, 65);*/
-
-
-    .leftbreak {
-        position: fixed;
-        background-color: #6D623E;
-        width: 98%;
-        height: 125px;
-        margin-top: -4px;
-        margin-left: -11px;
-        border: 1px solid black;
-
-        text-align: center;
-    }
-
-    /*#region nav bar content*/
-    .leftbreak-background-setter {
-        background-color: rgb(65, 65, 65);
-        width: 100%;
-        height: 100%;
-        margin-top: 1%;
-    }
-
-    .divider-line {
-        background-color: black;
-        height: 0px;
-        border: none;
-    }
-
-    .contact-info {
-        text-align: center;
-        font-size: 100%;
-    }
-
-    .resources {
-        /*Hide this for it takes up to much space*/
-        font-size: 0%;
-
-        margin-right: 400px;
-        margin-top: -35px;
-    }
-
-    /*Drop down*/
+    /*Drop down button*/
     .my-projects {
         text-align: center;
         font-size: 100%;
-
-        margin-left: -380px;
+        margin-left: -80%;
         margin-top: 20px;
         margin-bottom: 0px;
     }
     .project-dropdown-content{
         margin-top: 0px;
-        margin-left: 550px;
-    }
-
-
-    .dropbtn{
-        
-    }
-    /*#endregion*/
-
-    .testingHead {
-        position: fixed;
-        background-color: rgb(65, 65, 65);
-        width: 100%;
-        height: 200px;
-        right: 0%;
-        top: -10%;
+        margin-left: 80%;
     }
 
     /*Right Break: content side*/
@@ -504,97 +279,19 @@
         border: 1px solid black;
     }
 }
-
 @media screen and (min-width: 300px) and (max-width: 399px) {
-    /*Buttons*/
-    #link-button {
-        background-color: rgba(212, 172, 41, 0.404);
-        border: 1px solid black;
-        font-weight: lighter;
-        font-size: 100%;
-    }
-
-    #link-button:hover {
-        background-color: rgba(255, 196, 0, 0.514);
-        border: 1px solid black;
-        font-weight: lighter;
-        font-size: 100%;
-        /*Changes mouse cursor to pointer*/
-        cursor: pointer;
-    }
-
-    /*Left Break: Contact info, resources, my links, project links*/
-    /*background-color: rgb(65, 65, 65);*/
-
-
-    .leftbreak {
-        position: fixed;
-        background-color: #6D623E;
-        width: 98%;
-        height: 125px;
-        margin-top: -4px;
-        margin-left: -11px;
-        border: 1px solid black;
-
-        text-align: center;
-    }
-
-    /*#region nav bar content*/
-    .leftbreak-background-setter {
-        background-color: rgb(65, 65, 65);
-        width: 100%;
-        height: 100%;
-        margin-top: 1%;
-    }
-
-    .divider-line {
-        background-color: black;
-        height: 0px;
-        border: none;
-    }
-
-    .contact-info {
-        text-align: center;
-        font-size: 100%;
-    }
-
-    .resources {
-        /*Hide this for it takes up to much space*/
-        font-size: 0%;
-
-        margin-right: 400px;
-        margin-top: -35px;
-    }
-
-    /*Drop down*/
+    /*Drop down button*/
     .my-projects {
         text-align: center;
         font-size: 100%;
-
-        margin-left: -250px;
+        margin-left: -80%;
         margin-top: 20px;
         margin-bottom: 0px;
     }
     .project-dropdown-content{
         margin-top: 0px;
-        margin-left: 550px;
+        margin-left: 80%;
     }
-
-
-    .dropbtn{
-        
-    }
-    /*#endregion*/
-
-    .testingHead {
-        position: fixed;
-        background-color: rgb(65, 65, 65);
-        width: 100%;
-        height: 200px;
-        right: 0%;
-        top: -10%;
-    }
-
     /*Right Break: content side*/
     .rightbreak {
         z-index: -1;
@@ -607,7 +304,6 @@
         border: 1px solid black;
     }
 }
-
 /*#endregion */
 
 /*#region desktop*/
