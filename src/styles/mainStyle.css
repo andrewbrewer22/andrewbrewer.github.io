@@ -41,6 +41,10 @@
     cursor: pointer;
     background-image: url(../images/dropDownImg.png);
     background-repeat:no-repeat;
+
+    background-color: black;
+    transition: background-color 0.3s linear;
+
     background-position: 10% 10%;
     height: 40px;
     width: 40px;
@@ -50,8 +54,7 @@
 }
 
 /* Dropdown button on hover & focus */
-.dropbtn:hover,
-.dropbtn:focus {
+.dropbtn:hover{
     background-color: #e0a912c9;
 }
 
@@ -67,21 +70,12 @@
     position: absolute;
     background-color: #f1f1f100;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(255, 166, 0, 0.2);
     z-index: 1;
-}
-
-/* Links inside the dropdown */
-.project-dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Change color of dropdown links on hover */
-.project-dropdown-content a:hover {
-    background-color: #ddd
+    
+    margin-left: 109px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
@@ -735,7 +729,7 @@
 
     .my-links {
         text-align: center;
-        font-size: 120%;
+        font-size: 150%;
     }
 
     .my-projects {

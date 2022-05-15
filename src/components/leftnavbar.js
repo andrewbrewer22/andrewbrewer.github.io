@@ -106,7 +106,6 @@ function LeftNavbar() {
               Cosmic Number
             </button>
           </span>
-          <hr className="divider-line"></hr>
         </div>
       </section>
 
