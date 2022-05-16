@@ -8,6 +8,7 @@ export default class PictureGalleryPage extends React.Component {
         document.body.style = 'background: rgb(65, 65, 65);';
         return (
             <body class="body">
+                <section className="testingHead"></section>
                 <section class="break-container">
 
                     <Leftnavbar />

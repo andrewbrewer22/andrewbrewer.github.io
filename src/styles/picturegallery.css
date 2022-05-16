@@ -1,4 +1,68 @@
-/*Picture Gallery*/
+
+/*#region Universal*/
+.testingHead {
+    position: fixed;
+    background-color: rgb(65, 65, 65);
+    width: 100%;
+    height: 200px;
+    right: 0%;
+    top: -10%;
+}
+/*#endregion*/
+
+/*#region mobile*/
+@media screen and (min-width: 350px) and (max-width: 399px) {
+    .picture-gallery-title {
+        text-align: center;
+        width: 80%;
+        border: 2px solid black;
+        padding: 1px;
+        margin-left: 10%;
+        margin-top: 2%;
+    
+        background-color: rgba(255, 196, 0, 0.274);
+    }
+    
+    .gallery-content{
+        margin-left: 5%;
+        margin-top: 1%;
+    }
+    
+    .gallery-photo{
+        width: 306px;
+        height: 230px;
+        border: 2px solid black;
+    }
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 349px) {
+        .picture-gallery-title {
+            text-align: center;
+            width: 80%;
+            border: 2px solid black;
+            padding: 1px;
+            margin-left: 10%;
+            margin-top: 2%;
+        
+            background-color: rgba(255, 196, 0, 0.274);
+        }
+        
+        .gallery-content{
+            margin-left: 0%;
+            margin-top: 1%;
+        }
+        
+        .gallery-photo{
+            width: 306px;
+            height: 230px;
+            border: 2px solid black;
+        }
+        }
+/*#endregion*/
+
+
+/*#region Desktop*/
+@media screen and (min-width: 800px) and (max-width: 2000px) {
 .picture-gallery-title {
     text-align: center;
     width: 80%;
@@ -9,3 +73,16 @@
 
     background-color: rgba(255, 196, 0, 0.274);
 }
+
+.gallery-content{
+    margin-left: 7%;
+    margin-top: 1%;
+}
+
+.gallery-photo{
+    width: 612px;
+    height: 459px;
+    border: 4px solid black;
+}
+}
+/*#endregion desktop*/
