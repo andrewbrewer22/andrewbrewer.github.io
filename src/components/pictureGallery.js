@@ -10,6 +10,16 @@ export default class PictureGalleryComponent extends React.Component {
                         Picture Gallery
                     </p>
                 </div>
+                <img
+                    class="lakeside_01"
+                    src={require("../images/lakeside_01.JPG")}
+                    alt="lakeside_01"
+                ></img>
+                <img
+                    class="lakeside_01"
+                    src={require("../images/lakeside_01.JPG")}
+                    alt="lakeside_01"
+                ></img>
             </section>
         );
     }
