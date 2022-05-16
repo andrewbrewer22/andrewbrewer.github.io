@@ -1,5 +1,61 @@
-
 /*#region Universal*/
+
+/*#region misc*/
+
+/*Scroll bar*/
+::-webkit-scrollbar {
+    width: 20px;
+}
+::-webkit-scrollbar-track {
+    background: #6D623E;
+    border: 4px solid black;
+
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(212, 172, 41, 0.404);
+    border: 4px solid black;
+}
+.resScrollBar {
+    width: 1000px;
+    height: 1000px;
+}
+
+/*Hover*/
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 196, 0, 0.514);
+}
+
+/*Buttons*/
+#link-button {
+    background-color: rgba(212, 172, 41, 0.404);
+    border-style: solid;
+    border-color: black;
+    font-weight: lighter;
+}
+#link-button:hover {
+    background-color: rgba(255, 196, 0, 0.514);
+    border-style: solid;
+    border-color: black;
+    font-weight: lighter;
+
+    /*Changes mouse cursor to pointer*/
+    cursor: pointer;
+}
+
+/*placeholder text in input and text area boxes*/
+::placeholder {
+    color: rgb(64, 64, 64);
+    position: relative;
+    text-align: center;
+}
+
+::-ms-input-placeholder {
+    color: rgb(93, 93, 93);
+}
+
+.mainHTML {
+    caret-color: rgba(0, 0, 0, 0);
+}
 .br {
     display: block;
     margin-bottom: 0em;
@@ -11,19 +67,22 @@
 #bold-this {
     font-weight: bold;
 }
-/*.testingHead {
-    position: fixed;
-    background-color: rgb(65, 65, 65);
-    width: 100%;
-    height: 30%;
-    right: 0%;
-    top: -3%;}*/
 .body {
     background-color: rgb(65, 65, 65);
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.divider-line {
+    background-color: black;
+    height: 3px;
+    border: none;
 }
 .break-container {
     width: 50%;
 }
+
+/*#endregion misc*/
 
 /*#region leftbreak*/
 
@@ -35,7 +94,7 @@
     border: none;
     cursor: pointer;
     background-image: url(../images/dropDownImg.png);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
 
     background-color: black;
     transition: background-color 0.3s linear;
@@ -44,32 +103,29 @@
     height: 40px;
     width: 40px;
 }
-.dropbtn span{
+
+.dropbtn span {
     display: none;
 }
+
 /* Dropdown button on hover & focus */
-.dropbtn:hover{
+.dropbtn:hover {
     background-color: #e0a912c9;
-}
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-    position: relative;
-    display: inline-block;
 }
 /* Dropdown Content (Hidden by Default) */
 .project-dropdown-content {
     display: none;
-    position: absolute;
+    text-align: center;
     background-color: #f1f1f100;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(255, 166, 0, 0.2);
     background-color: #6d623e;
     z-index: 1;
     
-    margin-left: 109px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
     display: block;
@@ -91,6 +147,7 @@
     /*Changes mouse cursor to pointer*/
     cursor: pointer;
 }
+
 /*#endregion dropdown*/
 
 /*Hide content when scrolling up*/
@@ -102,7 +159,6 @@
     right: 0%;
     top: -10%;
 }
-
 .leftbreak-background-setter {
     background-color: rgb(65, 65, 65);
     width: 100%;
@@ -110,28 +166,13 @@
     margin-top: 1%;
 }
 
-.divider-line {
-    background-color: black;
-    height: 0px;
-    border: none;
-}
 
-.contact-info {
-    text-align: center;
-    font-size: 100%;
-}
-
-.resources {
-    /*Hide this for it takes up to much space*/
-    font-size: 0%;
-
-    margin-right: 400px;
-    margin-top: -35px;
-}
 /*#endregion leftbreak*/
 
-/*Under 700px*/
-@media screen and (max-width: 699px){
+/*#region bound width parameters*/
+
+/*Under 800px*/
+@media screen and (max-width: 799px) {
     .leftbreak {
         position: fixed;
         background-color: #6D623E;
@@ -143,264 +184,42 @@
 
         text-align: center;
     }
-}
-
-/*#endregion universal*/
-
-/*#region phone*/
-
-@media screen and (min-width: 700px) and (max-width: 799px) {
-    .leftbreak {
-        position: fixed;
-        background-color: #6D623E;
-        width: 98%;
-        height: 145px;
-        margin-top: -4px;
-        margin-left: -10px;
-        border: 1px solid black;
-
-        text-align: center;
-    }
-
-    .resources {
-        /*Hide this for it takes up to much space*/
-        font-size: 0%;
-        margin-right: 480px;
-        margin-top: -30px;
-    }
-    .my-projects {
-        text-align: center;
-        font-size: 85%;
-        margin-left: 470px;
-        margin-top: -130px;
-        margin-bottom: -33px;
-    }
-
-    /*Drop down*/
-    .my-projects {
-        text-align: center;
-        font-size: 100%;
-        margin-left: -90%;
-        margin-top: 20px;
-        margin-bottom: 0px;
-    }
-    .project-dropdown-content{
-        margin-top: 0px;
-        margin-left: 90%;
-    }
-
-    /*Right Break: content side*/
-    .rightbreak {
-        z-index: -1;
-        background-color: rgba(212, 175, 55, 0.5);
-        width: 98%;
-        height: 560%;
-        margin-top: 148px;
-        margin-left: -10px;
-        position: absolute;
-        border: 1px solid black;
-    }
-}
-@media screen and (min-width: 600px) and (max-width: 699px) {
-    /*Drop down button*/
-    .my-projects {
-        text-align: center;
-        font-size: 100%;
-        margin-left: -85%;
-        margin-top: 20px;
-        margin-bottom: 0px;
-    }
-    .project-dropdown-content{
-        margin-top: 0px;
-        margin-left: 85%;
-    }
-
-    /*Right Break: content side*/
-    .rightbreak {
-        z-index: -1;
-        background-color: rgba(212, 175, 55, 0.5);
-        width: 98%;
-        height: 500%;
-        margin-top: 128px;
-        margin-left: -11px;
-        position: absolute;
-        border: 1px solid black;
-    }
-}
-@media screen and (min-width: 500px) and (max-width: 599px) {
-    /*Drop down button*/
-    .my-projects {
-        text-align: center;
-        font-size: 100%;
-        margin-left: -80%;
-        margin-top: 20px;
-        margin-bottom: 0px;
-    }
-    .project-dropdown-content{
-        margin-top: 0px;
-        margin-left: 80%;
-    }
-
-    /*Right Break: content side*/
-    .rightbreak {
-        z-index: -1;
-        background-color: rgba(212, 175, 55, 0.5);
-        width: 98%;
-        /*height: 700px;*/
-        margin-top: 128px;
-        margin-left: -11px;
-        position: absolute;
-        border: 1px solid black;
-    }
-
-}
-@media screen and (min-width: 400px) and (max-width: 499px) {
-    /*Drop down button*/
-    .my-projects {
-        text-align: center;
-        font-size: 100%;
-        margin-left: -80%;
-        margin-top: 20px;
-        margin-bottom: 0px;
-    }
-    .project-dropdown-content{
-        margin-top: 0px;
-        margin-left: 80%;
-    }
-
-    /*Right Break: content side*/
-    .rightbreak {
-        z-index: -1;
-        background-color: rgba(212, 175, 55, 0.5);
-        width: 98%;
-        /*height: 700px;*/
-        margin-top: 128px;
-        margin-left: -11px;
-        position: absolute;
-        border: 1px solid black;
-    }
-}
-@media screen and (min-width: 300px) and (max-width: 399px) {
-    /*Drop down button*/
-    .my-projects {
-        text-align: center;
-        font-size: 100%;
-        margin-left: -80%;
-        margin-top: 20px;
-        margin-bottom: 0px;
-    }
-    .project-dropdown-content{
-        margin-top: 0px;
-        margin-left: 80%;
-    }
-    /*Right Break: content side*/
-    .rightbreak {
-        z-index: -1;
-        background-color: rgba(212, 175, 55, 0.5);
-        width: 98%;
-        /*height: 700px;*/
-        margin-top: 128px;
-        margin-left: -11px;
-        position: absolute;
-        border: 1px solid black;
-    }
-}
-/*#endregion */
-
-/*#region desktop*/
-@media screen and (min-width: 800px) and (max-width: 2000px) {
-
-    .mainHTML {
-        caret-color: rgba(0, 0, 0, 0);
-    }
-
-    /*Scroll bar*/
-    ::-webkit-scrollbar {
-        width: 20px;
-    }
-
-    ::-webkit-scrollbar-track {
-        background: #6D623E;
-        border: 4px solid black;
-
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background: rgba(212, 172, 41, 0.404);
-        border: 4px solid black;
-    }
-
-    .resScrollBar {
-        width: 1000px;
-        height: 1000px;
-    }
-
-    /*Hover*/
-    ::-webkit-scrollbar-thumb:hover {
-        background: rgba(255, 196, 0, 0.514);
-    }
-
-
-    .br {
-        display: block;
-        margin-bottom: 0em;
-    }
-
-    #br {
-        display: block;
-        margin-bottom: 0em;
-    }
 
     .divider-line {
         background-color: black;
-        height: 3px;
+        height: 0px;
         border: none;
     }
 
-    #bold-this {
-        font-weight: bold;
-    }
-
-    .body {
-        background-color: rgb(65, 65, 65);
-
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-    }
-
-    .break-container {
-        width: 50%;
-    }
-
-    /*placeholder text in input and text area boxes*/
-    ::placeholder {
-        color: rgb(64, 64, 64);
-        position: relative;
+    .contact-info {
         text-align: center;
+        font-size: 100%;
+    }
+    .resources {
+        /*Hide this for it takes up to much space*/
+        font-size: 0%;
+    
+        margin-right: 400px;
+        margin-top: -35px;
     }
 
-    ::-ms-input-placeholder {
-        color: rgb(93, 93, 93);
+    /*Drop down button*/
+    .my-projects {
+        text-align: center;
+        font-size: 100%;
     }
 
-    /*Buttons*/
-    #link-button {
-        background-color: rgba(212, 172, 41, 0.404);
-        border-style: solid;
-        border-color: black;
-        font-weight: lighter;
+    .project-dropdown-content {
+        margin-top: 0px;
+        margin-left: 80%;
+        margin-left: 109px;
+        /*needed to fix the nav bar to the left side of the screen*/
+        position: absolute;
     }
+}
 
-    #link-button:hover {
-        background-color: rgba(255, 196, 0, 0.514);
-        border-style: solid;
-        border-color: black;
-        font-weight: lighter;
-
-        /*Changes mouse cursor to pointer*/
-        cursor: pointer;
-    }
-
+/*Over 800px*/
+@media screen and (min-width: 800px) {
     /*Left Break: Contact info, resources, my links, project links*/
     .leftbreak {
         position: fixed;
@@ -413,6 +232,16 @@
         border: 4px solid black;
         /*For Modals to be displayed ontop of right break*/
         z-index: 1;
+    }
+
+    .home-title {
+        width: 80%;
+        border: 4px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+
+        background-color: rgba(255, 196, 0, 0.274);
     }
 
     .contact-info {
@@ -432,67 +261,168 @@
     .my-projects {
         text-align: center;
         font-size: 120%;
+
+        margin-left: 0%;
+        margin-top: 10px;
+        margin-bottom: 0px;
     }
 
-    /*Right Break: Content side*/
+    .divider-line {
+        background-color: black;
+        height: 3px;
+        border: none;
+    }
+
     .rightbreak {
         background-color: rgba(212, 175, 55, 0.5);
+        position: absolute;
         width: 75%;
         margin-left: 22%;
-        height: 315%;
-
-        position: absolute;
         border: 4px solid black;
-    }
-
-    .home-title {
-        width: 80%;
-        border: 4px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-
-        background-color: rgba(255, 196, 0, 0.274);
-    }
-
-
-
-    /*Home pricing page*/
-    .homePricing-title {
-        text-align: center;
-        width: 80%;
-        border: 4px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-
-        background-color: rgba(255, 196, 0, 0.274);
-    }
-
-    /*Picture Gallery*/
-    .picture-gallery-title {
-        text-align: center;
-        width: 80%;
-        border: 4px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-
-        background-color: rgba(255, 196, 0, 0.274);
-    }
-
-    /*Cosmic Number*/
-    .cosmic-number {
-        text-align: center;
-        width: 80%;
-        border: 4px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-
-        background-color: rgba(255, 196, 0, 0.274);
     }
 }
+
+/*#endregion bound width parameters*/
+
+/*#endregion universal*/
+
+/*#region phone*/
+
+@media screen and (min-width: 700px) and (max-width: 799px) {
+
+    .leftbreak {
+        height: 145px;
+    }
+    /*Drop down*/
+    .my-projects {
+        text-align: center;
+        margin-left: -90%;
+        margin-top: 30px;
+    }
+    .project-dropdown-content {
+        margin-top: 0px;
+        margin-left: 90%;
+    }
+
+    /*Right Break: content side*/
+    .rightbreak {
+        z-index: -1;
+        background-color: rgba(212, 175, 55, 0.5);
+        width: 98%;
+        margin-top: 148px;
+        margin-left: -11px;
+        position: absolute;
+        border: 1px solid black;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 699px) {
+
+    /*Drop down button*/
+    .my-projects {
+        margin-left: -85%;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .project-dropdown-content {
+        margin-top: 0px;
+        margin-left: 85%;
+    }
+
+    /*Right Break: content side*/
+    .rightbreak {
+        z-index: -1;
+        background-color: rgba(212, 175, 55, 0.5);
+        width: 98%;
+        margin-top: 128px;
+        margin-left: -11px;
+        position: absolute;
+        border: 1px solid black;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 599px) {
+
+    /*Drop down button*/
+    .my-projects {
+        margin-left: -80%;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .project-dropdown-content {
+        margin-top: 0px;
+        margin-left: 80%;
+    }
+
+    /*Right Break: content side*/
+    .rightbreak {
+        z-index: -1;
+        background-color: rgba(212, 175, 55, 0.5);
+        width: 98%;
+        margin-top: 128px;
+        margin-left: -11px;
+        position: absolute;
+        border: 1px solid black;
+    }
+
+}
+@media screen and (min-width: 400px) and (max-width: 499px) {
+
+    /*Drop down button*/
+    .my-projects {
+        text-align: center;
+        font-size: 100%;
+        margin-left: -80%;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .project-dropdown-content {
+        margin-top: 0px;
+        margin-left: 80%;
+    }
+
+    /*Right Break: content side*/
+    .rightbreak {
+        z-index: -1;
+        background-color: rgba(212, 175, 55, 0.5);
+        width: 98%;
+        /*height: 700px;*/
+        margin-top: 128px;
+        margin-left: -11px;
+        position: absolute;
+        border: 1px solid black;
+    }
+}
+@media screen and (min-width: 300px) and (max-width: 399px) {
+
+    /*Drop down button*/
+    .my-projects {
+        margin-left: -80%;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .project-dropdown-content {
+        margin-top: 0px;
+        margin-left: 80%;
+    }
+
+    /*Right Break: content side*/
+    .rightbreak {
+        z-index: -1;
+        background-color: rgba(212, 175, 55, 0.5);
+        width: 98%;
+        /*height: 700px;*/
+        margin-top: 128px;
+        margin-left: -11px;
+        position: absolute;
+        border: 1px solid black;
+    }
+}
+/*#endregion */
+
+/*#region desktop*/
 
 /*#endregion*/
 

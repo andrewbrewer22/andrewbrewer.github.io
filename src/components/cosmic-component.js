@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/mainStyle.css";
+import "../styles/cosmic.css";
 
 export default class CosmicComponent extends React.Component{
     render(){

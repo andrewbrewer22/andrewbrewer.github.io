@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/mainStyle.css";
+import "../styles/homepricing.css";
 
 export default class HomepricingComponent extends React.Component {
     render() {

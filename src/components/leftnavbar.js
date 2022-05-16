@@ -44,12 +44,7 @@ function LeftNavbar() {
       <section className="my-projects">
         {/*<span className="br" id="bold-this">My Example Projects</span>*/}
 
-        <button onClick={() => extendProjectMenu()} className="dropbtn">
-          <span>
-            Drop
-          </span>
-        </button>
-
+        <button onClick={() => extendProjectMenu()} className="dropbtn"></button>
         <div id="projectDropdown" className="project-dropdown-content">
           <span className="br">
             <button

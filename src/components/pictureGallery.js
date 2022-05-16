@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/mainStyle.css";
 import "../styles/picturegallery.css";
 
 export default class PictureGalleryComponent extends React.Component {

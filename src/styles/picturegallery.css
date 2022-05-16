@@ -8,119 +8,52 @@
     top: -10%;
 }
 
-.picture-gallery-title {
-    text-align: center;
-    background-color: rgba(255, 196, 0, 0.274);
+.gallery-photo {
+    width: 80%;
+    height: 80%;
 }
 
-.gallery-content {
-    text-align: center;
-    margin-left: 1%;
-    margin-top: 1%;
-}
-
-
-/*#endregion*/
-
-/*#region mobile*/
-@media screen and (min-width: 700px) and (max-width: 799px) {
-    .picture-gallery-title {
-        width: 80%;
-        border: 2px solid black;
-        padding: 1px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-
-    .gallery-photo {
-        width: 551px;
-        height: 414px;
-        border: 2px solid black;
-    }
-}
-@media screen and (min-width: 600px) and (max-width: 699px) {
-    .picture-gallery-title {
-        width: 80%;
-        border: 2px solid black;
-        padding: 1px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-
-    .gallery-photo {
-        width: 490px;
-        height: 368px;
-        border: 2px solid black;
-    }
-}
-@media screen and (min-width: 500px) and (max-width: 599px) {
-    .picture-gallery-title {
-        width: 80%;
-        border: 2px solid black;
-        padding: 1px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-    .gallery-photo {
-        width: 428px;
-        height: 322px;
-        border: 2px solid black;
-    }
-}
-@media screen and (min-width: 400px) and (max-width: 499px) {
-    .picture-gallery-title {
-        width: 80%;
-        border: 2px solid black;
-        padding: 1px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-    .gallery-photo {
-        width: 367px;
-        height: 276px;
-        border: 2px solid black;
-    }
-}
-@media screen and (min-width: 300px) and (max-width: 399px) {
-    .picture-gallery-title {
-        width: 80%;
-        border: 2px solid black;
-        padding: 1px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-
-    .gallery-photo {
-        width: 306px;
-        height: 230px;
-        border: 2px solid black;
-    }
-}
-/*#endregion*/
-
-/*#region Desktop*/
-@media screen and (min-width: 800px) and (max-width: 2000px) {
+/*#region boundry parameters*/
+@media screen and (max-width: 799px){
     .picture-gallery-title {
         text-align: center;
+        background-color: rgba(255, 196, 0, 0.274);
+
+        width: 80%;
+        border: 2px solid black;
+        padding: 1px;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+    .gallery-content {
+        text-align: center;
+        margin-left: 1%;
+        margin-top: 1%;
+    }
+    .gallery-photo {
+        border: 2px solid black;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .picture-gallery-title {
+        text-align: center;
+        background-color: rgba(255, 196, 0, 0.274);
+
         width: 80%;
         border: 4px solid black;
         padding: 10px;
-        margin-left: 10%;
+        margin-left: 8%;
         margin-top: 2%;
-
-        background-color: rgba(255, 196, 0, 0.274);
     }
-
     .gallery-content {
-        margin-left: 7%;
+        text-align: center;
         margin-top: 1%;
     }
-
     .gallery-photo {
-        width: 612px;
-        height: 459px;
         border: 4px solid black;
     }
 }
+/*#endregion*/
 
-/*#endregion desktop*/
+/*#endregion*/
