@@ -9,23 +9,7 @@
 /*#endregion*/
 
 /*#region mobile*/
-@media screen and (min-width: 800px) and (max-width: 899px) {
-    /*Resume*/
-    .self-portrait {
-        width: 276px;
-        height: 368px;
-        margin-left: 36%;
-        margin-top: 2%;
-        border: 4px solid black;
-    }
-    .resume-text {
-        width: 80%;
-        border: 2px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-}
+
 @media screen and (min-width: 700px) and (max-width: 799px) {
     /*Resume*/
     .self-portrait {
@@ -117,7 +101,7 @@
 /*#endregion*/
 
 /*#region desktop*/
-@media screen and (min-device-width: 900px) and (max-device-width: 2000px) {
+@media screen and (min-device-width: 800px) and (max-device-width: 2000px) {
     /*Resume*/
     .self-portrait {
         width: 276px;
