@@ -10,7 +10,7 @@
 
 # production
 /build
-contactmeServer.js
+public/app/contactmeServer.js
 
 # misc
 .DS_Store
