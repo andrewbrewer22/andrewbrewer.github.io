@@ -8,91 +8,81 @@
 }
 /*#endregion*/
 
+/*#region boundry parameters*/
+@media screen and (max-width: 799px){
+    .self-portrait {
+        width: 138px;
+        height: 184px;
+        margin-top: 2%;
+        border: 2px solid black;
+    }
+    .lca-certificate{
+        margin-top: 2%;
+        width: 60%;
+        height: 60%;
+        border: 2px solid black;
+    }
+    .dirtymike{
+        margin-top: 2%;
+        width: 70%;
+        height: 70%;
+        border: 2px solid black;
+    }
+    .resume-text {
+        border: 2px solid black;
+        padding: 10px;
+        width: 80%;
+        margin-left: 9%;
+        margin-top: 2%;
+    }
+}
+@media screen and (min-width: 800px){
+    .self-portrait {
+        width: 276px;
+        height: 368px;
+        margin-right: 4%;
+        margin-top: 2%;
+        border: 4px solid black;
+    }
+    .lca-certificate{
+        margin-top: 2%;
+        width: 557px;
+        height: 394px;
+        border: 4px solid black;
+    }
+    .dirtymike{
+        margin-top: 2%;
+        width: 539px;
+        height: 536px;
+        border: 4px solid black;
+    }
+    .resume-text {
+        width: 80%;
+        border: 4px solid black;
+        padding: 10px;
+        margin-left: 9%;
+        margin-top: 2%;
+    }
+}
+/*#endregion*/
+
 /*#region mobile*/
 
-@media screen and (min-width: 700px) and (max-width: 799px) {
-    /*Resume*/
-    .self-portrait {
-        width: 138px;
-        height: 184px;
-        margin-left: 36%;
-        margin-top: 2%;
-        border: 2px solid black;
-    }
-    .resume-text {
-        width: 80%;
-        border: 2px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-}
-@media screen and (min-width: 600px) and (max-width: 699px) {
-    /*Resume*/
-    .self-portrait {
-        width: 138px;
-        height: 184px;
-        margin-left: 39%;
-        margin-top: 2%;
-        border: 2px solid black;
-    }
-
-    .resume-text{
-        width: 80%;
-        border: 2px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-}
 @media screen and (min-width: 500px) and (max-width: 599px) {
-    /*Resume*/
-    .self-portrait {
-        width: 138px;
-        height: 184px;
-        margin-left: 38%;
-        margin-top: 2%;
-        border: 2px solid black;
-    }
     .resume-text {
-        width: 80%;
-        border: 2px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
+        margin-left: 8%;
     }
 }
 @media screen and (min-width: 400px) and (max-width: 499px) {
-    /*Resume*/
-    .self-portrait {
-        width: 138px;
-        height: 184px;
-        margin-left: 36%;
-        margin-top: 2%;
-        border: 2px solid black;
-    }
     .resume-text {
-        width: 80%;
-        border: 2px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
+        margin-left: 7%;
     }
 }
 @media screen and (min-width: 300px) and (max-width: 399px) {
-    /*Resume*/
-    .self-portrait {
-        width: 138px;
-        height: 184px;
-        margin-left: 31%;
-        margin-top: 2%;
-        border: 2px solid black;
-    }
     .resume-text {
-        width: 90%;
-        border: 2px solid black;
-        padding: 10px;
-        margin-left: 2%;
+        padding: 4px;
+        width: 85%;
+        margin-left: 6%;
         margin-top: 1%;
         font-size: 16px;
     }
@@ -100,25 +90,6 @@
 
 /*#endregion*/
 
-/*#region desktop*/
-@media screen and (min-device-width: 800px) and (max-device-width: 2000px) {
-    /*Resume*/
-    .self-portrait {
-        width: 276px;
-        height: 368px;
-        margin-left: 36%;
-        margin-top: 2%;
-        border: 4px solid black;
-    }
-    .resume-text {
-        width: 80%;
-        border: 4px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
-}
-/*#endregion*/
 
 /*
 

@@ -72,6 +72,7 @@
 
     -ms-overflow-style: none;
     scrollbar-width: none;
+    text-align: center;
 }
 .divider-line {
     background-color: black;
@@ -80,6 +81,7 @@
 }
 .break-container {
     width: 50%;
+    
 }
 
 /*#endregion misc*/
@@ -185,6 +187,18 @@
         text-align: center;
     }
 
+    /*Right Break: content side*/
+    .rightbreak {
+        z-index: -1;
+        background-color: rgba(212, 175, 55, 0.5);
+        width: 98%;
+        margin-top: 128px;
+        margin-left: -11px;
+        position: absolute;
+        border: 1px solid black;
+        text-align: center;
+    }
+
     .divider-line {
         background-color: black;
         height: 0px;
@@ -194,6 +208,7 @@
     .contact-info {
         text-align: center;
         font-size: 100%;
+        margin-top: 40px;
     }
     .resources {
         /*Hide this for it takes up to much space*/
@@ -207,17 +222,17 @@
     .my-projects {
         text-align: center;
         font-size: 100%;
+        margin-top: -15px;
+        margin-left: -80%;
     }
 
     .project-dropdown-content {
         margin-top: 0px;
         margin-left: 80%;
-        margin-left: 109px;
         /*needed to fix the nav bar to the left side of the screen*/
         position: absolute;
     }
 }
-
 /*Over 800px*/
 @media screen and (min-width: 800px) {
     /*Left Break: Contact info, resources, my links, project links*/
@@ -287,147 +302,33 @@
 /*#endregion universal*/
 
 /*#region phone*/
-
-@media screen and (min-width: 700px) and (max-width: 799px) {
-
-    .leftbreak {
-        height: 145px;
-    }
-    /*Drop down*/
-    .my-projects {
-        text-align: center;
-        margin-left: -90%;
-        margin-top: 30px;
-    }
-    .project-dropdown-content {
-        margin-top: 0px;
-        margin-left: 90%;
-    }
-
-    /*Right Break: content side*/
-    .rightbreak {
-        z-index: -1;
-        background-color: rgba(212, 175, 55, 0.5);
-        width: 98%;
-        margin-top: 148px;
-        margin-left: -11px;
-        position: absolute;
-        border: 1px solid black;
-    }
-}
-@media screen and (min-width: 600px) and (max-width: 699px) {
-
-    /*Drop down button*/
-    .my-projects {
-        margin-left: -85%;
-        margin-top: 20px;
-        margin-bottom: 0px;
-    }
-
-    .project-dropdown-content {
-        margin-top: 0px;
-        margin-left: 85%;
-    }
-
-    /*Right Break: content side*/
-    .rightbreak {
-        z-index: -1;
-        background-color: rgba(212, 175, 55, 0.5);
-        width: 98%;
-        margin-top: 128px;
-        margin-left: -11px;
-        position: absolute;
-        border: 1px solid black;
-    }
-}
 @media screen and (min-width: 500px) and (max-width: 599px) {
-
-    /*Drop down button*/
-    .my-projects {
-        margin-left: -80%;
-        margin-top: 20px;
-        margin-bottom: 0px;
+    /*To stop all the content from shifting to the left*/
+    .leftbreak {
+        margin-left: -12px;
     }
-
-    .project-dropdown-content {
-        margin-top: 0px;
-        margin-left: 80%;
+    .rightbreak{
+        margin-left: -12px;
     }
-
-    /*Right Break: content side*/
-    .rightbreak {
-        z-index: -1;
-        background-color: rgba(212, 175, 55, 0.5);
-        width: 98%;
-        margin-top: 128px;
-        margin-left: -11px;
-        position: absolute;
-        border: 1px solid black;
-    }
-
 }
 @media screen and (min-width: 400px) and (max-width: 499px) {
 
-    /*Drop down button*/
-    .my-projects {
-        text-align: center;
-        font-size: 100%;
-        margin-left: -80%;
-        margin-top: 20px;
-        margin-bottom: 0px;
+    /*To stop all the content from shifting to the left*/
+    .leftbreak {
+        margin-left: -13px;
     }
-
-    .project-dropdown-content {
-        margin-top: 0px;
-        margin-left: 80%;
-    }
-
-    /*Right Break: content side*/
-    .rightbreak {
-        z-index: -1;
-        background-color: rgba(212, 175, 55, 0.5);
-        width: 98%;
-        /*height: 700px;*/
-        margin-top: 128px;
-        margin-left: -11px;
-        position: absolute;
-        border: 1px solid black;
+    .rightbreak{
+        margin-left: -13px;
     }
 }
 @media screen and (min-width: 300px) and (max-width: 399px) {
 
-    /*Drop down button*/
-    .my-projects {
-        margin-left: -80%;
-        margin-top: 20px;
-        margin-bottom: 0px;
+    /*To stop all the content from shifting to the left*/
+    .leftbreak {
+        margin-left: -14px;
     }
-
-    .project-dropdown-content {
-        margin-top: 0px;
-        margin-left: 80%;
-    }
-
-    /*Right Break: content side*/
-    .rightbreak {
-        z-index: -1;
-        background-color: rgba(212, 175, 55, 0.5);
-        width: 98%;
-        /*height: 700px;*/
-        margin-top: 128px;
-        margin-left: -11px;
-        position: absolute;
-        border: 1px solid black;
+    .rightbreak{
+        margin-left: -14px;
     }
 }
 /*#endregion */
-
-/*#region desktop*/
-
-/*#endregion*/
-
-/*#region desktop and beyond*/
-
-@media screen and (min-device-width: 2001px) {}
-
-/*#endregion*/
