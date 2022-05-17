@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import ErrorPage from "./pages/errorpage";
-import ResumePage from "./pages/resume-page";
+import ResumePage from "./pages/Resume-page";
 import BMICalcPage from "./pages/bmi-page";
 import APIDEMO from "./pages/api-page";
 import HomepricingPage from "./pages/homepricing-page";
