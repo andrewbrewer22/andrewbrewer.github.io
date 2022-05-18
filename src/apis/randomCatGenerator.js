@@ -33,10 +33,12 @@ export default class RandomCatGenerator extends React.Component {
                 I tested in a seperate browser and confirmed this */}
                 <span id="bold-this">Procedural Robot Generator</span>
                 <pre className="catContainer">
-                    <div className="catInputContainer">
+                    <div className="cat-input-container">
                         <input className="catInput" placeholder="Put Some Words Here!" 
                         type="text" id="cat-input" ></input>
-                        <button type="button" onClick={this.refreshImg}>Generate</button>
+                        <br></br>
+                        <button className="cat-button" type="button" onClick={this.refreshImg}>Generate</button>
+                        
                     </div>
                     <br />
                     <img  className="catImg" alt="img" src={"https://robohash.org/" + catText + "/?set=set4"}></img>
