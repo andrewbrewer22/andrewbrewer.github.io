@@ -11,7 +11,6 @@
 /*#region boundry parameters*/
 @media screen and (max-width: 799px){
     .resume-title{
-
         font-size: 200%;
         font-family: "AlexBrush-Regular";
     }
@@ -44,14 +43,12 @@
 }
 @media screen and (min-width: 800px){
     .resume-title{
-        margin-right: 3%;
         font-size: 400%;
         font-family: "AlexBrush-Regular";
     }
     .self-portrait {
         width: 276px;
         height: 368px;
-        margin-right: 4%;
         margin-top: 1%;
         border: 4px solid black;
     }
@@ -101,74 +98,3 @@
 }
 
 /*#endregion*/
-
-
-/*
-
-    .self-portrait {
-        width: 92px;
-        height: 123px;
-        margin-left: 30%;
-        margin-top: 2%;
-
-        border: 2px solid black;
-
-        background-color: rgba(255, 196, 0, 0.274);
-    }
-
-    .basic-information {
-        width: 80%;
-        border: 1px solid black;
-        padding: 10px;
-        margin-left: 6%;
-        margin-top: 2%;
-
-        background-color: rgba(255, 196, 0, 0.274);
-        font-size: 50%;
-    }
-
-    .my-skills {
-        width: 80%;
-        border: 1px solid black;
-        padding: 10px;
-        margin-left: 6%;
-        margin-top: 2%;
-
-        background-color: rgba(255, 196, 0, 0.274);
-        font-size: 50%;
-    }
-
-    .my-talents {
-        width: 80%;
-        border: 1px solid black;
-        padding: 10px;
-        margin-left: 6%;
-        margin-top: 2%;
-
-        background-color: rgba(255, 196, 0, 0.274);
-        font-size: 50%;
-    }
-
-    .my-education {
-        width: 80%;
-        border: 1px solid black;
-        padding: 10px;
-        margin-left: 6%;
-        margin-top: 2%;
-
-        background-color: rgba(255, 196, 0, 0.274);
-        font-size: 50%;
-    }
-
-    .achievements {
-        width: 80%;
-        border: 1px solid black;
-        padding: 10px;
-        margin-left: 6%;
-        margin-top: 2%;
-
-        background-color: rgba(255, 196, 0, 0.274);
-        font-size: 50%;
-    }
-
-*/

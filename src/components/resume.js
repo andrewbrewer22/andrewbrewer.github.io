@@ -49,7 +49,7 @@ export default class Resume extends React.Component {
             <span id="bold-this">Front-End</span> sites and generally learn how
             programming languages worked together. When learning the{" "}
             <span id="bold-this">Back-End</span> side of development we used{" "}
-            <span id="bold-this">C#</span> and a different
+            <span id="bold-this">C#</span> and different
             <span id="bold-this"> Frameworks</span> such as{" "}
             <span id="bold-this">Angular</span>,
             <span id="bold-this"> ASP. NET</span>, and{" "}
