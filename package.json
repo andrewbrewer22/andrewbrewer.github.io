@@ -2,7 +2,7 @@
   "name": "resume-exhibit",
   "version": "14.17.5",
   "private": true,
-  "homepage": "/resume",
+  "homepage": "https://www.brewertrove.com/resume",
   "dependencies": {
     "-": "^0.0.1",
     "@actions/core": "^1.6.0",
