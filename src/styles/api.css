@@ -1,90 +1,135 @@
-
 /*#region Universal*/
+
+/*#region Quote generator*/
+
+.quote-container {
+    width: 80%;
+    padding: 10px;
+    margin-left: 8%;
+    margin-top: 2%;
+
+    font-size: 120%;
+    text-align: center;
+    border: 4px solid black;
+    background-color: rgba(255, 196, 0, 0.274);
+}
+.quoteButton {
+    padding: 6px 8px;
+    margin-top: 14px;
+    margin-right: 0px;
+
+    background-color: rgba(121, 101, 36, 0.69);
+    font-size: large;
+    border: 4px solid black;
+}
+.quoteButton:hover {
+    cursor: pointer;
+    background-color: rgb(255, 196, 0);
+}
+
+.quote-content {
+    display: inline-block;
+    max-width: 80%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    flex-wrap: wrap;
+
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+
+@media screen and (max-width: 800px) {
+    .quote-container {
+        border: 2px solid black;
+        font-size: 100%;
+    }
+
+    .quoteButton {
+        border: 2px solid black;
+    }
+}
+@media screen and (max-width: 500px) {
+    .quote-container {
+        margin-left: 6%;
+    }
+}
+/*#endregion Quote generator*/
+
+/*#region cat generator*/
+.catgen-container{
+    width: 80%;
+    padding: 10px;
+    margin-left: 8%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+    text-align: center;
+    border: 4px solid black;
+    background-color: rgba(255, 196, 0, 0.274);
+}
+.catContainer {
+    margin-top: 2%;
+    flex-wrap: wrap;
+}
+
+.catInput {
+    caret-color: rgb(0, 0, 0);
+}
+
+.catImg {
+    border: 4px solid black;
+    background-color: wheat;
+}
+
+@media screen and (max-width: 800px) {
+    .catgen-container{
+        border: 2px solid black;
+    }
+    .catImg {
+        border: 2px solid black;
+        background-color: wheat;
+    }
+}
+@media screen and (max-width: 500px) {
+    .catgen-container{
+        margin-left: 6%;
+        border: 2px solid black;
+    }
+}
+@media screen and (max-width: 500px) {
+    .catImg {
+        width: 100%;
+        height: 100%;
+        margin-left: -1%;
+    }
+
+}
+/*#endregion cat generator*/
 
 /*#endregion universal*/
 
 /*#region Mobile*/
 
-@media screen and (min-width: 700px) and (max-width: 799px) {
-    
-}
-@media screen and (min-width: 600px) and (max-width: 699px) {
-    
-}
-@media screen and (min-width: 500px) and (max-width: 599px) {
-    
-}
-@media screen and (min-width: 400px) and (max-width: 499px) {
-    
-}
-@media screen and (min-width: 300px) and (max-width: 399px) {
-    
-}
+@media screen and (min-width: 700px) and (max-width: 799px) {}
+
+@media screen and (min-width: 600px) and (max-width: 699px) {}
+
+@media screen and (min-width: 500px) and (max-width: 599px) {}
+
+@media screen and (min-width: 400px) and (max-width: 499px) {}
+
+@media screen and (min-width: 300px) and (max-width: 399px) {}
+
 /*#endregion mobile*/
 
 /*#region desktop*/
-@media screen and (min-device-width: 1000px) and (max-device-width: 2000px) {
-    /*API*/
-.api-container {
-    overflow: "hidden";
-    text-align: center;
-    width: 80%;
-    border: 4px solid black;
-    padding: 10px;
-    margin-left: 10%;
-    margin-top: 2%;
+@media screen and (min-device-width: 800px) and (max-device-width: 2000px) {
 
-    background-color: rgba(255, 196, 0, 0.274);
-}
-.quoteButton{
-    background-color: rgba(121, 101, 36, 0.69);
-    font-size: large;
-    border: 4px solid black;
-    padding: 6px 8px;
-    margin-top: 14px;
-    margin-right: 0px;
-}
-.quoteButton:hover{
-    cursor: pointer;
-    background-color: rgb(255, 196, 0);
-}
-.contentRestrictor-api {
-    display: inline-block;
-    max-width: 80%;
-    height: 1.5em;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-
-    list-style: none;
-}
-/*Cat API*/
-.catContainer{
-    margin-top: auto;
-    flex-wrap: wrap;
     
-}
-.catInput{
-    caret-color: rgb(0, 0, 0);
-}
-.catImg{
-    border: 4px solid black;
-    background-color: wheat;
-}
 
 }
+
 /*#endregion*/
-
-/*
-.ajax-title {
-        text-align: center;
-        width: 80%;
-        border: 4px solid black;
-        padding: 10px;
-        margin-left: 10%;
-        margin-top: 2%;
-
-        background-color: rgba(255, 196, 0, 0.274);
-    }
-
-*/

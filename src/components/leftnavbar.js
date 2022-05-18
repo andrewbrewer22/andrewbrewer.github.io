@@ -37,16 +37,10 @@ function LeftNavbar() {
         <span className="br" id="bold-this">
           React
         </span>
-        {/* <span className="br">blahblahblah:</span>
-        <span className="br" id="bold-this">
-          blahblahblah
-        </span> */}
         <hr className="divider-line"></hr>
       </section>
 
       <section className="my-projects">
-        {/*<span className="br" id="bold-this">My Example Projects</span>*/}
-
         <button onClick={() => extendProjectMenu()} className="dropbtn"></button>
         <div id="projectDropdown" className="project-dropdown-content">
           <span className="br">
@@ -74,15 +68,6 @@ function LeftNavbar() {
               API Demonstration
             </button>
           </span>
-          {/*
-          <span className="br">
-            <button onClick={() => {
-              navigate("/homeBuyer");
-            }} id="link-button">
-              Find a Home under a price
-            </button>
-          </span>
-          */}
           <span className="br">
             <button
               onClick={() => {
@@ -93,7 +78,7 @@ function LeftNavbar() {
               Picture Gallery
             </button>
           </span>
-          <span className="br">
+{/*           <span className="br">
             <button
               onClick={() => {
                 navigate("/cosmicnumber");
@@ -102,7 +87,7 @@ function LeftNavbar() {
             >
               Cosmic Number
             </button>
-          </span>
+          </span> */}
         </div>
       </section>
 

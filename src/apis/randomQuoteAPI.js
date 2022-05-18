@@ -1,6 +1,4 @@
-
- import React from "react";
- import "../styles/mainStyle.css";
+import React from "react";
 import "../styles/api.css";
 
 export default class RandomQuoteAPI extends React.Component {
@@ -46,6 +44,7 @@ export default class RandomQuoteAPI extends React.Component {
 
     render() {
         const { error, isLoaded, items } = this.state;
+
         if (error) {
             return <div className="api-container">Error: {error.message}</div>;
         } else if (!isLoaded) {
@@ -53,18 +52,17 @@ export default class RandomQuoteAPI extends React.Component {
         } else {
             
             return (
-                <ul className="api-container">
-                    Random Quote Generator
+                <div className="quote-container">
+                    <span id="bold-this">Random Quote Generator</span>
                     <pre >
-                        Author: {items.author}
+                        Author: <span id="bold-this">{items.author}</span>
                         <br />
-                        <li className="contentRestrictor-api"><q>{items.content}</q></li>
+                        <div className="quote-content"><q>{items.content}</q></div>
                         <br />
-                        (Quote ID: {items._id})
+                        (Quote ID: <span id="bold-this">{items._id}</span>)
                     </pre>
-
-                    <button className="quoteButton" onClick={this.apiFetch}>Refresh</button>
-                </ul>
+                    <button className="quoteButton" onClick={this.apiFetch}>New Quote</button>
+                </div>
             );
         }
     }

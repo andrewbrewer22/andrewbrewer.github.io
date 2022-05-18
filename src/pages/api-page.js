@@ -1,10 +1,8 @@
 import React from "react";
-import "../styles/api.css";
 import "../styles/mainStyle.css";
 import Leftnavbar from "../components/leftnavbar";
 import RandomCatGenerator from "../apis/randomCatGenerator";
 import RandomQuoteAPI from "../apis/randomQuoteAPI";
-import { isDOMComponent } from "react-dom/test-utils";
 
 export default class APIDEMO extends React.Component {
     render() {

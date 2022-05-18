@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/api.css";
-import "../styles/mainStyle.css";
 
 export default class RandomCatGenerator extends React.Component {
 
@@ -29,8 +28,10 @@ export default class RandomCatGenerator extends React.Component {
     render() {
         const { catText } = this.state;
         return (
-            <ul className="api-container">
-                Random Cat Generator
+            <div className="catgen-container">
+                {/*Robot for some reason?????? Maybe cat appending is broken on there end
+                I tested in a seperate browser and confirmed this */}
+                <span id="bold-this">Procedural Robot Generator</span>
                 <pre className="catContainer">
                     <div className="catInputContainer">
                         <input className="catInput" placeholder="Put Some Words Here!" 
@@ -40,7 +41,7 @@ export default class RandomCatGenerator extends React.Component {
                     <br />
                     <img  className="catImg" alt="img" src={"https://robohash.org/" + catText + "/?set=set4"}></img>
                 </pre>
-            </ul>
+            </div>
         );
     }
 
