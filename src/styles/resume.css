@@ -10,6 +10,11 @@
 
 /*#region boundry parameters*/
 @media screen and (max-width: 799px){
+    .resume-title{
+
+        font-size: 200%;
+        font-family: "AlexBrush-Regular";
+    }
     .self-portrait {
         width: 138px;
         height: 184px;
@@ -37,6 +42,11 @@
     }
 }
 @media screen and (min-width: 800px){
+    .resume-title{
+        margin-right: 3%;
+        font-size: 400%;
+        font-family: "AlexBrush-Regular";
+    }
     .self-portrait {
         width: 276px;
         height: 368px;
