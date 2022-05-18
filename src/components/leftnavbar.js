@@ -25,19 +25,22 @@ function LeftNavbar() {
       </section>
 
       <section className="resources">
+      <span className="br" id="bold-this">
+          Proficiencies
+        </span>
         <span className="br">Programming Languages:</span>
         <span className="br" id="bold-this">
           {" "}
-          HTML, CSS, JS, C#
+          HTML, CSS, JS
         </span>
         <span className="br">Frameworks and Libraries:</span>
         <span className="br" id="bold-this">
           React
         </span>
-        <span className="br">blahblahblah:</span>
+        {/* <span className="br">blahblahblah:</span>
         <span className="br" id="bold-this">
           blahblahblah
-        </span>
+        </span> */}
         <hr className="divider-line"></hr>
       </section>
 
