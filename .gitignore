@@ -10,9 +10,10 @@
 
 # production
 /build
-public/app/contactmeServer.js
+
 
 # misc
+contactmeServer.js
 .DS_Store
 .env.local
 .env.development.local
