@@ -15,3 +15,21 @@
     src: local("AlexBrush-Regular"),
         url("../fonts/AlexBrush-Regular.ttf") format("truetype");
 }
+/*Demo*/
+@font-face{
+    font-family: "Abasalom";
+    src: local("Abasalom"),
+        url("../fonts/Abasalom.otf") format("opentype");
+}
+
+@font-face{
+    font-family: "OregonLdo-d9q7";
+    src: local("OregonLdo-d9q7"),
+        url("../fonts/OregonLdo-d9q7.ttf") format("truetype");
+}
+/*Demo*/
+@font-face{
+    font-family: "Pandemi";
+    src: local("Pandemi"),
+        url("../fonts/Pandemi.ttf") format("truetype");
+}

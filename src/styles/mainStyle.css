@@ -199,6 +199,37 @@
         text-align: center;
     }
 
+    .home-title {
+        width: 80%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 7%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+
+        font-family: "Abasalom";
+        font-size: 200%;
+
+        background-color: rgba(255, 196, 0, 0.274);
+    }
+    .home-container{
+        width: 80%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 7%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        background-color: rgba(255, 196, 0, 0.274);
+
+        font-family: "Abasalom";
+        font-size: 100%;
+    }
+    .home-points{
+        margin-left: -6%;
+        margin-top: -1%;
+        display: inline-block;
+    }
+
     .divider-line {
         background-color: black;
         height: 0px;
@@ -255,8 +286,29 @@
         padding: 10px;
         margin-left: 10%;
         margin-top: 2%;
+        margin-bottom: 2%;
+
+        font-family: "Abasalom";
+        font-size: 300%;
 
         background-color: rgba(255, 196, 0, 0.274);
+    }
+    .home-container{
+        width: 80%;
+        border: 4px solid black;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        background-color: rgba(255, 196, 0, 0.274);
+
+        font-family: "Abasalom";
+        font-size: 130%;
+    }
+    .home-points{
+        margin-left: -5%;
+        margin-top: -1%;
+        display: inline-block;
     }
 
     .contact-info {
@@ -310,6 +362,10 @@
     .rightbreak{
         margin-left: -12px;
     }
+
+    .home-points{
+        margin-left: -8%;
+    }
 }
 @media screen and (min-width: 400px) and (max-width: 499px) {
 
@@ -320,6 +376,10 @@
     .rightbreak{
         margin-left: -13px;
     }
+
+    .home-points{
+        margin-left: -10%;
+    }
 }
 @media screen and (min-width: 300px) and (max-width: 399px) {
 
@@ -329,6 +389,10 @@
     }
     .rightbreak{
         margin-left: -14px;
+    }
+
+    .home-points{
+        margin-left: -13%;
     }
 }
 /*#endregion */
