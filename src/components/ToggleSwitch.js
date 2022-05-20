@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import "../styles/ToggleSwitch.css";
-import "../fonts/Freshman.ttf";
-import "../fonts/MKBritishWriting.ttf";
 import "../styles/fonts.css";
 
 var unitofmeasurment = "";
