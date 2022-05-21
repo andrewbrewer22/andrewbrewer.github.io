@@ -17,7 +17,35 @@ const pictures = [
   require("../images/sofiamoose_04.JPG"),
 ];
 
+let slideIndex = 1;
+
 export default class PictureGalleryComponent extends React.Component {
+  
+  constructor(props) {
+    super(props);
+    this.showSlides = this.showSlides.bind(this);
+    this.plusSlides = this.plusSlides.bind(this);
+  }
+
+  componentDidMount(){
+    this.showSlides(slideIndex);
+  }
+  // Next/previous controls
+  plusSlides(n) {
+    this.showSlides(slideIndex += n);
+  }
+  
+  showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
+  }
+
   render() {
     return (
       <section className="rightbreak">
@@ -25,7 +53,51 @@ export default class PictureGalleryComponent extends React.Component {
           <p>Picture Gallery</p>
         </div>
 
-        {/* <div className="slideshow-container">
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img className="gallery-photo"
+              src={pictures[0]}
+              alt="lakeside_01"></img>
+            <div class="text">Caption Text</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img
+              className="gallery-photo"
+              src={pictures[1]}
+              alt="lakeside_02"
+            ></img>
+            <div class="text">Caption Two</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img
+              className="gallery-photo"
+              src={pictures[2]}
+              alt="lakeside_03"
+            ></img>
+            <div class="text">Caption Three</div>
+          </div>
+
+          <a class="prev" onclick={this.plusSlides(-1)}>&#10094;</a>
+          <a class="next" onclick={this.plusSlides(1)}>&#10095;</a>
+
+        </div>
+
+      </section>
+    );
+  }
+}
+
+
+
+
+// #region 
+{/* <div className="slideshow-container">
           <div className="mySlides fade">
             <img
               className="gallery-photo"
@@ -58,9 +130,7 @@ export default class PictureGalleryComponent extends React.Component {
           </button>
         </div> */}
 
-
-
-        {/*
+{/*
         <section className="gallery-content">
           <img
             className="gallery-photo"
@@ -129,40 +199,4 @@ export default class PictureGalleryComponent extends React.Component {
           ></img> 
         </section>
         */}
-      </section>
-    );
-  }
-}
-
-/* let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-} */
+//#endregion

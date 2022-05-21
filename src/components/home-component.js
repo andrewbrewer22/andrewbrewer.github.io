@@ -19,7 +19,7 @@ export default class HomeComponent extends React.Component{
                         <li>Resume</li>
                         <li>BMI Calculator</li>
                         <li>API demonstration</li>
-                        <li>Picture Gallery</li>
+                        {/* <li>Picture Gallery</li> */}
                     </ul>
                 </div>
             </section>

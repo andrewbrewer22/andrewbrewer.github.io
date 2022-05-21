@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 //useParams,   Link
-import ContactMe from "./contactMe";
+//import ContactMe from "./contactMe";
 //style
 import "../styles/mainStyle.css";
 
@@ -68,7 +68,7 @@ function LeftNavbar() {
               API Demonstration
             </button>
           </span>
-          <span className="br">
+          {/* <span className="br">
             <button
               onClick={() => {
                 navigate("/picturegallery");
@@ -76,16 +76,6 @@ function LeftNavbar() {
               id="link-button"
             >
               Picture Gallery
-            </button>
-          </span>
-{/*           <span className="br">
-            <button
-              onClick={() => {
-                navigate("/cosmicnumber");
-              }}
-              id="link-button"
-            >
-              Cosmic Number
             </button>
           </span> */}
         </div>
