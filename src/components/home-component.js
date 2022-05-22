@@ -11,7 +11,7 @@ export default class HomeComponent extends React.Component{
                 </div>
 
                 <div className="home-container">
-                    <p>This Website is built in React to demonstrate my current skills!</p>
+                    <p>This Website is built in <span id="bold-this">ReactJS</span> to demonstrate my current skills!</p>
                     <p id="bold-this">Things to expect</p>
                     <p className="divider-line "></p>
 

@@ -74,7 +74,7 @@ export default class Resume extends React.Component {
             trained as a{" "}
             <span id="bold-this">Joint Fire Support Specialist</span> (MOS:
             13F). My primary responsibility was to gain{" "}
-            <span id="bold-this">accurate target information</span>
+            <span id="bold-this">accurate target information </span>
             which included{" "}
             <span id="bold-this">
               identification, location, and the correct munitions
@@ -83,7 +83,7 @@ export default class Resume extends React.Component {
             systems, aircraft and naval batteries) to incapacitate or destroy
             the target in{" "}
             <span id="bold-this">
-              support of the advancement of friendly troops.
+              support of the advancement of friendly troops. 
             </span>
             My secondary responsibility was to{" "}
             <span id="bold-this">maintain</span> radio and gps/satellite{" "}
@@ -93,10 +93,12 @@ export default class Resume extends React.Component {
             <span id="bold-this">communications with our leadership </span>
             regardless of rank or position. This meant that we were to give{" "}
             <span id="bold-this">briefs</span>, or other important information
-            to higher ranking officers and Non Commissioned officers in a{" "}
+            to higher ranking officers and NonCommissioned officers in a{" "}
             <span id="bold-this">precise and coherent</span> manner.
           </p>
         </div>
+
+        <div class="resume-text">Personal Experience here</div>
       </section>
     );
   }
