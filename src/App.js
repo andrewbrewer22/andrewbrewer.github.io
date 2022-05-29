@@ -3,12 +3,16 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import ErrorPage from "./pages/errorpage";
+/*Portfolio Imports*/
 import ResumePage from "./pages/Resume-page";
 import BMICalcPage from "./pages/bmi-page";
 import APIDEMO from "./pages/api-page";
 import PictureGalleryPage from "./pages/picturegallery-page";
 import HomePage from "./pages/home-page";
 /* import CosmicNumber from "./pages/cosmicNumber-page"; */
+
+/*Shopping Imports*/
+import ShoppingPage from "./shop/shoppingPage";
 
 //tools
 import ScrollToTop from "./tools/ScrollToTop";
@@ -21,12 +25,16 @@ function App() {
       <Router >
         <ScrollToTop />
         <Routes >
+          {/*Personal Portfolio*/}
           <Route path="/" element={<HomePage />} />
-          <Route path="resume" element={<ResumePage />} />
-          <Route path="bmicalc" element={<BMICalcPage />} />
-          <Route path="api" element={<APIDEMO />} />
-          <Route path="picturegallery" element={<PictureGalleryPage />} />
+          <Route path="portfolio/resume" element={<ResumePage />} />
+          <Route path="portfolio/bmicalc" element={<BMICalcPage />} />
+          <Route path="portfolio/api" element={<APIDEMO />} />
+          <Route path="portfolio/picturegallery" element={<PictureGalleryPage />} />
           {/* <Route path="cosmicnumber" element={<CosmicNumber />} /> */}
+
+          {/*Shopping*/}
+          <Route path="shop/" element={<ShoppingPage />} />
 
           {/*Error page*/}
           <Route path="*" element={<ErrorPage />} />

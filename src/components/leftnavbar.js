@@ -45,13 +45,13 @@ function LeftNavbar() {
         <div id="projectDropdown" className="project-dropdown-content">
           <span className="br">
             <button
-              onClick={() => { navigate("/resume"); }}
+              onClick={() => { navigate("/portfolio/resume"); }}
               id="link-button">Resume</button>
           </span>
           <span className="br">
             <button
               onClick={() => {
-                navigate("/bmicalc");
+                navigate("/portfolio/bmicalc");
               }}
               id="link-button"
             >
@@ -61,7 +61,7 @@ function LeftNavbar() {
           <span className="br">
             <button
               onClick={() => {
-                navigate("/api");
+                navigate("/portfolio/api");
               }}
               id="link-button"
             >

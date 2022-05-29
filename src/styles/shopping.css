@@ -1,0 +1,187 @@
+
+/*#region Universal*/
+
+/*#region Colors*/
+.green{
+    background-color: aquamarine;
+}
+/*#endregion colors*/
+
+/*#region Main*/
+.body{
+    background-color: rgb(65, 65, 65);
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    text-align: center;
+}
+.head-curtain{
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 200px;
+    right: 0%;
+    top: -10%;
+}
+.break-container{
+    width: 50%;
+}
+
+/*#endregion main*/
+
+/*#region Navbar*/
+
+
+/*#region Drop down menu*/
+
+/* Dropdown Button */
+.dropbtn {
+    caret-color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    background-image: url(../images/dropDownImg.png);
+    background-repeat: no-repeat;
+
+    background-color: black;
+    transition: background-color 0.3s linear;
+
+    background-position: 10% 10%;
+    height: 40px;
+    width: 40px;
+}
+
+.dropbtn span {
+    display: none;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover {
+    background-color: #12e072c9;
+}
+/* Dropdown Content (Hidden by Default) */
+.project-dropdown-content {
+    display: none;
+    text-align: center;
+    background-color: #f1f1f100;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(13, 191, 111, 0.2);
+    background-color: #64b7a6;
+    z-index: 1;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+
+/*Content Buttons*/
+#link-button {
+    background-color: #6bb186;
+    border: 1px solid black;
+    font-weight: lighter;
+    font-size: 100%;
+}
+
+#link-button:hover {
+    background-color: rgba(44, 198, 139);
+    border: 1px solid black;
+    font-weight: lighter;
+    font-size: 100%;
+    /*Changes mouse cursor to pointer*/
+    cursor: pointer;
+}
+
+/*#endregion dropdown*/
+
+/*#endregion*/
+
+/*#endregion universal*/
+
+/*#region Boundries*/
+@media screen and (max-width: 799px) {
+    /*Left Break: nav side*/
+    .leftbreak {
+        position: fixed;
+        background-color: #6D623E;
+        width: 98%;
+        height: 125px;
+        margin-top: -4px;
+        margin-left: -11px;
+        border: 1px solid black;
+        
+        text-align: center;
+    }
+
+    .divider-line {
+        background-color: black;
+        height: 0px;
+        border: none;
+    }
+
+    /*Right Break: content side*/
+    .main-title{
+        margin-top: 2%;
+        margin-bottom: 2%;
+
+        font-size: 18px;
+    }
+
+    .main-section {
+        z-index: -1;
+        background-color: rgba(212, 175, 55, 0.5);
+        width: 98%;
+        margin-top: 128px;
+        margin-left: -11px;
+        position: absolute;
+        border: 1px solid black;
+        text-align: center;
+    }
+}
+/*Over 800px*/
+@media screen and (min-width: 800px) {
+        /*Left Break: nav side*/
+        .leftbreak {
+        position: fixed;
+        background-color: rgba(55, 212, 212);
+        width: 20%;
+        margin-left: 0%;
+        margin-top: 0%;
+        height: 96%;
+
+        border: 4px solid black;
+        /*For Modals to be displayed ontop of right break*/
+        z-index: 1;
+    }
+
+    .divider-line {
+        background-color: black;
+        height: 3px;
+        border: none;
+    }
+
+    /*Right Break: content side*/
+    .main-section {
+        background-color: rgba(55, 212, 212);
+        position: absolute;
+        width: 75%;
+        margin-left: 22%;
+        border: 4px solid black;
+    }
+    .main-content{
+        margin-top: 2%;
+        margin-bottom: 2%;
+        background-color: rgb(92, 173, 173);
+        border: 4px solid black;
+        width: 75%;
+    }
+    .main-title{
+        margin-top: 2%;
+        margin-bottom: 2%;
+
+        font-size: 18px;
+    }
+}
+/*#endregion boundries*/

@@ -10,11 +10,8 @@ export default class PictureGalleryPage extends React.Component {
             <body class="body">
                 <section className="testingHead"></section>
                 <section class="break-container">
-
                     <Leftnavbar />
-
                     <PictureGalleryComponent />
-
                 </section>
             </body>
         );
