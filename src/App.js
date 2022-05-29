@@ -17,6 +17,7 @@ import ShoppingPage from "./shop/shoppingPage";
 //tools
 import ScrollToTop from "./tools/ScrollToTop";
 
+
 //https://andrewbrewer.github.io (this was originally in the homepage section in package.json)
 function App() {
   return (
@@ -31,7 +32,6 @@ function App() {
           <Route path="portfolio/bmicalc" element={<BMICalcPage />} />
           <Route path="portfolio/api" element={<APIDEMO />} />
           <Route path="portfolio/picturegallery" element={<PictureGalleryPage />} />
-          {/* <Route path="cosmicnumber" element={<CosmicNumber />} /> */}
 
           {/*Shopping*/}
           <Route path="shop/" element={<ShoppingPage />} />

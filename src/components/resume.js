@@ -6,7 +6,7 @@ import "../styles/fonts.css";
 export default class Resume extends React.Component {
   render() {
     return (
-      <section class="rightbreak">
+      <section class="rightbreak portfolio-color-2">
         <div>
           <span className="resume-title" id="bold-this">
             Andrew Brewer
@@ -14,13 +14,13 @@ export default class Resume extends React.Component {
         </div>
         <div>
           <img
-            class="self-portrait"
+            class="self-portrait portfolio-color-3"
             src={require("../images/Andrew_Brewer.jpg")}
             alt="Andrew_Brewer"
           ></img>
         </div>
 
-        <div class="resume-text">
+        <div class="resume-text portfolio-color-3">
           <p>
             Thank you for taking the time to check out my website! I created
             this React app from scratch to demonstrate my competency and
@@ -31,13 +31,13 @@ export default class Resume extends React.Component {
 
         <div>
           <img
-            class="lca-certificate"
+            class="lca-certificate portfolio-color-3"
             src={require("../images/lcacertificate.png")}
             alt="lcaCertificate"
           ></img>
         </div>
 
-        <div class="resume-text">
+        <div class="resume-text portfolio-color-3">
           <p>
             Through the Austin Coding Academy, I learned the major parts of
             developing a website. Initially, <span id="bold-this">GitHub</span>{" "}
@@ -62,13 +62,13 @@ export default class Resume extends React.Component {
 
         <div>
           <img
-            class="dirtymike"
+            class="dirtymike portfolio-color-3"
             src={require("../images/dirtmikeandtheboys.jpeg")}
             alt="dirtmikeandtheboys"
           ></img>
         </div>
 
-        <div class="resume-text">
+        <div class="resume-text portfolio-color-3">
           <p>
             During my service in the <span id="bold-this">U.S. Army,</span> I
             trained as a{" "}
@@ -96,7 +96,7 @@ export default class Resume extends React.Component {
           </p>
         </div>
 
-        <div class="resume-text">Personal Experience here</div>
+        {/* <div class="resume-text" id="portfolio-color-3">Personal Experience here</div> */}
       </section>
     );
   }

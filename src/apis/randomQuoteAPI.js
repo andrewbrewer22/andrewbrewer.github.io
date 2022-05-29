@@ -52,7 +52,7 @@ export default class RandomQuoteAPI extends React.Component {
         } else {
             
             return (
-                <div className="quote-container">
+                <div className="quote-container portfolio-color-2">
                     <span id="bold-this">Random Quote Generator</span>
                     <pre >
                         Author: <span id="bold-this">{items.author}</span>

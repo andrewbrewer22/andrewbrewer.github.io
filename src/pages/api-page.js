@@ -12,7 +12,7 @@ export default class APIDEMO extends React.Component {
                     <section class="break-container">
                         <Leftnavbar />
 
-                        <section className="rightbreak">
+                        <section className="rightbreak portfolio-color-1">
                             <RandomQuoteAPI />
 
                             <RandomCatGenerator />

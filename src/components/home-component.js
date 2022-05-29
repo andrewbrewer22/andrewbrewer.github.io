@@ -3,13 +3,13 @@ import React from "react";
 export default class HomeComponent extends React.Component{
     render(){
         return(
-            <section className="rightbreak" id="gold-trans-50">
-                <div className="home-title">
+            <section className="rightbreak" id="portfolio-color-2">
+                <div className="home-title" id="portfolio-color-3">
                     <p>Welcome To my website!</p>
                     <p>Click on the navbar to get started</p>
                 </div>
 
-                <div className="home-container">
+                <div className="home-container" id="portfolio-color-3">
                     <p>This Website is built in <span id="bold-this">ReactJS</span> to demonstrate my current skills!</p>
                     <p id="bold-this">Things to expect</p>
                     <p className="divider-line "></p>

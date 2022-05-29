@@ -1,16 +1,32 @@
 /*#region Colors*/
-#gold-solid{
+
+.curtain-color-1{
+    background-color: rgb(65, 65, 65);
+}
+.curtain-color-2{
+    background-color: rgb(255, 255, 255);
+}
+
+/*portfolio color scheme*/
+.portfolio-color-1{
     background-color: #6D623E;
 }
-#gold-trans-50{
+.portfolio-color-2{
     background-color: rgba(212, 175, 55, 0.5);
 }
-#gold-trans-274{
+.portfolio-color-3{
     background-color: rgba(255, 196, 0, 0.274);
 }
 
-.green{
-    background-color: aquamarine;
+/*Shop color scheme*/
+.shop-color-1{
+    background-color: rgb(127, 255, 148);
+}
+.shop-color-2{
+    background-color: rgba(99, 212, 55, 0.5);
+}
+.shop-color-3{
+    background-color: rgba(0, 255, 0, 0.274);
 }
 
 /*Drop down gold*/

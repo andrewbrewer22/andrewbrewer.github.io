@@ -1,12 +1,4 @@
 /*#region Universal*/
-/*Resume*/
-.self-portrait {
-    background-color: rgba(255, 196, 0, 0.274);
-}
-.resume-text{
-    background-color: rgba(255, 196, 0, 0.274);
-}
-/*#endregion*/
 
 /*#region boundry parameters*/
 @media screen and (max-width: 799px){

@@ -9,7 +9,7 @@ function LeftNavbar() {
   let navigate = useNavigate();
 
   return (
-    <section className="leftbreak" id="gold-solid">
+    <section className="leftbreak portfolio-color-1">
       <span className="leftbreak-background-setter"></span>
 
       <section className="contact-info">

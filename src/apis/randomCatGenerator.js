@@ -28,8 +28,8 @@ export default class RandomCatGenerator extends React.Component {
     render() {
         const { catText } = this.state;
         return (
-            <div className="catgen-container">
-                {/*Robot for some reason?????? Maybe cat appending is broken on there end
+            <div className="catgen-container portfolio-color-2">
+                {/*Robot for some reason?????? Maybe cat appending is broken on there end,
                 I tested in a seperate browser and confirmed this */}
                 <span id="bold-this">Procedural Robot Generator</span>
                 <pre className="catContainer">

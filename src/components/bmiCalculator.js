@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../styles/bmi.css";
 
 /*BMI Formula
@@ -70,17 +70,17 @@ export default class BMICalculator extends React.Component {
 
   render() {
     return (
-      <section className="rightbreak">
-        <div className="bmi-explanation">
+      <section className="rightbreak portfolio-color-1">
+        <div className="bmi-explanation portfolio-color-2">
           <p className="exp-textbox">
             The BMI (Body Mass Index) Calculator is used to determine body fat
             in an individual based on height and weight.
           </p>
         </div>
 
-        <div className="bmi-content">
+        <div className="bmi-content portfolio-color-2">
 
-          <div className="bmi-inputbox-container">
+          <div className="bmi-inputbox-container" >
             <input
               className="bmi-inputbox"
               type="text"
@@ -120,7 +120,7 @@ export default class BMICalculator extends React.Component {
           {/*Toggle Switch*/}
         </div>
 
-        <div className="bmi-content" id="bmi-calculated">
+        <div className="bmi-content portfolio-color-2" id="bmi-calculated">
           BMI:{" "}
         </div>
       </section>

@@ -3,15 +3,12 @@
 
 /*#region Main*/
 .body{
-    background-color: rgb(65, 65, 65);
-
     -ms-overflow-style: none;
     scrollbar-width: none;
     text-align: center;
 }
 .head-curtain{
     position: fixed;
-    background-color: rgb(255, 255, 255);
     width: 100%;
     height: 200px;
     right: 0%;
@@ -50,7 +47,7 @@
 
 /* Dropdown button on hover & focus */
 .dropbtn:hover {
-    background-color: #12e072c9;
+
 }
 /* Dropdown Content (Hidden by Default) */
 .project-dropdown-content {
@@ -58,10 +55,9 @@
     text-align: center;
     background-color: #f1f1f100;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(13, 191, 111, 0.2);
-    background-color: #64b7a6;
+    /* box-shadow: 0px 8px 16px 0px rgba(13, 191, 111, 0.2); */
     z-index: 1;
-    
+
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -73,14 +69,14 @@
 
 /*Content Buttons*/
 #link-button {
-    background-color: #6bb186;
+    /* background-color: #6bb186; */
     border: 1px solid black;
     font-weight: lighter;
     font-size: 100%;
 }
 
 #link-button:hover {
-    background-color: rgba(44, 198, 139);
+    /* background-color: rgba(44, 198, 139); */
     border: 1px solid black;
     font-weight: lighter;
     font-size: 100%;
@@ -99,7 +95,6 @@
     /*Left Break: nav side*/
     .leftbreak {
         position: fixed;
-        background-color: #6D623E;
         width: 98%;
         height: 125px;
         margin-top: -4px;
@@ -119,13 +114,11 @@
     .main-title{
         margin-top: 2%;
         margin-bottom: 2%;
-
         font-size: 18px;
     }
 
     .main-section {
         z-index: -1;
-        background-color: rgba(212, 175, 55, 0.5);
         width: 98%;
         margin-top: 128px;
         margin-left: -11px;
@@ -143,7 +136,6 @@
         margin-left: 0%;
         margin-top: 0%;
         height: 96%;
-
         border: 4px solid black;
         /*For Modals to be displayed ontop of right break*/
         z-index: 1;
@@ -157,16 +149,15 @@
 
     /*Right Break: content side*/
     .main-section {
-        background-color: rgba(55, 212, 212);
         position: absolute;
         width: 75%;
         margin-left: 22%;
         border: 4px solid black;
     }
     .main-content{
+        margin-left: 11%;
         margin-top: 2%;
         margin-bottom: 2%;
-        background-color: rgb(92, 173, 173);
         border: 4px solid black;
         width: 75%;
     }

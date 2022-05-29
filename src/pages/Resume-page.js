@@ -9,7 +9,7 @@ export default class ResumePage extends React.Component {
         document.body.style = 'background: rgb(65, 65, 65);';
         return (
                 <body class="body">
-                    <section className="testingHead"></section>
+                    <section className="testingHead curtain-color-1"></section>
                     <section class="break-container">
                         <Leftnavbar />
                         <Resume />

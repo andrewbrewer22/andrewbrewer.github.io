@@ -68,7 +68,7 @@
     font-weight: bold;
 }
 .body {
-    background-color: rgb(65, 65, 65);
+    /* background-color: rgb(65, 65, 65); */
 
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -154,14 +154,12 @@
 /*Hide content when scrolling up*/
 .testingHead {
     position: fixed;
-    background-color: rgb(65, 65, 65);
     width: 100%;
     height: 200px;
     right: 0%;
     top: -10%;
 }
 .leftbreak-background-setter {
-    background-color: rgb(65, 65, 65);
     width: 100%;
     height: 100%;
     margin-top: 1%;
