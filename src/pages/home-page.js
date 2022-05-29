@@ -1,7 +1,9 @@
 import React from "react";
 import HomeComponent from "../components/home-component";
 import LeftNavbar from "../components/leftnavbar";
+
 import "../styles/mainStyle.css";
+import "../styles/colorScheme.css";
 
 export default class HomePage extends React.Component{
     render(){

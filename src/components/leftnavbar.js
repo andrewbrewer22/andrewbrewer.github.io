@@ -3,13 +3,13 @@ import { useNavigate } from "react-router-dom";
 //useParams,   Link
 //import ContactMe from "./contactMe";
 //style
-import "../styles/mainStyle.css";
+//import "../styles/mainStyle.css";
 
 function LeftNavbar() {
   let navigate = useNavigate();
 
   return (
-    <section className="leftbreak">
+    <section className="leftbreak" id="gold-solid">
       <span className="leftbreak-background-setter"></span>
 
       <section className="contact-info">

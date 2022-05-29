@@ -1,0 +1,21 @@
+/*#region Colors*/
+#gold-solid{
+    background-color: #6D623E;
+}
+#gold-trans-50{
+    background-color: rgba(212, 175, 55, 0.5);
+}
+#gold-trans-274{
+    background-color: rgba(255, 196, 0, 0.274);
+}
+
+.green{
+    background-color: aquamarine;
+}
+
+/*Drop down gold*/
+.gold-drop-solid{
+    background-color: #e0a912c9;
+}
+
+/*#endregion colors*/

@@ -1,12 +1,6 @@
 
 /*#region Universal*/
 
-/*#region Colors*/
-.green{
-    background-color: aquamarine;
-}
-/*#endregion colors*/
-
 /*#region Main*/
 .body{
     background-color: rgb(65, 65, 65);
@@ -145,7 +139,6 @@
         /*Left Break: nav side*/
         .leftbreak {
         position: fixed;
-        background-color: rgba(55, 212, 212);
         width: 20%;
         margin-left: 0%;
         margin-top: 0%;

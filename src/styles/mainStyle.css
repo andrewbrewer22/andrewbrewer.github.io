@@ -176,7 +176,7 @@
 @media screen and (max-width: 799px) {
     .leftbreak {
         position: fixed;
-        background-color: #6D623E;
+        /* background-color: rgba(212, 175, 55, 0.3); */
         width: 98%;
         height: 125px;
         margin-top: -4px;
@@ -189,7 +189,7 @@
     /*Right Break: content side*/
     .rightbreak {
         z-index: -1;
-        background-color: rgba(212, 175, 55, 0.5);
+        /* background-color: rgba(212, 175, 55, 0.5); */
         width: 98%;
         margin-top: 128px;
         margin-left: -11px;
@@ -209,7 +209,7 @@
         font-family: "Abasalom";
         font-size: 200%;
 
-        background-color: rgba(255, 196, 0, 0.274);
+        /* background-color: rgba(255, 196, 0, 0.274); */
     }
     .home-container{
         width: 80%;
@@ -218,7 +218,7 @@
         margin-left: 7%;
         margin-top: 2%;
         margin-bottom: 2%;
-        background-color: rgba(255, 196, 0, 0.274);
+        /* background-color: rgba(255, 196, 0, 0.274); */
 
         font-family: "Abasalom";
         font-size: 100%;
@@ -268,7 +268,7 @@
     /*Left Break: Contact info, resources, my links, project links*/
     .leftbreak {
         position: fixed;
-        background-color: rgba(212, 175, 55, 0.3);
+        /* background-color: rgba(212, 175, 55, 0.3); */
         width: 20%;
         margin-left: 0%;
         margin-top: 0%;
@@ -290,7 +290,7 @@
         font-family: "Abasalom";
         font-size: 300%;
 
-        background-color: rgba(255, 196, 0, 0.274);
+        /* background-color: rgba(255, 196, 0, 0.274); */
     }
     .home-container{
         width: 80%;
@@ -299,7 +299,7 @@
         margin-left: 10%;
         margin-top: 2%;
         margin-bottom: 2%;
-        background-color: rgba(255, 196, 0, 0.274);
+        /* background-color: rgba(255, 196, 0, 0.274); */
 
         font-family: "Abasalom";
         font-size: 130%;
@@ -340,7 +340,7 @@
     }
 
     .rightbreak {
-        background-color: rgba(212, 175, 55, 0.5);
+        /* background-color: rgba(212, 175, 55, 0.5); */
         position: absolute;
         width: 75%;
         margin-left: 22%;

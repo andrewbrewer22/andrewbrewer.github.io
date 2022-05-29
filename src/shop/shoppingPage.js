@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/shopping.css";
+/* import "../styles/shopping.css"; */
 import ShoppingComponent from "../shop/shoppingComponent";
 import ShoppingNavbar from "./shoppingNavbar";
 

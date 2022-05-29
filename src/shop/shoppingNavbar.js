@@ -13,10 +13,6 @@ function ShoppingNavbar() {
                     Shopping
                 </span>
                 <span className="br">Null</span>
-                {/*
-          <span className="br">253-244-8669</span>
-          <span className="br">andrewwilsonbrewer22@gmail.com</span>
-          */}
                 <hr className="divider-line"></hr>
             </section>
 
@@ -64,16 +60,6 @@ function ShoppingNavbar() {
                             Null
                         </button>
                     </span>
-                    {/* <span className="br">
-            <button
-              onClick={() => {
-                navigate("/picturegallery");
-              }}
-              id="link-button"
-            >
-              Picture Gallery
-            </button>
-          </span> */}
                 </div>
             </section>
 
