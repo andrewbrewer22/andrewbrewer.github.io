@@ -8,6 +8,48 @@ export default class ShoppingComponent extends React.Component {
                 <section className="main-content shop-color-3">
                     <div className="main-title">Shopping Here</div>
                 </section>
+                <section className="main-content shop-color-3">
+                    <div className="main-title">Shopping Here</div>
+                </section>
+                <section className="main-content shop-color-3">
+                    <div className="main-title">Shopping Here</div>
+                </section>
+                <section className="main-content shop-color-3">
+                    <div className="main-title">Shopping Here</div>
+                </section>
+                <section className="main-content shop-color-3">
+                    <div className="main-title">Shopping Here</div>
+                </section>
+                <section className="main-content shop-color-3">
+                    <div className="main-title">Shopping Here</div>
+                </section>
+                <section className="main-content shop-color-3">
+                    <div className="main-title">Shopping Here</div>
+                </section>
+                <section className="main-content shop-color-3">
+                    <div className="main-title">Shopping Here</div>
+                </section>
+                <section className="main-content shop-color-3">
+                    <div className="main-title">Shopping Here</div>
+                </section>
+                <section className="main-content shop-color-3">
+                    <div className="main-title">Shopping Here</div>
+                </section>
+                <section className="main-content shop-color-3">
+                    <div className="main-title">Shopping Here</div>
+                </section>
+                <section className="main-content shop-color-3">
+                    <div className="main-title">Shopping Here</div>
+                </section>
+                <section className="main-content shop-color-3">
+                    <div className="main-title">Shopping Here</div>
+                </section>
+                <section className="main-content shop-color-3">
+                    <div className="main-title">Shopping Here</div>
+                </section>
+                <section className="main-content shop-color-3">
+                    <div className="main-title">Shopping Here</div>
+                </section>
             </section>
         );
     }

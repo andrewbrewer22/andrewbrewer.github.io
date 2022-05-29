@@ -4,7 +4,7 @@
     background-color: rgb(65, 65, 65);
 }
 .curtain-color-2{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(218, 183, 143);
 }
 
 /*portfolio color scheme*/
@@ -20,13 +20,13 @@
 
 /*Shop color scheme*/
 .shop-color-1{
-    background-color: rgb(127, 255, 148);
+    background-color: rgba(91, 143, 137, 0.712);
 }
 .shop-color-2{
-    background-color: rgba(99, 212, 55, 0.5);
+    background-color: rgba(150, 69, 69, 0.5);
 }
 .shop-color-3{
-    background-color: rgba(0, 255, 0, 0.274);
+    background-color: rgba(189, 54, 0, 0.274);
 }
 
 /*Drop down gold*/

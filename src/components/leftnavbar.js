@@ -68,16 +68,11 @@ function LeftNavbar() {
               API Demonstration
             </button>
           </span>
-          {/* <span className="br">
+          <span className="br">
             <button
-              onClick={() => {
-                navigate("/picturegallery");
-              }}
-              id="link-button"
-            >
-              Picture Gallery
-            </button>
-          </span> */}
+              onClick={() => { navigate("/shop"); }}
+              id="link-button">Shop</button>
+          </span>
         </div>
       </section>
 

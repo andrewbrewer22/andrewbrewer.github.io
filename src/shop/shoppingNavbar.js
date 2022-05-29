@@ -37,28 +37,10 @@ function ShoppingNavbar() {
                 <div id="projectDropdown" className="project-dropdown-content">
                     <span className="br">
                         <button
-                            onClick={() => { navigate("/resume"); }}
-                            id="link-button">Null</button>
+                            onClick={() => { navigate("/"); }}
+                            id="link-button">Home</button>
                     </span>
                     <span className="br">
-                        <button
-                            onClick={() => {
-                                navigate("/bmicalc");
-                            }}
-                            id="link-button"
-                        >
-                            Null
-                        </button>
-                    </span>
-                    <span className="br">
-                        <button
-                            onClick={() => {
-                                navigate("/api");
-                            }}
-                            id="link-button"
-                        >
-                            Null
-                        </button>
                     </span>
                 </div>
             </section>
