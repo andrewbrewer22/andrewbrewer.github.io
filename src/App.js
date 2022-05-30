@@ -14,6 +14,11 @@ import HomePage from "./pages/home-page";
 /*Shopping Imports*/
 import ShoppingPage from "./shop/shoppingPage";
 
+/*Language Imports*/
+import LangaugeMain from "./language/languageMain";
+import EnglishMain from "./language/english/englishMain";
+import EnglishGrammerMain from "./language/english/grammer/englishGrammerMain";
+
 //tools
 import ScrollToTop from "./tools/ScrollToTop";
 
@@ -34,7 +39,14 @@ function App() {
           <Route path="portfolio/picturegallery" element={<PictureGalleryPage />} />
 
           {/*Shopping*/}
-          <Route path="shop/" element={<ShoppingPage />} />
+          <Route path="shop" element={<ShoppingPage />} />
+
+          {/*Grammer*/}
+          <Route path="language" element={<LangaugeMain />} />
+          {/*English*/}
+          <Route path="language/english" element={<EnglishMain />} />
+          <Route path="language/english/grammer" element={<EnglishGrammerMain />} />
+          <Route path="language/english/poetry" element={<LangaugeMain />} />
 
           {/*Error page*/}
           <Route path="*" element={<ErrorPage />} />
