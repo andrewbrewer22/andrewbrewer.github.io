@@ -26,14 +26,14 @@
 /*#region Drop down menu*/
 
 /* Dropdown Button */
-.dropbtn {
+.dropbtnSHOP {
     caret-color: rgb(0, 0, 0);
     border: none;
     cursor: pointer;
-    background-image: url(../images/dropDownImg.png);
+    background-image: url(../images/dropDownImgUniversal.png);
     background-repeat: no-repeat;
 
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     transition: background-color 0.3s linear;
 
     background-position: 10% 10%;
@@ -41,12 +41,12 @@
     width: 40px;
 }
 
-.dropbtn span {
+.dropbtnSHOP span {
     display: none;
 }
 
 /* Dropdown button on hover & focus */
-.dropbtn:hover {
+.dropbtnSHOP:hover {
 
 }
 /* Dropdown Content (Hidden by Default) */

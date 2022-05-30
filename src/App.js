@@ -9,13 +9,13 @@ import BMICalcPage from "./pages/bmi-page";
 import APIDEMO from "./pages/api-page";
 import PictureGalleryPage from "./pages/picturegallery-page";
 import HomePage from "./pages/home-page";
-/* import CosmicNumber from "./pages/cosmicNumber-page"; */
 
 /*Shopping Imports*/
 import ShoppingPage from "./shop/shoppingPage";
 
 /*Language Imports*/
 import LangaugeMain from "./language/languageMain";
+/*English*/
 import EnglishMain from "./language/english/englishMain";
 import EnglishGrammerMain from "./language/english/grammer/englishGrammerMain";
 

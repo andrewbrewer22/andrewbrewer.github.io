@@ -33,8 +33,8 @@ function ShoppingNavbar() {
             </section>
 
             <section className="my-projects">
-                <button onClick={() => extendProjectMenu()} className="dropbtn"></button>
-                <div id="projectDropdown" className="project-dropdown-content">
+                <button onClick={() => extendProjectMenu()} className="dropbtnSHOP"></button>
+                <div id="projectDropdownSHOP" className="project-dropdown-content-SHOP">
                     <span className="br">
                         <button
                             onClick={() => { navigate("/"); }}
@@ -53,11 +53,11 @@ function ShoppingNavbar() {
 export default ShoppingNavbar;
 
 function extendProjectMenu() {
-    document.getElementById("projectDropdown").classList.toggle("show");
+    document.getElementById("projectDropdownSHOP").classList.toggle("show");
 }
 window.onclick = function (event) {
-    if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("project-dropdown-content");
+    if (!event.target.matches('.dropbtnSHOP')) {
+        var dropdowns = document.getElementsByClassName("project-dropdown-content-SHOP");
         var i;
         for (i = 0; i < dropdowns.length; i++) {
             var openDropdown = dropdowns[i];
