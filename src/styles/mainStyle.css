@@ -168,6 +168,27 @@
 
 /*#endregion leftbreak*/
 
+/*#region rightbreak*/
+.right-content-wide{
+    text-align: center;
+    width: 80%;
+    border: 4px solid black;
+    padding: 10px;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.right-content{
+    text-align: center;
+    width: 40%;
+    border: 4px solid black;
+    padding: 10px;
+    margin-left: 30%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+/*#endregion rightbreak*/
+
 /*#region bound width parameters*/
 
 /*Under 800px*/

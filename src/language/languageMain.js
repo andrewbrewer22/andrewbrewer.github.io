@@ -10,7 +10,7 @@ export default class LangaugeMain extends React.Component {
 
                     <LanguageNavbar />
 
-                    <div>
+                    <div className="rightbreak language-color-1">
                         Language Main
                     </div>
 

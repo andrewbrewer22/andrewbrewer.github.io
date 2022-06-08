@@ -5,7 +5,7 @@ function LanguageNavbar() {
     let navigate = useNavigate();
 
     return (
-        <section className="leftbreak">
+        <section className="leftbreak language-color-1">
             <span className="leftbreak-background-setter"></span>
 
             <section className="contact-info">

@@ -4,8 +4,8 @@ import "../styles/error.css";
 export default class ErrorComponent extends React.Component{
     render(){
         return(
-            <section className="rightbreak">
-                <div className="error-body">
+            <section className="rightbreak portfolio-color-1">
+                <div className="error-body portfolio-color-2">
                 ERROR: PAGE NOT FOUND
                 </div>
             </section>
