@@ -96,7 +96,7 @@ export default class Resume extends React.Component {
           </p>
         </div>
 
-        <div class="resume-text">Personal Experience here</div>
+        {/* <div class="resume-text">Personal Experience here</div> */}
       </section>
     );
   }

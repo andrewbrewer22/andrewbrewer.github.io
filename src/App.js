@@ -10,6 +10,11 @@ import PictureGalleryPage from "./pages/picturegallery-page";
 import HomePage from "./pages/home-page";
 /* import CosmicNumber from "./pages/cosmicNumber-page"; */
 
+
+
+//game
+import GamePage from "./game/gamePage";
+
 //tools
 import ScrollToTop from "./tools/ScrollToTop";
 
@@ -27,6 +32,10 @@ function App() {
           <Route path="api" element={<APIDEMO />} />
           <Route path="picturegallery" element={<PictureGalleryPage />} />
           {/* <Route path="cosmicnumber" element={<CosmicNumber />} /> */}
+
+
+          {/*Game page*/}
+          <Route path="webgame" element={<GamePage />} />
 
           {/*Error page*/}
           <Route path="*" element={<ErrorPage />} />

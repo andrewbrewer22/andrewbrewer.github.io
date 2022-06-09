@@ -78,6 +78,18 @@ function LeftNavbar() {
               Picture Gallery
             </button>
           </span> */}
+
+          {/* <span className="br">
+            <button
+              onClick={() => {
+                navigate("/webgame");
+              }}
+              id="link-button"
+            >
+              Web Game
+            </button>
+          </span>  */}
+
         </div>
       </section>
 
