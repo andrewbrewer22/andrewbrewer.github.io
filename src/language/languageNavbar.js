@@ -21,7 +21,7 @@ function LanguageNavbar() {
                 <div id="projectDropdown" className="project-dropdown-content">
                     <span className="br">
                         <button
-                            onClick={() => { navigate("/"); }}
+                            onClick={() => { navigate("/r-welcome"); }}
                             id="link-button">Home</button>
                     </span>
                     <span className="br">

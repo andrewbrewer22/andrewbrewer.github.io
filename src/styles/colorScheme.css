@@ -1,5 +1,43 @@
 /*#region Colors*/
 
+/*#region Base Colors*/
+
+/*Black*/
+.color-black-1{
+    background-color: black;
+}
+.color-black-2{
+    background-color: rgba(0, 0, 0, 0.781);
+}
+.color-black-3{
+    background-color: black;
+}
+
+/*White*/
+.color-white-1{
+    background-color: white;
+}
+.color-white-2{
+    background-color: rgba(255, 255, 255, 0.404);
+}
+.color-white-3{
+    background-color: rgba(253, 239, 239, 0.685);
+}
+
+/*Red*/
+.color-red-1{
+    background-color: red;
+}
+.color-red-2{
+    background-color: rgba(151, 0, 0, 0.603);
+}
+.color-red-3{
+    background-color: rgba(51, 0, 0, 0.76);
+}
+/*#endregion */
+
+
+/*#region Specialized Colors*/
 .curtain-color-1{
     background-color: rgb(65, 65, 65);
 }
@@ -44,5 +82,7 @@
 .gold-drop-solid{
     background-color: #e0a912c9;
 }
+
+/*#endregion */
 
 /*#endregion colors*/

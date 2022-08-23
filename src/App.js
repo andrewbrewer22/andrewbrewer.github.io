@@ -19,8 +19,8 @@ import ResumeHomePage from "./pages/home-page";
 import ShoppingPage from "./shop/shoppingPage";
 
 /*Health Imports*/
-import HealthPage from "./pages/health-page";
-import "./styles/health.css";
+import HealthPage from "./health/pages/health-page";
+import "./health/style/health.css";
 
 /*Language Imports*/
 import LangaugeMain from "./language/languageMain";
@@ -64,6 +64,9 @@ function App() {
           <Route path="portfolio/bmicalc" element={<BMICalcPage />} />
           <Route path="portfolio/api" element={<APIDEMO />} />
           <Route path="portfolio/picturegallery" element={<PictureGalleryPage />} />
+
+          {/*Health*/}
+          <Route path="health" element={<HealthPage />} />
 
           {/*Shopping*/}
           <Route path="shop" element={<ShoppingPage />} />
