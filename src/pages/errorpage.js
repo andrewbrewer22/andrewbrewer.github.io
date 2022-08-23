@@ -1,7 +1,8 @@
 import React from "react";
 import "../styles/mainStyle.css";
-import LeftNavbar from "../components/leftnavbar";
-import ErrorComponent from "../components/errorComponent";
+import ErrorLeftNavbar from "../components/errorNav";
+//import ErrorComponent from "../components/errorComponent";
+import UniversalErrorComponent from "../components/universalErrorComponent";
 
 export default class ErrorPage extends React.Component{
     render(){
@@ -10,9 +11,9 @@ export default class ErrorPage extends React.Component{
             <body className="body">
                 <section className="break-container">
                     
-                <LeftNavbar />
+                <ErrorLeftNavbar />
 
-                <ErrorComponent />
+                <UniversalErrorComponent />
 
                 </section>
             </body>
