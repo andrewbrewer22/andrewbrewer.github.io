@@ -13,6 +13,10 @@ import HomePage from "./pages/home-page";
 /*Shopping Imports*/
 import ShoppingPage from "./shop/shoppingPage";
 
+/*Health Imports*/
+import HealthPage from "./pages/health-page";
+import "./styles/health.css";
+
 /*Language Imports*/
 import LangaugeMain from "./language/languageMain";
 /*English*/
@@ -40,6 +44,9 @@ function App() {
 
           {/*Shopping*/}
           <Route path="shop" element={<ShoppingPage />} />
+
+          {/*Health*/}
+          <Route path="health" element={<HealthPage />} />
 
           {/*Grammer*/}
           <Route path="language" element={<LangaugeMain />} />

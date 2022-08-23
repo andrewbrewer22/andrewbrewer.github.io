@@ -78,6 +78,11 @@ function LeftNavbar() {
               onClick={() => { navigate("/language"); }}
               id="link-button">Language</button>
           </span>
+          <span className="br">
+            <button
+              onClick={() => { navigate("/health"); }}
+              id="link-button">Health</button>
+          </span>
         </div>
       </section>
 

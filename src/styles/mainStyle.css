@@ -64,7 +64,11 @@
     display: block;
     margin-bottom: 0em;
 }
+/*Delete below when everything has been updated with class bold-this*/
 #bold-this {
+    font-weight: bold;
+}
+.bold-this{
     font-weight: bold;
 }
 .body {
