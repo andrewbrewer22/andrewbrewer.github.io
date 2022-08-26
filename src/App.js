@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import ErrorPage from "./pages/errorpage";
 
+import DefaultDirectory from "./pages/default-dir";
+
 /*--------------*/
 /*RESUME PORTION*/
 /*-V----------V-*/
@@ -54,6 +56,10 @@ function App() {
       <Router >
         <ScrollToTop />
         <Routes >
+
+          <Route path="/" element={<DefaultDirectory />} />
+          <Route path="*" element={<ErrorPage />} />
+          
           {/*--------------*/
           /*RESUME PORTION*/
           /*-V----------V-*/}
@@ -85,9 +91,6 @@ function App() {
           /*-V------------V-*/}
 
           <Route path="/p-welcome" element={<PersonalHomePage />} />
-
-          {/*Error page*/}
-          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </Router>
     </main>

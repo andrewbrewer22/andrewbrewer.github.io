@@ -197,6 +197,21 @@
 
 /*Under 800px*/
 @media screen and (max-width: 799px) {
+    .default-comp{
+        font-size: 20px;
+        position: absolute;
+        width: 80%;
+        margin-left: 10%;
+        border: 3px solid black;
+    }
+    .default-button{
+        font-size: 30px;
+        position: absolute;
+        width: 10%;
+        margin-left: 43%;
+        border: 3px solid black;
+    }
+
     .leftbreak {
         position: fixed;
         /* background-color: rgba(212, 175, 55, 0.3); */
@@ -288,6 +303,22 @@
 }
 /*Over 800px*/
 @media screen and (min-width: 800px) {
+    .default-comp{
+        font-size: 30px;
+        position: absolute;
+        width: 80%;
+        margin-left: 10%;
+        border: 3px solid black;
+    }
+    .default-button{
+        font-size: 30px;
+        position: absolute;
+        width: 10%;
+        margin-left: 43%;
+        border: 3px solid black;
+    }
+
+
     /*Left Break: Contact info, resources, my links, project links*/
     .leftbreak {
         position: fixed;
@@ -415,6 +446,14 @@
 
     .home-points{
         margin-left: -13%;
+    }
+
+    .default-comp{
+        font-size: 20px;
+        position: absolute;
+        width: 80%;
+        margin-left: 5%;
+        border: 3px solid black;
     }
 }
 /*#endregion */
