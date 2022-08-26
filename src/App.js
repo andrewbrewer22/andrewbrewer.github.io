@@ -2,6 +2,13 @@ import React from "react";
 //import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+//DB
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
 import ErrorPage from "./pages/errorpage";
 
 import DefaultDirectory from "./pages/default-dir";
@@ -50,6 +57,22 @@ import ScrollToTop from "./tools/ScrollToTop";
 
 //https://andrewbrewer.github.io (this was originally in the homepage section in package.json)
 function App() {
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAd8YozoHMjON66XfiQdtGAQP5ixiceUiA",
+    authDomain: "andrewbrewergithubio.firebaseapp.com",
+    projectId: "andrewbrewergithubio",
+    storageBucket: "andrewbrewergithubio.appspot.com",
+    messagingSenderId: "351499485802",
+    appId: "1:351499485802:web:4d29f1dd477a8cf1dc4013",
+    measurementId: "G-VNNW48LMRG"
+  };
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+
   return (
     <main>
 
@@ -59,7 +82,7 @@ function App() {
 
           <Route path="/" element={<DefaultDirectory />} />
           <Route path="*" element={<ErrorPage />} />
-          
+
           {/*--------------*/
           /*RESUME PORTION*/
           /*-V----------V-*/}

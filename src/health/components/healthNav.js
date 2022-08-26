@@ -20,12 +20,34 @@ function HealthNavbar() {
                 <button
                     onClick={() => extendProjectMenu()} className="dropbtnHealth"></button>
                 <div id="projectDropdownHealth" className="project-dropdown-content-health">
+                <span className="br">
+                        <button
+                            onClick={() => {navigate(""); }} id="link-button-health">
+                            Macro Tracker
+                        </button>
+                    </span>
+                    <span className="br">
+                        <button
+                            onClick={() => {navigate(""); }} id="link-button-health">
+                            Food Database
+                        </button>
+                    </span>
+                    <span className="br">
+                        <button
+                            onClick={() => {navigate(""); }} id="link-button-health">
+                            Workouts
+                        </button>
+                    </span>
+
                     <span className="br">
                         <button
                             onClick={() => {navigate("/r-welcome"); }} id="link-button-health">
                             Resume
                         </button>
                     </span>
+                    
+
+                    
                 </div>
             </section>
 
