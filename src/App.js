@@ -3,6 +3,8 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 //DB
+import { getDatabase } from "firebase/database";
+
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -10,8 +12,9 @@ import { getAnalytics } from "firebase/analytics";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 import ErrorPage from "./pages/errorpage";
-
 import DefaultDirectory from "./pages/default-dir";
+import RegistrationPage from "./register/register-home";
+import LoginPage from "./register/login";
 
 /*--------------*/
 /*RESUME PORTION*/
@@ -55,6 +58,7 @@ import PersonalHomePage from "./.personal/pages/p-homepage";
 import ScrollToTop from "./tools/ScrollToTop";
 
 
+
 //https://andrewbrewer.github.io (this was originally in the homepage section in package.json)
 function App() {
 
@@ -82,6 +86,8 @@ function App() {
 
           <Route path="/" element={<DefaultDirectory />} />
           <Route path="*" element={<ErrorPage />} />
+          <Route path="/register" element={<RegistrationPage />} />
+          <Route path="/login" element={<LoginPage />} />
 
           {/*--------------*/
           /*RESUME PORTION*/
