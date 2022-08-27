@@ -2,9 +2,9 @@ import React from "react";
 
 
 //DB
-import { getDatabase } from "firebase/database";
+//import { getDatabase } from "firebase/database";
 //reference DB
-const database = getDatabase();
+//const database = getDatabase();
 
 export default class LoginFields extends React.Component{
     

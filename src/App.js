@@ -2,9 +2,6 @@ import React from "react";
 //import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-//DB
-import { getDatabase } from "firebase/database";
-
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -57,8 +54,6 @@ import PersonalHomePage from "./.personal/pages/p-homepage";
 //tools
 import ScrollToTop from "./tools/ScrollToTop";
 
-
-
 //https://andrewbrewer.github.io (this was originally in the homepage section in package.json)
 function App() {
 
@@ -75,7 +70,7 @@ function App() {
   };
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
+  //const analytics = getAnalytics(app);
 
   return (
     <main>
