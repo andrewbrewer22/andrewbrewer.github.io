@@ -53,6 +53,7 @@ import PersonalHomePage from "./.personal/pages/p-homepage";
 
 //tools
 import ScrollToTop from "./tools/ScrollToTop";
+import TestDB from "./database_001/test/testDB";
 
 //https://andrewbrewer.github.io (this was originally in the homepage section in package.json)
 function App() {
@@ -83,6 +84,10 @@ function App() {
           <Route path="*" element={<ErrorPage />} />
           <Route path="/register" element={<RegistrationPage />} />
           <Route path="/login" element={<LoginPage />} />
+
+          {/*Testing*/}
+
+          <Route path="testdb" element={<TestDB />} />
 
           {/*--------------*/
           /*RESUME PORTION*/
