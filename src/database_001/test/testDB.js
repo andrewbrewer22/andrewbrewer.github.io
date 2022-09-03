@@ -1,10 +1,18 @@
 import React from "react";
 import { getDatabase, ref, set, child, get} from "firebase/database";
 
-var currentNumber = 1;
+var currentNumber = 0;
 var newData = 0;
 
 export default class TestDB extends React.Component {
+
+    componentDidMount(){
+        updateNewData();
+
+        //set our current number to the current db number
+        //currentNumber = newData;
+    }
+
     render() {
         document.body.style = "background: rgba(100, 150, 100);";
         return (
@@ -29,13 +37,13 @@ function addNumberData() {
     const reference = ref(db, "db_001/test/number");
 
     //increment our test number
-    currentNumber += 1;
+    currentNumber = currentNumber + 1;
 
     set(reference, {
         currentNumber,
     });
 
-    retrieveNewData();
+    //retrieveNewData();
     updateNewData();
 }
 
@@ -57,5 +65,7 @@ function retrieveNewData() {
 }
 
 function updateNewData() {
+    retrieveNewData();
+
     document.getElementById("newData").innerHTML = "Current Data: " + newData;
 }
