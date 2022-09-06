@@ -68,21 +68,7 @@ function LeftNavbar() {
               API Demonstration
             </button>
           </span>
-          <span className="br">
-            <button
-              onClick={() => { navigate("/shop"); }}
-              id="link-button">Shop</button>
-          </span>
-          <span className="br">
-            <button
-              onClick={() => { navigate("/language"); }}
-              id="link-button">Language</button>
-          </span>
-          <span className="br">
-            <button
-              onClick={() => { navigate("/health"); }}
-              id="link-button">Health</button>
-          </span>
+          
         </div>
       </section>
 
@@ -109,17 +95,20 @@ window.onclick = function(event) {
   }
 }
 
-/*run our contact me server */
-// const { exec } = require("child_process");
-
-// exec("node contactmeServer.js", (error, stdout, stderr) => {
-//   if (error) {
-//       console.log(`error: ${error.message}`);
-//       return;
-//   }
-//   if (stderr) {
-//       console.log(`stderr: ${stderr}`);
-//       return;
-//   }
-//   console.log(`stdout: ${stdout}`);
-// });
+/*
+<span className="br">
+            <button
+              onClick={() => { navigate("/shop"); }}
+              id="link-button">Shop</button>
+          </span>
+          <span className="br">
+            <button
+              onClick={() => { navigate("/language"); }}
+              id="link-button">Language</button>
+          </span>
+          <span className="br">
+            <button
+              onClick={() => { navigate("/health"); }}
+              id="link-button">Health</button>
+          </span>
+*/

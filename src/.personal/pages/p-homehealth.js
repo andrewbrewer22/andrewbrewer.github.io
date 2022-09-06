@@ -8,7 +8,7 @@ import PersonalNavbar from "../components/p-homenavbar";
 import "../style/p_color.css";
 import "../style/p_structure.css";
 
-export default class PersonalHomePage extends React.Component{
+export default class PersonalHomeHealthPage extends React.Component{
     render(){
         document.body.style = 'background: rgb(65, 65, 65);';
         return(
@@ -19,12 +19,12 @@ export default class PersonalHomePage extends React.Component{
 
                     {/*Navigation*/}
                     <section >
-                        <PersonalNavbar />
+                        Health
                     </section>
 
                     {/*Content*/}
                     <section>
-                        <PersonalHomeComponent />
+                        Health
                     </section>
 
                 </section>

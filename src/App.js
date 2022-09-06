@@ -47,6 +47,7 @@ import JapaneseMain from "./language/japanese/japaneseMain";
 /*Personal PORTION*/
 /*-V------------V-*/
 import PersonalHomePage from "./.personal/pages/p-homepage";
+import PersonalHomeHealthPage from "./.personal/pages/p-homehealth";
 /*-^------------^-*/
 /*Personal PORTION*/
 /*----------------*/
@@ -93,15 +94,12 @@ function App() {
           /*RESUME PORTION*/
           /*-V----------V-*/}
 
-          {/*Personal Portfolio*/}
+          {/*Portfolio*/}
           <Route path="/r-welcome" element={<ResumeHomePage />} />
           <Route path="portfolio/resume" element={<ResumePage />} />
           <Route path="portfolio/bmicalc" element={<BMICalcPage />} />
           <Route path="portfolio/api" element={<APIDEMO />} />
           <Route path="portfolio/picturegallery" element={<PictureGalleryPage />} />
-
-          {/*Health*/}
-          <Route path="health" element={<HealthPage />} />
 
           {/*Shopping*/}
           <Route path="shop" element={<ShoppingPage />} />
@@ -120,6 +118,9 @@ function App() {
           /*-V------------V-*/}
 
           <Route path="/p-welcome" element={<PersonalHomePage />} />
+          {/*Health*/}
+          <Route path="health" element={<PersonalHomeHealthPage />} />
+
         </Routes>
       </Router>
     </main>

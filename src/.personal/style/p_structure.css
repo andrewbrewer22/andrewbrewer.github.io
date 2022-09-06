@@ -1,0 +1,33 @@
+/*#region Universal*/
+.nav-button{
+    border: none;
+    cursor: pointer;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: center;
+}
+/*#endregion */
+
+/*Under 800px*/
+@media screen and (max-width: 799px) {
+
+}
+/*Over 800px*/
+@media screen and (min-width: 800px) {
+    .nav-title{
+        font-size: 50px;
+        margin-left: 43%;
+    }
+    
+    .nav-container{
+        
+    }
+
+    .nav-button{
+        height: 40px;
+        width: 100px;
+        
+    }
+}

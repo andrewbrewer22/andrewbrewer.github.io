@@ -1,6 +1,7 @@
 import React from "react";
-
 import RegisterFields from "./register-fields";
+
+import "./register.css";
 
 export default class RegistrationPage extends React.Component{
 

@@ -4,7 +4,9 @@ export default class PersonalHomeComponent extends React.Component{
     render(){
         return(
             <section>
-                Personal
+                <div>
+                    personal
+                </div>
             </section>
         );
     }
